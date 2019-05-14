@@ -1,0 +1,1130 @@
+{
+  "allFields": {
+    "name": {
+      "labels": [
+        "label.name"
+      ],
+      "components": [
+        "CS.vpc.vmListView"
+      ]
+    },
+    "instancename": {
+      "labels": [
+        "label.internal.name"
+      ],
+      "components": [
+        "CS.sections.instances"
+      ]
+    },
+    "displayname": {
+      "labels": [
+        "label.name"
+      ],
+      "components": [
+        "CS.sections.storage.sections.vmsnapshots"
+      ]
+    },
+    "ipaddress": {
+      "labels": [
+        "label.ips"
+      ],
+      "components": [
+        "CS.vpc.sections.publicLbIps"
+      ]
+    },
+    "account": {
+      "labels": [
+        "label.account"
+      ],
+      "components": [
+        "CS.vpc.siteToSiteVPN.sections.vpnGateway"
+      ]
+    },
+    "zonename": {
+      "labels": [
+        "label.zone"
+      ],
+      "components": [
+        "CS.vpc.vmListView"
+      ]
+    },
+    "state": {
+      "labels": [
+        "label.state"
+      ],
+      "components": [
+        "CS.vpc.siteToSiteVPN.sections.vpnConnection"
+      ]
+    },
+    "type": {
+      "labels": [
+        "label.type"
+      ],
+      "components": [
+        "CS.sections.system.subsections.primary-storage"
+      ]
+    },
+    "vmdisplayname": {
+      "labels": [
+        "label.vm.display.name"
+      ],
+      "components": [
+        "CS.sections.storage.sections.volumes"
+      ]
+    },
+    "hypervisor": {
+      "labels": [
+        "label.hypervisor"
+      ],
+      "components": [
+        "CS.sections.global-settings.sections.hypervisorCapabilities"
+      ]
+    },
+    "volumename": {
+      "labels": [
+        "label.volume"
+      ],
+      "components": [
+        "CS.sections.storage.sections.snapshots"
+      ]
+    },
+    "intervaltype": {
+      "labels": [
+        "label.interval.type"
+      ],
+      "components": [
+        "CS.sections.storage.sections.snapshots"
+      ]
+    },
+    "created": {
+      "labels": [
+        "label.date"
+      ],
+      "components": [
+        "CS.sections.events.sections.events"
+      ]
+    },
+    "current": {
+      "labels": [
+        "label.vmsnapshot.current"
+      ],
+      "components": [
+        "CS.sections.storage.sections.vmsnapshots"
+      ]
+    },
+    "parentName": {
+      "labels": [
+        "label.vmsnapshot.parentname"
+      ],
+      "components": [
+        "CS.sections.storage.sections.vmsnapshots"
+      ]
+    },
+    "cidr": {
+      "labels": [
+        "label.ipv4.cidr"
+      ],
+      "components": [
+        "CS.sections.system.naas.mainNetworks.guest.detailView.tabs.network"
+      ]
+    },
+    "ip6cidr": {
+      "labels": [
+        "label.ipv6.CIDR"
+      ],
+      "components": [
+        "CS.sections.system.naas.mainNetworks.guest.detailView.tabs.network"
+      ]
+    },
+    "virtualmachinedisplayname": {
+      "labels": [
+        "label.vm.name"
+      ],
+      "components": [
+        "CS.vpc.sections.publicLbIps"
+      ]
+    },
+    "associatednetworkname": {
+      "labels": [
+        "label.network"
+      ],
+      "components": [
+        "CS.sections.network.sections.ipAddresses"
+      ]
+    },
+    "description": {
+      "labels": [
+        "label.description"
+      ],
+      "components": [
+        "CS.vpc.sections.networkACLLists"
+      ]
+    },
+    "domain": {
+      "labels": [
+        "label.domain"
+      ],
+      "components": [
+        "CS.vpc.siteToSiteVPN.sections.vpnGateway"
+      ]
+    },
+    "displaytext": {
+      "labels": [
+        "label.description"
+      ],
+      "components": [
+        "CS.sections.configuration.sections.diskOfferings"
+      ]
+    },
+    "gateway": {
+      "labels": [
+        "label.gateway"
+      ],
+      "components": [
+        "CS.vpc.siteToSiteVPN.sections.vpnConnection"
+      ]
+    },
+    "cidrlist": {
+      "labels": [
+        "label.CIDR.list"
+      ],
+      "components": [
+        "CS.sections.network.sections.vpnCustomerGateway"
+      ]
+    },
+    "ipsecpsk": {
+      "labels": [
+        "label.IPsec.preshared.key"
+      ],
+      "components": [
+        "CS.vpc.siteToSiteVPN.sections.vpnConnection"
+      ]
+    },
+    "username": {
+      "labels": [
+        "label.username"
+      ],
+      "components": [
+        "CS.sections.system.naas.networkProviders.types.Opendaylight.tabs.controllers"
+      ]
+    },
+    "ostypename": {
+      "labels": [
+        "label.os.type"
+      ],
+      "components": [
+        "CS.sections.templates.sections.isos"
+      ]
+    },
+    "level": {
+      "labels": [
+        "label.level"
+      ],
+      "components": [
+        "CS.sections.events.sections.events"
+      ]
+    },
+    "sent": {
+      "labels": [
+        "label.date"
+      ],
+      "components": [
+        "CS.sections.events.sections.alerts"
+      ]
+    },
+    "project": {
+      "labels": [
+        "label.project"
+      ],
+      "components": [
+        "CS.sections.projects.sections.invitations"
+      ]
+    },
+    "rolename": {
+      "labels": [
+        "label.role"
+      ],
+      "components": [
+        "CS.sections.accounts.sections.accounts"
+      ]
+    },
+    "roletype": {
+      "labels": [
+        "label.roletype"
+      ],
+      "components": [
+        "CS.sections.accounts.sections.accounts"
+      ]
+    },
+    "domainpath": {
+      "labels": [
+        "label.domain"
+      ],
+      "components": [
+        "CS.sections.accounts.sections.accounts"
+      ]
+    },
+    "firstname": {
+      "labels": [
+        "label.first.name"
+      ],
+      "components": [
+        "CS.sections.accounts.sections.users"
+      ]
+    },
+    "lastname": {
+      "labels": [
+        "label.last.name"
+      ],
+      "components": [
+        "CS.sections.accounts.sections.users"
+      ]
+    },
+    "privatekey": {
+      "labels": [
+        "label.private.key"
+      ],
+      "components": [
+        "CS.sections.accounts.sections.sshkeypairs"
+      ]
+    },
+    "id": {
+      "labels": [
+        "label.id"
+      ],
+      "components": [
+        "CS.vpc.sections.networkACLLists"
+      ]
+    },
+    "endpoint": {
+      "labels": [
+        "label.endpoint"
+      ],
+      "components": [
+        "CS.sections.regions.sections.regions"
+      ]
+    },
+    "gslbdomainname": {
+      "labels": [
+        "label.gslb.domain.name"
+      ],
+      "components": [
+        "CS.sections.regions.sections.GSLB"
+      ]
+    },
+    "gslblbmethod": {
+      "labels": [
+        "label.algorithm"
+      ],
+      "components": [
+        "CS.sections.regions.sections.GSLB"
+      ]
+    },
+    "startip": {
+      "labels": [
+        "label.ipv4.start.ip"
+      ],
+      "components": [
+        "CS.sections.system.subsections.guestIpRanges"
+      ]
+    },
+    "endip": {
+      "labels": [
+        "label.ipv4.end.ip"
+      ],
+      "components": [
+        "CS.sections.system.subsections.guestIpRanges"
+      ]
+    },
+    "netmask": {
+      "labels": [
+        "label.netmask"
+      ],
+      "components": [
+        "CS.sections.system.subsections.guestIpRanges"
+      ]
+    },
+    "vlan": {
+      "labels": [
+        "label.vlan"
+      ],
+      "components": [
+        "CS.sections.system.naas.networks"
+      ]
+    },
+    "publicport": {
+      "labels": [
+        "label.public.port"
+      ],
+      "components": [
+        "CS.sections.regions.sections.lbUnderGSLB"
+      ]
+    },
+    "privateport": {
+      "labels": [
+        "label.private.port"
+      ],
+      "components": [
+        "CS.sections.regions.sections.lbUnderGSLB"
+      ]
+    },
+    "algorithm": {
+      "labels": [
+        "label.algorithm"
+      ],
+      "components": [
+        "CS.vpc.sections.internalLoadBalancers"
+      ]
+    },
+    "uuid": {
+      "labels": [
+        "label.id"
+      ],
+      "components": [
+        "CS.sections.regions.sections.NCC"
+      ]
+    },
+    "numretries": {
+      "labels": [
+        "label.numretries"
+      ],
+      "components": [
+        "CS.sections.regions.sections.NCC"
+      ]
+    },
+    "broadcasturi": {
+      "labels": [
+        "label.broadcat.uri"
+      ],
+      "components": [
+        "CS.sections.system.naas.mainNetworks.guest.detailView.tabs.network"
+      ]
+    },
+    "guestvlanrange": {
+      "labels": [
+        "label.vlan.vni.ranges"
+      ],
+      "components": [
+        "CS.sections.system.naas.mainNetworks.guest.detailView.tabs.dedicatedGuestVlanRanges"
+      ]
+    },
+    "isolationmethods": {
+      "labels": [
+        "label.isolation.method"
+      ],
+      "components": [
+        "CS.sections.system.naas.networks"
+      ]
+    },
+    "broadcastdomainrange": {
+      "labels": [
+        "label.broadcast.domain.range"
+      ],
+      "components": [
+        "CS.sections.system.naas.networks"
+      ]
+    },
+    "routerType": {
+      "labels": [
+        "label.type"
+      ],
+      "components": [
+        "CS.sections.system.subsections.virtualRouters.sections.routerNoGroup"
+      ]
+    },
+    "url": {
+      "labels": [
+        "label.url"
+      ],
+      "components": [
+        "CS.sections.global-settings.sections.baremetalRct"
+      ]
+    },
+    "systemvmtype": {
+      "labels": [
+        "label.type"
+      ],
+      "components": [
+        "CS.sections.system.subsections.systemVms"
+      ]
+    },
+    "publicip": {
+      "labels": [
+        "label.ip.address"
+      ],
+      "components": [
+        "CS.vpc.siteToSiteVPN.sections.vpnConnection"
+      ]
+    },
+    "guestnetworkname": {
+      "labels": [
+        "label.network"
+      ],
+      "components": [
+        "CS.sections.system.subsections.virtualRouters.sections.routerNoGroup"
+      ]
+    },
+    "hostname": {
+      "labels": [
+        "label.host.name"
+      ],
+      "components": [
+        "CS.sections.global-settings.sections.ldapConfiguration"
+      ]
+    },
+    "requiresupgrade": {
+      "labels": [
+        "label.requires.upgrade"
+      ],
+      "components": [
+        "CS.sections.system.subsections.virtualRouters.sections.routerNoGroup"
+      ]
+    },
+    "routerCount": {
+      "labels": [
+        "label.total.virtual.routers"
+      ],
+      "components": [
+        "CS.sections.system.subsections.virtualRouters.sections.routerGroupByAccount"
+      ]
+    },
+    "routerRequiresUpgrade": {
+      "labels": [
+        "label.upgrade.required"
+      ],
+      "components": [
+        "CS.sections.system.subsections.virtualRouters.sections.routerGroupByAccount"
+      ]
+    },
+    "agentstate": {
+      "labels": [
+        "label.agent.state"
+      ],
+      "components": [
+        "CS.sections.system.subsections.systemVms"
+      ]
+    },
+    "lbdevicestate": {
+      "labels": [
+        "label.status"
+      ],
+      "components": [
+        "CS.sections.system.subsections.f5Devices"
+      ]
+    },
+    "fwdevicestate": {
+      "labels": [
+        "label.status"
+      ],
+      "components": [
+        "CS.sections.system.subsections.paDevices"
+      ]
+    },
+    "fwdevicename": {
+      "labels": [
+        "label.type"
+      ],
+      "components": [
+        "CS.sections.system.subsections.paDevices"
+      ]
+    },
+    "transportzoneuuid": {
+      "labels": [
+        "label.nicira.transportzoneuuid"
+      ],
+      "components": [
+        "CS.sections.system.subsections.niciraNvpDevices"
+      ]
+    },
+    "l3gatewayserviceuuid": {
+      "labels": [
+        "label.nicira.l3gatewayserviceuuid"
+      ],
+      "components": [
+        "CS.sections.system.subsections.niciraNvpDevices"
+      ]
+    },
+    "l2gatewayserviceuuid": {
+      "labels": [
+        "label.nicira.l2gatewayserviceuuid"
+      ],
+      "components": [
+        "CS.sections.system.subsections.niciraNvpDevices"
+      ]
+    },
+    "port": {
+      "labels": [
+        "label.ldap.port"
+      ],
+      "components": [
+        "CS.sections.global-settings.sections.ldapConfiguration"
+      ]
+    },
+    "apiversion": {
+      "labels": [
+        "label.api.version"
+      ],
+      "components": [
+        "CS.sections.system.subsections.nuageVspDevices"
+      ]
+    },
+    "retrycount": {
+      "labels": [
+        "label.numretries"
+      ],
+      "components": [
+        "CS.sections.system.subsections.nuageVspDevices"
+      ]
+    },
+    "retryinterval": {
+      "labels": [
+        "label.retry.interval"
+      ],
+      "components": [
+        "CS.sections.system.subsections.nuageVspDevices"
+      ]
+    },
+    "allocationstate": {
+      "labels": [
+        "label.allocation.state"
+      ],
+      "components": [
+        "CS.sections.system.subsections.clusters"
+      ]
+    },
+    "hypervisortype": {
+      "labels": [
+        "label.hypervisor"
+      ],
+      "components": [
+        "CS.sections.system.subsections.clusters"
+      ]
+    },
+    "podname": {
+      "labels": [
+        "label.pod"
+      ],
+      "components": [
+        "CS.sections.system.subsections.clusters"
+      ]
+    },
+    "managedstate": {
+      "labels": [
+        "label.managed.state"
+      ],
+      "components": [
+        "CS.sections.system.subsections.clusters"
+      ]
+    },
+    "clustername": {
+      "labels": [
+        "label.cluster"
+      ],
+      "components": [
+        "CS.sections.system.subsections.primary-storage"
+      ]
+    },
+    "resourcestate": {
+      "labels": [
+        "label.resource.state"
+      ],
+      "components": [
+        "CS.sections.system.subsections.hosts"
+      ]
+    },
+    "powerstate": {
+      "labels": [
+        "label.metrics.outofbandmanagementpowerstate"
+      ],
+      "components": [
+        "CS.sections.metrics.hosts"
+      ]
+    },
+    "path": {
+      "labels": [
+        "label.path"
+      ],
+      "components": [
+        "CS.sections.system.subsections.primary-storage"
+      ]
+    },
+    "scope": {
+      "labels": [
+        "label.scope"
+      ],
+      "components": [
+        "CS.sections.system.subsections.secondary-storage.sections.secondaryStorage"
+      ]
+    },
+    "protocol": {
+      "labels": [
+        "label.protocol"
+      ],
+      "components": [
+        "CS.sections.system.subsections.secondary-storage.sections.secondaryStorage"
+      ]
+    },
+    "providername": {
+      "labels": [
+        "label.provider"
+      ],
+      "components": [
+        "CS.sections.system.subsections.secondary-storage.sections.cacheStorage"
+      ]
+    },
+    "startipv6": {
+      "labels": [
+        "label.ipv6.start.ip"
+      ],
+      "components": [
+        "CS.sections.system.subsections.guestIpRanges"
+      ]
+    },
+    "endipv6": {
+      "labels": [
+        "label.ipv6.end.ip"
+      ],
+      "components": [
+        "CS.sections.system.subsections.guestIpRanges"
+      ]
+    },
+    "resourcename": {
+      "labels": [
+        "label.resource.name"
+      ],
+      "components": [
+        "CS.sections.system.subsections.vnmcDevices"
+      ]
+    },
+    "provider": {
+      "labels": [
+        "label.provider"
+      ],
+      "components": [
+        "CS.sections.system.subsections.vnmcDevices"
+      ]
+    },
+    "insideportprofile": {
+      "labels": [
+        "label.inside.port.profile"
+      ],
+      "components": [
+        "CS.sections.system.subsections.asa1000v"
+      ]
+    },
+    "value": {
+      "labels": [
+        "label.value"
+      ],
+      "components": [
+        "CS.sections.global-settings.sections.globalSettings"
+      ]
+    },
+    "hypervisorversion": {
+      "labels": [
+        "label.hypervisor.version"
+      ],
+      "components": [
+        "CS.sections.global-settings.sections.hypervisorCapabilities"
+      ]
+    },
+    "maxguestslimit": {
+      "labels": [
+        "label.max.guest.limit"
+      ],
+      "components": [
+        "CS.sections.global-settings.sections.hypervisorCapabilities"
+      ]
+    },
+    "iscustomized": {
+      "labels": [
+        "label.custom.disk.size"
+      ],
+      "components": [
+        "CS.sections.configuration.sections.diskOfferings"
+      ]
+    },
+    "disksize": {
+      "labels": [
+        "label.disk.size.gb"
+      ],
+      "components": [
+        "CS.sections.configuration.sections.diskOfferings"
+      ]
+    },
+    "clusters": {
+      "labels": [
+        "label.metrics.clusters"
+      ],
+      "components": [
+        "CS.sections.metrics.zones"
+      ]
+    },
+    "cpuused": {
+      "labels": [
+        "label.metrics.cpu.usage"
+      ],
+      "components": [
+        "CS.sections.metrics.instances"
+      ]
+    },
+    "cpuallocated": {
+      "labels": [
+        "label.metrics.cpu.allocated"
+      ],
+      "components": [
+        "CS.sections.metrics.clusters"
+      ]
+    },
+    "memused": {
+      "labels": [
+        "label.metrics.memory.usage"
+      ],
+      "components": [
+        "CS.sections.metrics.instances"
+      ]
+    },
+    "memallocated": {
+      "labels": [
+        "label.metrics.memory.allocated"
+      ],
+      "components": [
+        "CS.sections.metrics.clusters"
+      ]
+    },
+    "hosts": {
+      "labels": [
+        "label.metrics.hosts"
+      ],
+      "components": [
+        "CS.sections.metrics.clusters"
+      ]
+    },
+    "instances": {
+      "labels": [
+        "label.instances"
+      ],
+      "components": [
+        "CS.sections.metrics.hosts"
+      ]
+    },
+    "network": {
+      "labels": [
+        "label.metrics.network.usage"
+      ],
+      "components": [
+        "CS.sections.metrics.instances"
+      ]
+    },
+    "disk": {
+      "labels": [
+        "label.metrics.disk"
+      ],
+      "components": [
+        "CS.sections.metrics.storagepool"
+      ]
+    },
+    "vmname": {
+      "labels": [
+        "label.metrics.vm.name"
+      ],
+      "components": [
+        "CS.sections.metrics.volumes"
+      ]
+    },
+    "sizegb": {
+      "labels": [
+        "label.metrics.disk.size"
+      ],
+      "components": [
+        "CS.sections.metrics.volumes"
+      ]
+    },
+    "physicalsize": {
+      "labels": [
+        "label.disk.physicalsize"
+      ],
+      "components": [
+        "CS.sections.metrics.volumes"
+      ]
+    },
+    "utilization": {
+      "labels": [
+        "label.disk.utilisation"
+      ],
+      "components": [
+        "CS.sections.metrics.volumes"
+      ]
+    },
+    "storagetype": {
+      "labels": [
+        "label.metrics.disk.storagetype"
+      ],
+      "components": [
+        "CS.sections.metrics.volumes"
+      ]
+    },
+    "storage": {
+      "labels": [
+        "label.metrics.storagepool"
+      ],
+      "components": [
+        "CS.sections.metrics.volumes"
+      ]
+    },
+    "property": {
+      "labels": [
+        "label.metrics.property"
+      ],
+      "components": [
+        "CS.sections.metrics.storagepool"
+      ]
+    },
+    "balance": {
+      "labels": [
+        "label.quota.balance"
+      ],
+      "components": [
+        "CS.sections.quota.sections.fullSummary"
+      ]
+    },
+    "quota": {
+      "labels": [
+        "label.quota.value"
+      ],
+      "components": [
+        "CS.sections.quota.sections.balancestatement"
+      ]
+    },
+    "unit": {
+      "labels": [
+        "label.quota.type.unit"
+      ],
+      "components": [
+        "CS.sections.quota.sections.quotastatement"
+      ]
+    },
+    "date": {
+      "labels": [
+        "label.quota.date"
+      ],
+      "components": [
+        "CS.sections.quota.sections.balancestatement"
+      ]
+    },
+    "credit": {
+      "labels": [
+        "label.quota.credit"
+      ],
+      "components": [
+        "CS.sections.quota.sections.balancestatement"
+      ]
+    },
+    "usageName": {
+      "labels": [
+        "label.usage.type"
+      ],
+      "components": [
+        "CS.sections.quota.sections.tariffView"
+      ]
+    },
+    "usageUnit": {
+      "labels": [
+        "label.usage.unit"
+      ],
+      "components": [
+        "CS.sections.quota.sections.tariffView"
+      ]
+    },
+    "tariffValue": {
+      "labels": [
+        "label.quota.tariff.value"
+      ],
+      "components": [
+        "CS.sections.quota.sections.tariffView"
+      ]
+    },
+    "templatetype": {
+      "labels": [
+        "label.quota.email.template"
+      ],
+      "components": [
+        "CS.sections.quota.sections.emailTemplates"
+      ]
+    },
+    "templatesubject": {
+      "labels": [
+        "label.quota.email.subject"
+      ],
+      "components": [
+        "CS.sections.quota.sections.emailTemplates"
+      ]
+    },
+    "templatebody": {
+      "labels": [
+        "label.quota.email.body"
+      ],
+      "components": [
+        "CS.sections.quota.sections.emailTemplates"
+      ]
+    },
+    "last_updated": {
+      "labels": [
+        "label.quota.email.lastupdated"
+      ],
+      "components": [
+        "CS.sections.quota.sections.emailTemplates"
+      ]
+    },
+    "sourceipaddress": {
+      "labels": [
+        "label.source.ip.address"
+      ],
+      "components": [
+        "CS.vpc.sections.internalLoadBalancers"
+      ]
+    },
+    "sourceport": {
+      "labels": [
+        "label.source.port"
+      ],
+      "components": [
+        "CS.vpc.sections.internalLoadBalancers"
+      ]
+    },
+    "instanceport": {
+      "labels": [
+        "label.instance.port"
+      ],
+      "components": [
+        "CS.vpc.sections.internalLoadBalancers"
+      ]
+    },
+    "tierName": {
+      "labels": [
+        "label.tier"
+      ],
+      "components": [
+        "CS.vpc.acl.listView"
+      ]
+    },
+    "aclTotal": {
+      "labels": [
+        "label.network.ACL.total"
+      ],
+      "components": [
+        "CS.vpc.acl.listView"
+      ]
+    },
+    "ikepolicy": {
+      "labels": [
+        "label.IKE.policy"
+      ],
+      "components": [
+        "CS.vpc.siteToSiteVPN.sections.vpnConnection"
+      ]
+    },
+    "esppolicy": {
+      "labels": [
+        "label.ESP.policy"
+      ],
+      "components": [
+        "CS.vpc.siteToSiteVPN.sections.vpnConnection"
+      ]
+    }
+  },
+  "columnsOrder": {
+    "CS.sections.instances": "'name', 'instancename', 'displayname', 'ipaddress', 'account', 'zonename', 'state'",
+    "CS.sections.affinityGroups": "'name', 'type'",
+    "CS.sections.storage.sections.volumes": "'name', 'type', 'vmdisplayname', 'hypervisor', 'account', 'zonename', 'state'",
+    "CS.sections.storage.sections.snapshots": "'volumename', 'name', 'intervaltype', 'created', 'state'",
+    "CS.sections.storage.sections.vmsnapshots": "'displayname', 'state', 'type', 'current', 'parentName', 'created'",
+    "CS.sections.network.sections.networks": "'name', 'type', 'cidr', 'ip6cidr', 'account', 'zonename', 'state'",
+    "CS.sections.network.sections.secondaryNicIps": "'virtualmachinedisplayname', 'ipaddress'",
+    "CS.sections.network.sections.ipAddresses": "'ipaddress', 'associatednetworkname', 'virtualmachinedisplayname', 'account', 'zonename', 'state'",
+    "CS.sections.network.sections.securityGroups": "'name', 'description', 'domain', 'account'",
+    "CS.sections.network.sections.vpc": "'name', 'displaytext', 'zonename', 'cidr', 'state'",
+    "CS.sections.network.sections.vpnCustomerGateway": "'name', 'gateway', 'cidrlist', 'ipsecpsk'",
+    "CS.sections.network.sections.vpnuser": "'username', 'domain', 'state'",
+    "CS.sections.templates.sections.templates": "'name', 'hypervisor', 'ostypename', 'account'",
+    "CS.sections.templates.sections.isos": "'name', 'ostypename', 'account'",
+    "CS.sections.events.sections.events": "'description', 'level', 'type', 'account', 'username', 'domain', 'created'",
+    "CS.sections.events.sections.alerts": "'description', 'type', 'sent'",
+    "CS.sections.projects.sections.projects": "'name', 'displaytext', 'domain', 'account', 'state'",
+    "CS.sections.projects.sections.invitations": "'project', 'domain', 'state'",
+    "CS.sections.roles": "'name', 'type', 'description'",
+    "CS.sections.accounts.sections.accounts": "'name', 'rolename', 'roletype', 'domainpath', 'state'",
+    "CS.sections.accounts.sections.users": "'username', 'firstname', 'lastname'",
+    "CS.sections.accounts.sections.sshkeypairs": "'name', 'domain', 'account', 'privatekey'",
+    "CS.sections.regions.sections.regions": "'name', 'id', 'endpoint'",
+    "CS.sections.regions.sections.GSLB": "'name', 'gslbdomainname', 'gslblbmethod'",
+    "CS.sections.regions.sections.portableIpRanges": "'startip', 'endip', 'gateway', 'netmask', 'vlan'",
+    "CS.sections.regions.sections.lbUnderGSLB": "'name', 'publicport', 'privateport', 'algorithm'",
+    "CS.sections.regions.sections.NCC": "'uuid', 'ipaddress', 'numretries'",
+    "CS.sections.system.naas.mainNetworks.guest.detailView.tabs.network": "'name', 'type', 'vlan', 'broadcasturi', 'cidr', 'ip6cidr'",
+    "CS.sections.system.naas.mainNetworks.guest.detailView.tabs.dedicatedGuestVlanRanges": "'guestvlanrange', 'domain', 'account'",
+    "CS.sections.system.naas.networks": "'name', 'state', 'isolationmethods', 'vlan', 'broadcastdomainrange'",
+    "CS.sections.system.naas.networkProviders.types.virtualRouter.tabs.instances": "'name', 'zonename', 'routerType', 'state'",
+    "CS.sections.system.naas.networkProviders.types.InternalLbVm.tabs.instances": "'name', 'zonename', 'routerType', 'state'",
+    "CS.sections.system.naas.networkProviders.types.vpcVirtualRouter.tabs.instances": "'name', 'zonename', 'routerType', 'state'",
+    "CS.sections.system.naas.networkProviders.types.Ovs.tabs.instances": "'name', 'zonename', 'routerType', 'state'",
+    "CS.sections.system.naas.networkProviders.types.Opendaylight.tabs.controllers": "'name', 'url', 'username'",
+    "CS.sections.system.physicalResourceSection.sections.physicalResources.listView.zones.detailView.tabs.systemVMs": "'name', 'systemvmtype', 'zonename', 'state'",
+    "CS.sections.system.subsections.virtualRouters.sections.routerNoGroup": "'name', 'publicip', 'routerType', 'guestnetworkname', 'account', 'hostname', 'state', 'requiresupgrade'",
+    "CS.sections.system.subsections.virtualRouters.sections.routerGroupByZone": "'name', 'routerCount', 'routerRequiresUpgrade'",
+    "CS.sections.system.subsections.virtualRouters.sections.routerGroupByPod": "'name', 'routerCount', 'routerRequiresUpgrade'",
+    "CS.sections.system.subsections.virtualRouters.sections.routerGroupByCluster": "'name', 'routerCount', 'routerRequiresUpgrade'",
+    "CS.sections.system.subsections.virtualRouters.sections.routerGroupByAccount": "'name', 'domain', 'routerCount', 'routerRequiresUpgrade'",
+    "CS.sections.system.subsections.systemVms": "'name', 'systemvmtype', 'publicip', 'hostname', 'zonename', 'state', 'agentstate'",
+    "CS.sections.system.subsections.netscalerDevices": "'ipaddress', 'lbdevicestate'",
+    "CS.sections.system.subsections.BaremetalDhcpDevices": "'url'",
+    "CS.sections.system.subsections.BaremetalPxeDevices": "'url'",
+    "CS.sections.system.subsections.f5Devices": "'ipaddress', 'lbdevicestate'",
+    "CS.sections.system.subsections.srxDevices": "'ipaddress', 'fwdevicestate', 'fwdevicename'",
+    "CS.sections.system.subsections.paDevices": "'ipaddress', 'fwdevicestate', 'fwdevicename'",
+    "CS.sections.system.subsections.niciraNvpDevices": "'hostname', 'transportzoneuuid', 'l3gatewayserviceuuid', 'l2gatewayserviceuuid'",
+    "CS.sections.system.subsections.brocadeVcsDevices": "'hostname'",
+    "CS.sections.system.subsections.bigswitchBcfDevices": "'hostname'",
+    "CS.sections.system.subsections.nuageVspDevices": "'hostname', 'port', 'apiversion', 'retrycount', 'retryinterval'",
+    "CS.sections.system.subsections.pods": "'name', 'gateway', 'netmask', 'zonename', 'allocationstate'",
+    "CS.sections.system.subsections.clusters": "'name', 'hypervisortype', 'zonename', 'podname', 'managedstate', 'allocationstate'",
+    "CS.sections.system.subsections.hosts": "'name', 'ipaddress', 'hypervisor', 'zonename', 'clustername', 'resourcestate', 'state', 'powerstate'",
+    "CS.sections.system.subsections.primary-storage": "'name', 'ipaddress', 'path', 'type', 'scope', 'clustername', 'zonename', 'state'",
+    "CS.sections.system.subsections.ucs": "'name', 'url'",
+    "CS.sections.system.subsections.secondary-storage.sections.secondaryStorage": "'name', 'url', 'protocol', 'scope', 'zonename'",
+    "CS.sections.system.subsections.secondary-storage.sections.cacheStorage": "'name', 'url', 'providername'",
+    "CS.sections.system.subsections.guestIpRanges": "'startip', 'endip', 'startipv6', 'endipv6', 'gateway', 'netmask'",
+    "CS.sections.system.subsections.vnmcDevices": "'resourcename', 'provider'",
+    "CS.sections.system.subsections.asa1000v": "'hostname', 'insideportprofile'",
+    "CS.sections.global-settings.sections.globalSettings": "'name', 'description', 'value'",
+    "CS.sections.global-settings.sections.ldapConfiguration": "'hostname', 'port'",
+    "CS.sections.global-settings.sections.baremetalRct": "'id', 'url'",
+    "CS.sections.global-settings.sections.hypervisorCapabilities": "'hypervisor', 'hypervisorversion', 'maxguestslimit'",
+    "CS.sections.configuration.sections.serviceOfferings": "'name', 'displaytext'",
+    "CS.sections.configuration.sections.systemServiceOfferings": "'name', 'displaytext'",
+    "CS.sections.configuration.sections.diskOfferings": "'name', 'displaytext', 'iscustomized', 'disksize'",
+    "CS.sections.configuration.sections.networkOfferings": "'name', 'state'",
+    "CS.sections.configuration.sections.vpcOfferings": "'name', 'state'",
+    "CS.sections.metrics": "'name'",
+    "CS.sections.metrics.zones": "'name', 'state', 'clusters', 'cpuused', 'cpuallocated', 'memused', 'memallocated'",
+    "CS.sections.metrics.clusters": "'name', 'state', 'hosts', 'cpuused', 'cpuallocated', 'memused', 'memallocated'",
+    "CS.sections.metrics.hosts": "'name', 'state', 'powerstate', 'instances', 'cpuused', 'memused', 'network'",
+    "CS.sections.metrics.instances": "'name', 'state', 'ipaddress', 'zonename', 'cpuused', 'memused', 'network', 'disk'",
+    "CS.sections.metrics.volumes": "'name', 'state', 'vmname', 'sizegb', 'physicalsize', 'utilization', 'storagetype', 'storage', 'disk'",
+    "CS.sections.metrics.storagepool": "'name', 'property', 'disk'",
+    "CS.sections.quota.sections.summary": "'account', 'domain', 'balance', 'quota', 'state'",
+    "CS.sections.quota.sections.fullSummary": "'account', 'domain', 'balance', 'quota', 'state'",
+    "CS.sections.quota.sections.quotastatement": "'name', 'unit', 'quota'",
+    "CS.sections.quota.sections.balancestatement": "'date', 'quota', 'credit'",
+    "CS.sections.quota.sections.tariffEdit": "'usageName', 'usageUnit', 'tariffValue', 'description'",
+    "CS.sections.quota.sections.tariffView": "'usageName', 'usageUnit', 'tariffValue', 'description'",
+    "CS.sections.quota.sections.emailTemplates": "'templatetype', 'templatesubject', 'templatebody', 'last_updated'",
+    "CS.vpc.sections.internalLoadBalancers": "'name', 'sourceipaddress', 'sourceport', 'instanceport', 'algorithm'",
+    "CS.vpc.sections.publicLbIps": "'ipaddress', 'zonename', 'virtualmachinedisplayname', 'state'",
+    "CS.vpc.sections.networkACLLists": "'name', 'description', 'id'",
+    "CS.vpc.vmListView": "'name', 'account', 'zonename', 'state'",
+    "CS.vpc.acl.listView": "'tierName', 'aclTotal'",
+    "CS.vpc.siteToSiteVPN.sections.vpnGateway": "'publicip', 'account', 'domain'",
+    "CS.vpc.siteToSiteVPN.sections.vpnConnection": "'publicip', 'gateway', 'state', 'ipsecpsk', 'ikepolicy', 'esppolicy'"
+  }
+}

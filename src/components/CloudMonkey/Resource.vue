@@ -344,7 +344,7 @@ export default {
           key = Object.keys(key)[0]
         }
         this.columns.push({
-          title: key,
+          title: this.$t(key),
           dataIndex: key,
           key: counter++,
           scopedSlots: { customRender: key },

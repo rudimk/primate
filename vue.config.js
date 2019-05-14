@@ -89,7 +89,7 @@ module.exports = {
     port: 5050,
     proxy: {
       '/client/api': {
-        target: 'http://192.168.1.10:8080/client/api',
+        target: 'http://10.2.3.82:8080/client/api',
         ws: false,
         changeOrigin: true
       }
@@ -97,6 +97,16 @@ module.exports = {
   },
 
   lintOnSave: undefined,
+
   // babel-loader no-ignore node_modules/*
-  transpileDependencies: []
+  transpileDependencies: [],
+
+  pluginOptions: {
+    i18n: {
+      locale: 'en',
+      fallbackLocale: 'en',
+      localeDir: 'locales',
+      enableInSFC: true
+    }
+  }
 }

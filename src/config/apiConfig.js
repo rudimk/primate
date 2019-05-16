@@ -8,7 +8,7 @@ export const apiConfig = {
     path: 'vm',
     label: 'Instances',
     listApi: 'listVirtualMachinesMetrics',
-    column: ['name', 'instancename', 'state', 'nic[].ipaddress', 'zonename', 'account', 'domain',
+    column: ['name', 'instancename', 'state', 'ipaddress', 'zonename', 'account', 'domain',
       'cpunumber', 'cpuused', 'cputotal', 'memoryintfreekbs', 'memorytotal', 'networkread', 'networkwrite', 'diskkbsread', 'diskkbswrite', 'diskiopstotal'
     ],
     hidden: ['zonename', 'account', 'domain'],
@@ -19,6 +19,27 @@ export const apiConfig = {
         label: 'Deploy VM',
         type: 'main',
         params: ['name', 'zoneid', 'diskofferingid']
+      },
+      {
+        api: 'destroyVirtualMachine',
+        icon: 'delete',
+        label: 'Destroy VM',
+        type: 'main',
+        params: ['id', 'expunge']
+      },
+      {
+        api: 'startVirtualMachine',
+        icon: 'play-circle',
+        label: 'Start VM',
+        type: 'main',
+        params: ['id', 'deploymentplanner', 'hostid']
+      },
+      {
+        api: 'stopVirtualMachine',
+        icon: 'stop',
+        label: 'Stop VM',
+        type: 'main',
+        params: ['id', 'forced']
       }
     ]
   },

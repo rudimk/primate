@@ -22,13 +22,13 @@ export const asyncRouterMap = [
         path: '/vm',
         name: 'vm',
         meta: { title: 'Instances', keepAlive: true, icon: 'cloud', permission: [ 'listVirtualMachinesMetrics', 'listVirtualMachines' ] },
-        component: () => import('@/components/CloudMonkey/Resource.vue'),
+        component: () => import('@/components/CloudMonkey/Instances.vue'),
         hideChildrenInMenu: true,
         children: [
           {
             path: '/vm/:id',
             meta: { title: 'Instances', keepAlive: true, icon: 'cloud', permission: [ 'listVirtualMachinesMetrics', 'listVirtualMachines' ] },
-            component: () => import('@/components/CloudMonkey/Resource.vue')
+            component: () => import('@/components/CloudMonkey/Instances.vue')
           }
         ]
       },

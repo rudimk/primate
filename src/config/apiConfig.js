@@ -8,9 +8,7 @@ export const apiConfig = {
     path: 'vm',
     label: 'Instances',
     listApi: 'listVirtualMachinesMetrics',
-    column: ['name', 'instancename', 'state', 'nic[].ipaddress', 'zonename', 'account', 'domain',
-      'cpunumber', 'cpuused', 'cputotal', 'memoryintfreekbs', 'memorytotal', 'networkread', 'networkwrite', 'diskkbsread', 'diskkbswrite', 'diskiopstotal'
-    ],
+    column: ['name', 'instancename', 'displayname', 'ipaddress', 'account', 'zonename', 'state'],
     hidden: ['zonename', 'account', 'domain'],
     actions: [
       {

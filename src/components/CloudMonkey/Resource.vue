@@ -235,11 +235,12 @@ export default {
         this.apiName = this.config.listApi
         this.actions = this.config.actions
         this.columnKeys = this.config.column
-      } else {
-        if (this.$route && this.$route.meta && this.$route.meta.permission) {
-          this.apiName = this.$route.meta.permission[0]
-        }
       }
+
+      if (this.apiName !== '' && this.$route && this.$route.meta && this.$route.meta.permission) {
+        this.apiName = this.$route.meta.permission[0]
+      }      
+      
       if (this.apiName && this.apiName !== '' && !this.columnKeys || this.columnKeys.length == 0) {
         for (const field of store.getters.apis[this.apiName]['response']) {
           this.columnKeys.push(field.name)

@@ -41,7 +41,7 @@ export const apiConfig = {
     label: 'Volumes',
     parent: 'storage',
     listApi: 'listVolumesMetrics',
-    column: ['name', 'state', 'type', 'vmname', 'size', 'physicalsize', 'utilization', 'storage', 'hypervisor', 'account', 'domain', 'zonename'],
+    column: ['name', 'type', 'vmdisplayname', 'hypervisor', 'account', 'zonename', 'state'],
     hidden: ['storage', 'utilization'],
     actions: [
       {
@@ -108,7 +108,7 @@ export const apiConfig = {
     label: 'Snapshots',
     parent: 'storage',
     listApi: 'listSnapshots',
-    column: ['volumename', 'name', 'state', 'intervaltype', 'created', 'account', 'domain'],
+    column: ['volumename', 'name', 'intervaltype', 'created', 'state'],
     hidden: [],
     actions: [
     ]
@@ -121,7 +121,7 @@ export const apiConfig = {
     label: 'VM Snapshots',
     parent: 'storage',
     listApi: 'listVMSnapshot',
-    column: ['name', 'state', 'type', 'current', 'parent', 'created', 'account', 'domain'],
+    column: ['displayname', 'state', 'type', 'current', 'parentName', 'created'],
     hidden: ['storage'],
     actions: [
     ]
@@ -131,7 +131,7 @@ export const apiConfig = {
   'guestnetwork': {
     icon: 'wifi',
     listApi: 'listNetworks',
-    column: [],
+    column: ['name', 'type', 'cidr', 'ip6cidr', 'account', 'zonename', 'state'],
     hidden: [],
     actions: [
       {
@@ -178,4 +178,158 @@ export const apiConfig = {
       }
       }
   }
+  'securitygroups': {
+    column: ['name', 'description', 'domain', 'account'],
+    actions: []
+  },
+
+  'vpc': {
+    column: ['name', 'displaytext', 'zonename', 'cidr', 'state'],
+    actions: []
+  },
+
+  'vpngateway': {
+    column: ['name', 'gateway', 'cidrlist', 'ipsecpsk'],
+    actions: []
+  },
+
+  'template': {
+    column: ['name', 'hypervisor', 'ostypename', 'account'],
+    actions: []
+  },
+
+  'iso': {
+    column: ['name', 'ostypename', 'account'],
+    actions: []
+  },
+
+  'events': {
+    column: ['description', 'level', 'type', 'account', 'username', 'domain', 'created'],
+    actions: []
+  },
+
+  'alerts': {
+    column: ['description', 'type', 'sent'],
+    actions: []
+  },
+
+  'project': {
+    column: ['name', 'displaytext', 'domain', 'account', 'state'],
+    actions: []
+  },
+
+  'affinitygroups': {
+    column: ['name', 'type'],
+    actions: []
+  },
+
+  'ssh': {
+    column: ['name', 'domain', 'account', 'privatekey'],
+    actions: []
+  },
+
+  'user': {
+    column: ['username', 'firstname', 'lastname'],
+    actions: []
+  },
+
+  'account': {
+    column: ['name', 'rolename', 'roletype', 'domainpath', 'state'],
+    actions: []
+  },
+
+  // 'domain': {
+  //   column: [],
+  //   actions: []
+  // },
+
+  'role': {
+    column: ['name', 'type', 'description'],
+    actions: []
+  },
+
+  // 'zone': {
+  //   column: ['name', 'state', 'clusters', 'cpuused', 'cpuallocated', 'memused', 'memallocated'],
+  //   actions: []
+  // },
+
+  'pod': {
+    column: ['name', 'gateway', 'netmask', 'zonename', 'allocationstate'],
+    actions: []
+  },
+
+  'cluster': {
+    column: ['name', 'hypervisortype', 'zonename', 'podname', 'managedstate', 'allocationstate'],
+    actions: []
+  },
+
+  'host': {
+    column: ['name', 'ipaddress', 'hypervisor', 'zonename', 'clustername', 'resourcestate', 'state', 'powerstate'],
+    actions: []
+  },
+
+  'primarystorage': {
+    column: ['name', 'ipaddress', 'path', 'type', 'scope', 'clustername', 'zonename', 'state'],
+    actions: []
+  },
+
+  'secondarystorage': {
+    column: ['name', 'url', 'protocol', 'scope', 'zonename'],
+    actions: []
+  },
+
+  'systemvm': {
+    column: ['name', 'systemvmtype', 'publicip', 'hostname', 'zonename', 'state', 'agentstate'],
+    actions: []
+  }
+
+  // 'router': {
+  //   column: [],
+  //   actions: []
+  // },
+
+  // 'cpusocket': {
+  //   column: [],
+  //   actions: []
+  // },
+
+  // 'computeoffering': {
+  //   column: [],
+  //   actions: []
+  // },
+
+  // 'diskoffering': {
+  //   column: [],
+  //   actions: []
+  // },
+
+  // 'networkoffering': {
+  //   column: [],
+  //   actions: []
+  // },
+
+  // 'vpcoffering': {
+  //   column: [],
+  //   actions: []
+  // },
+
+  // 'systemoffering': {
+  //   column: [],
+  //   actions: []
+  // },
+
+  // 'globalsetting': {
+  //   column: [],
+  //   actions: []
+  // },
+
+  // 'ldapsetting': {
+  //   column: [],
+  //   actions: []
+  // },
+
+  // 'hypervisorcapability': {
+  //   column: [],
+  //   actions: []
+  // }
 }

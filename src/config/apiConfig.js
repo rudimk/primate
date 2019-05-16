@@ -141,6 +141,41 @@ export const apiConfig = {
         params: ['id']
       }
     ]
-  }
+  },
 
+  // Security Groups
+  'securitygroups': {
+    icon: 'compass',
+    listApi: 'listSecurityGroups',
+    column: [],
+    hidden: [],
+    actions: [
+      {
+        api: 'deleteNetwork',
+        icon: 'delete',
+        label: 'Delete Network',
+        params: ['id']
+      }
+    ]
+  }, 
+
+  // Templates
+  'templates': {
+    icon: 'save',
+    listApi: 'listTemplates',
+    column: ['name', 'hypervisor', 'ostype', 'account', 'order'],
+    hidden: [],
+    actions: [
+      {
+        api: 'registerTemplate',
+        icon: 'plus',
+        label: 'Create template',
+        type: 'main',
+        params: ['displaytext', 'format', 'hypervisor', 'name', 'ostypeid', 'url', 'account', 'bits', 'checksum', 'details', 'directdownload', 'domainid', 'isdynamicallyscalable', 'isextractable', 'isfeatured', 'ispublic', 'isrouting', 'passwordenabled', 'projectid', 'requireshvm', 'sshkeyenabled', 'templatetag', 'zoneid', 'zoneids']
+      }, 
+      {
+        api: ''
+      }
+      }
+  }
 }

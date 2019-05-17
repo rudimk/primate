@@ -11,12 +11,89 @@ export const apiConfig = {
     column: ['name', 'instancename', 'displayname', 'ipaddress', 'account', 'zonename', 'state'],
     hidden: ['zonename', 'account', 'domain'],
     actions: [
+      // Deploy VM
       {
         api: 'deployVirtualMachine',
         icon: 'plus',
         label: 'Deploy VM',
         type: 'main',
-        params: ['name', 'zoneid', 'diskofferingid']
+        params: ['name', 'zoneid', 'diskofferingid', 'account', 'affinitygroupids', 'affinitygroupnames',
+        'customid', 'datadiskofferinglist', 'deploymentplanner', 'details', 'dhcpoptionsnetworklist', 'diskofferingid',
+        'displayname', 'displayvm', 'domainid', 'group', 'hostid', 'hypervisor', 'ip6address', 'ipaddress',
+        'iptonetworklist', 'keyboard', 'keypair', 'macaddress', 'name', 'networkids', 
+        'projectid', 'rootdisksize', 'securitygroupids', 'securitygroupnames', 'size', 'startvm', 'userdata']
+      },
+      // Reboot
+      {
+        api: 'RebootVirtualMachine',
+        icon: 'reload',
+        label: 'Reboot Instance',
+        type: 'main',
+        params: ['id']
+      },
+      // Take Snapshot
+      {
+        api: 'createVMSnaphot',
+        icon: 'camera',
+        label: 'Reboot Instance',
+        type: 'main',
+        params: ['virtualmachineid', 'description', 'name', 'quiescevm', 'snapshotmemory']
+      },
+      // Destroy
+      {
+        api: 'destroyVirtualMachine',
+        icon: 'delete',
+        label: 'Destroy Instance',
+        type: 'main',
+        params: ['id']
+      },
+      // Reinstall VM
+      {
+        api: 'restoreVirtualMachine',
+        icon: 'to-top',
+        label: 'Reinstall Instance',
+        type: 'main',
+        params: ['virtualmachineid']
+      },
+      // Attach ISO
+      {
+        api: 'attachIso',
+        icon: 'paper-clip',
+        label: 'Attach ISO to Instance',
+        type: 'main',
+        params: ['id', 'virtualmachineid']
+      },
+      // Reset password
+      {
+        api: 'resetPasswordForVirtualMachine',
+        icon: 'key',
+        label: 'Reset Instance Password',
+        type: 'main',
+        params: ['id']
+      },
+      // Migrate to host
+      {
+        api: 'migrateVirtualMachine',
+        icon: 'select',
+        label: 'Migrate Instance to new host',
+        type: 'main',
+        params: ['virtualmachineid', 'hostid', 'storageid']
+      },
+      // Change service offering
+      {
+        api: 'changeServiceForVirtualMachine',
+        icon: 'key',
+        label: 'Change Service Offering',
+        type: 'main',
+        params: ['id', 'serviceofferingid']
+      },
+      //reset ssh key
+      {
+        api: 'resetSSHKeyForVirtualMachine',
+        icon: 'key',
+        label: 'Reset SSH key for Instance',
+        type: 'main',
+        params: ['id', 'keypair']
       }
     ]
   },
@@ -143,21 +220,6 @@ export const apiConfig = {
     ]
   },
 
-  // Security Groups
-  'securitygroups': {
-    icon: 'compass',
-    listApi: 'listSecurityGroups',
-    column: [],
-    hidden: [],
-    actions: [
-      {
-        api: 'deleteNetwork',
-        icon: 'delete',
-        label: 'Delete Network',
-        params: ['id']
-      }
-    ]
-  }, 
 
   // Templates
   'templates': {
@@ -172,12 +234,9 @@ export const apiConfig = {
         label: 'Create template',
         type: 'main',
         params: ['displaytext', 'format', 'hypervisor', 'name', 'ostypeid', 'url', 'account', 'bits', 'checksum', 'details', 'directdownload', 'domainid', 'isdynamicallyscalable', 'isextractable', 'isfeatured', 'ispublic', 'isrouting', 'passwordenabled', 'projectid', 'requireshvm', 'sshkeyenabled', 'templatetag', 'zoneid', 'zoneids']
-      }, 
-      {
-        api: ''
-      }
-      }
-  }
+      }]
+  },
+  // Security Groups
   'securitygroups': {
     column: ['name', 'description', 'domain', 'account'],
     actions: []
@@ -248,10 +307,10 @@ export const apiConfig = {
     actions: []
   },
 
-  // 'zone': {
-  //   column: ['name', 'state', 'clusters', 'cpuused', 'cpuallocated', 'memused', 'memallocated'],
-  //   actions: []
-  // },
+  'zonemetrics': {
+    column: ['name', 'state', 'clusters', 'cpuused', 'cpuallocated', 'memused', 'memallocated'],
+    actions: []
+  },
 
   'pod': {
     column: ['name', 'gateway', 'netmask', 'zonename', 'allocationstate'],
@@ -281,7 +340,7 @@ export const apiConfig = {
   'systemvm': {
     column: ['name', 'systemvmtype', 'publicip', 'hostname', 'zonename', 'state', 'agentstate'],
     actions: []
-  }
+  },
 
   // 'router': {
   //   column: [],
@@ -318,15 +377,22 @@ export const apiConfig = {
   //   actions: []
   // },
 
-  // 'globalsetting': {
-  //   column: [],
-  //   actions: []
-  // },
+  'ldapsetting': {
+    column: ['hostname', 'port'],
+    actions: [
+      {
+        api: 'addLdapConfiguration',
+        icon: 'plus',
+        label: 'Create ',
+        type: 'main',
+        params: ['hostname', 'port', 'domainid']
+      }]
+  },
 
-  // 'ldapsetting': {
-  //   column: [],
-  //   actions: []
-  // },
+  'globalsetting': {
+    column: ['name', 'description', 'value'],
+    actions: []
+  },
 
   // 'hypervisorcapability': {
   //   column: [],

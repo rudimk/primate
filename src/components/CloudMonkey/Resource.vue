@@ -4,6 +4,7 @@
       <a-col :span="16">
         <a-button
           v-for="(action, index) in actions"
+          :title="action.label"
           :key="index"
           :icon="action.icon"
           :type="action.icon == 'delete' ? 'danger' : (action.icon == 'plus' ? 'primary' : 'default')"
@@ -240,7 +241,7 @@ export default {
       if (this.apiName !== '' && this.$route && this.$route.meta && this.$route.meta.permission) {
         this.apiName = this.$route.meta.permission[0]
       }      
-      
+
       if (this.apiName && this.apiName !== '' && !this.columnKeys || this.columnKeys.length == 0) {
         for (const field of store.getters.apis[this.apiName]['response']) {
           this.columnKeys.push(field.name)

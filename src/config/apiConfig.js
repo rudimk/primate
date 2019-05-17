@@ -25,9 +25,17 @@ export const apiConfig = {
       },
       // Reboot
       {
-        api: 'RebootVirtualMachine',
+        api: 'rebootVirtualMachine',
         icon: 'reload',
         label: 'Reboot Instance',
+        type: 'main',
+        params: ['id']
+      },
+      // Reboot
+      {
+        api: 'stopVirtualMachine',
+        icon: 'reload',
+        label: 'Stop Instance',
         type: 'main',
         params: ['id']
       },
@@ -35,7 +43,7 @@ export const apiConfig = {
       {
         api: 'createVMSnaphot',
         icon: 'camera',
-        label: 'Reboot Instance',
+        label: 'Create Snapshot',
         type: 'main',
         params: ['virtualmachineid', 'description', 'name', 'quiescevm', 'snapshotmemory']
       },
@@ -220,7 +228,6 @@ export const apiConfig = {
     ]
   },
 
-
   // Templates
   'templates': {
     icon: 'save',
@@ -307,8 +314,8 @@ export const apiConfig = {
     actions: []
   },
 
-  'zonemetrics': {
-    column: ['name', 'state', 'clusters', 'cpuused', 'cpuallocated', 'memused', 'memallocated'],
+  'zone': {
+    column: ['name', 'networktype', 'state'],
     actions: []
   },
 
@@ -392,7 +399,7 @@ export const apiConfig = {
   'globalsetting': {
     column: ['name', 'description', 'value'],
     actions: []
-  },
+  }
 
   // 'hypervisorcapability': {
   //   column: [],

@@ -23,6 +23,14 @@ export const apiConfig = {
         'iptonetworklist', 'keyboard', 'keypair', 'macaddress', 'name', 'networkids', 
         'projectid', 'rootdisksize', 'securitygroupids', 'securitygroupnames', 'size', 'startvm', 'userdata']
       },
+      // Start
+      {
+        api: 'startVirtualMachine',
+        icon: 'play-circle',
+        label: 'Start Instance',
+        type: 'main',
+        params: ['id', 'deploymentplanner', 'hostid']
+      },
       // Reboot
       {
         api: 'rebootVirtualMachine',
@@ -34,7 +42,7 @@ export const apiConfig = {
       // Reboot
       {
         api: 'stopVirtualMachine',
-        icon: 'reload',
+        icon: 'stop',
         label: 'Stop Instance',
         type: 'main',
         params: ['id']

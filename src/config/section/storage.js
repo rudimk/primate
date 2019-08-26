@@ -15,7 +15,7 @@ export default {
         {
           api: 'createVolume',
           icon: 'plus',
-          label: 'Create Volume',
+          label: 'Create Volumes',
           type: 'main',
           params: ['name', 'zoneid', 'diskofferingid']
         }, {

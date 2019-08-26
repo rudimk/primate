@@ -32,8 +32,7 @@ export default {
 <style lang="less" scoped>
 .user-layout {
   height: 100%;
-  background: rgb(255,255,255) url(~@/assets/background.svg);
-  background-size: 20%;
+  background: rgb(255,255,255);
 
   &-container {
     position: absolute;

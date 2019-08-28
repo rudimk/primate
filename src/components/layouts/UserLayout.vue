@@ -35,12 +35,13 @@ export default {
   background: #fff;
 
   &-container {
-    position: absolute;
-    top: 50%;
+    margin: 3rem 0 5rem;
     width: 100%;
-    transform: translateY(-50%);
 
     @media (min-height:700px) {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
       margin-top: -50px;
     }
   }

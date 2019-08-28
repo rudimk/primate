@@ -35,10 +35,11 @@ export default {
   background: #fff;
 
   &-container {
-    margin: 3rem 0 5rem;
+    padding: 3rem 0;
     width: 100%;
 
-    @media (min-height:700px) {
+    @media (min-height:600px) {
+      padding: 0;
       position: relative;
       top: 50%;
       transform: translateY(-50%);

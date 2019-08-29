@@ -21,7 +21,7 @@
         "label.display.name"
       ],
       "components": [
-        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView"
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
       ]
     },
     "ipaddress": {
@@ -45,7 +45,7 @@
         "label.zone"
       ],
       "components": [
-        "Cs.vpc.vmListView.listView"
+        "Cs.vpc.tiers.detailView.tabs.details"
       ]
     },
     "state": {
@@ -53,7 +53,7 @@
         "label.state"
       ],
       "components": [
-        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView"
+        "Cs.vpc.tiers.detailView.tabs.details"
       ]
     },
     "expunge": {
@@ -101,7 +101,7 @@
         "label.description"
       ],
       "components": [
-        "Cs.vpc.sections.networkACLLists.listView.actions.add.createForm"
+        "Cs.vpc.sections.networkACLLists.listView.detailView.tabs.details"
       ]
     },
     "snapshotMemory": {
@@ -237,7 +237,7 @@
         "label.memory.mb"
       ],
       "components": [
-        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.actions.scaleUp.createForm"
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
       ]
     },
     "sshkeypair": {
@@ -288,6 +288,150 @@
         "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.actions.assignVmToAnotherAccount.createForm"
       ]
     },
+    "templatename": {
+      "labels": [
+        "label.template"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
+      ]
+    },
+    "isdynamicallyscalable": {
+      "labels": [
+        "label.dynamically.scalable"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
+      ]
+    },
+    "guestosid": {
+      "labels": [
+        "label.os.type"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
+      ]
+    },
+    "hypervisor": {
+      "labels": [
+        "label.hypervisor"
+      ],
+      "components": [
+        "Cs.zoneWizard.forms.cluster"
+      ]
+    },
+    "xenserverToolsVersion61plus": {
+      "labels": [
+        "label.Xenserver.Tools.Version61plus"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
+      ]
+    },
+    "isoname": {
+      "labels": [
+        "label.attached.iso"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
+      ]
+    },
+    "serviceofferingname": {
+      "labels": [
+        "label.compute.offering"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
+      ]
+    },
+    "cpunumber": {
+      "labels": [
+        "label.num.cpu.cores"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
+      ]
+    },
+    "cpuspeed": {
+      "labels": [
+        "label.cpu.mhz"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
+      ]
+    },
+    "vgpu": {
+      "labels": [
+        "label.vgpu"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
+      ]
+    },
+    "haenable": {
+      "labels": [
+        "label.ha.enabled"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
+      ]
+    },
+    "publicip": {
+      "labels": [
+        "label.ip.address"
+      ],
+      "components": [
+        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details"
+      ]
+    },
+    "group": {
+      "labels": [
+        "label.group"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
+      ]
+    },
+    "hostname": {
+      "labels": [
+        "label.host.name"
+      ],
+      "components": [
+        "Cs.zoneWizard.forms.host"
+      ]
+    },
+    "keypair": {
+      "labels": [
+        "label.ssh.key.pair"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details"
+      ]
+    },
+    "domain": {
+      "labels": [
+        "label.domain"
+      ],
+      "components": [
+        "Cs.zoneWizard.forms.zone"
+      ]
+    },
+    "created": {
+      "labels": [
+        "label.date"
+      ],
+      "components": [
+        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details"
+      ]
+    },
+    "id": {
+      "labels": [
+        "label.id"
+      ],
+      "components": [
+        "Cs.vpc.tiers.detailView.tabs.details"
+      ]
+    },
     "networkid": {
       "labels": [
         "label.select.tier"
@@ -310,6 +454,102 @@
       ],
       "components": [
         "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics.actions.updateIpaddr.createForm"
+      ]
+    },
+    "networkname": {
+      "labels": [
+        "label.network.name"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics"
+      ]
+    },
+    "type": {
+      "labels": [
+        "label.type"
+      ],
+      "components": [
+        "Cs.vpc.tiers.detailView.tabs.details"
+      ]
+    },
+    "macaddress": {
+      "labels": [
+        "label.mac.address"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics"
+      ]
+    },
+    "secondaryips": {
+      "labels": [
+        "label.secondary.ips"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics"
+      ]
+    },
+    "gateway": {
+      "labels": [
+        "label.gateway"
+      ],
+      "components": [
+        "Cs.vpc.tiers.actions.add.createForm"
+      ]
+    },
+    "netmask": {
+      "labels": [
+        "label.netmask"
+      ],
+      "components": [
+        "Cs.vpc.tiers.actions.add.createForm"
+      ]
+    },
+    "ip6address": {
+      "labels": [
+        "label.ipv6.address"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics"
+      ]
+    },
+    "ip6gateway": {
+      "labels": [
+        "label.ipv6.gateway"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics"
+      ]
+    },
+    "ip6cidr": {
+      "labels": [
+        "label.ipv6.CIDR"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics"
+      ]
+    },
+    "broadcasturi": {
+      "labels": [
+        "label.broadcast.uri"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics"
+      ]
+    },
+    "isolationuri": {
+      "labels": [
+        "label.isolation.uri"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics"
+      ]
+    },
+    "isdefault": {
+      "labels": [
+        "label.is.default"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics"
       ]
     },
     "totalCPU": {
@@ -376,28 +616,12 @@
         "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.stats"
       ]
     },
-    "type": {
-      "labels": [
-        "label.run.diagnostics.type"
-      ],
-      "components": [
-        "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView.detailView.actions.diagnostics.createForm"
-      ]
-    },
     "vmdisplayname": {
       "labels": [
         "label.vm.display.name"
       ],
       "components": [
-        "Cs.sections.storage.sections.volumes.listView"
-      ]
-    },
-    "hypervisor": {
-      "labels": [
-        "label.hypervisor"
-      ],
-      "components": [
-        "Cs.zoneWizard.forms.cluster"
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
       ]
     },
     "availabilityZone": {
@@ -490,10 +714,10 @@
     },
     "tags": {
       "labels": [
-        "label.tags"
+        "label.storage.tags"
       ],
       "components": [
-        "Cs.sections.metrics.volumes.listView.detailView.actions.takeSnapshot.createForm"
+        "Cs.sections.metrics.storagepool.listView.detailView.tabs.details"
       ]
     },
     "virtualMachineId": {
@@ -502,14 +726,6 @@
       ],
       "components": [
         "Cs.sections.metrics.volumes.listView.detailView.actions.attachDisk.createForm"
-      ]
-    },
-    "xenserverToolsVersion61plus": {
-      "labels": [
-        "label.xenserver.tools.version.61.plus"
-      ],
-      "components": [
-        "Cs.sections.metrics.volumes.listView.detailView.actions.createTemplate.createForm"
       ]
     },
     "isPasswordEnabled": {
@@ -523,14 +739,6 @@
     "isFeatured": {
       "labels": [
         "label.featured"
-      ],
-      "components": [
-        "Cs.sections.metrics.volumes.listView.detailView.actions.createTemplate.createForm"
-      ]
-    },
-    "isdynamicallyscalable": {
-      "labels": [
-        "label.dynamically.scalable"
       ],
       "components": [
         "Cs.sections.metrics.volumes.listView.detailView.actions.createTemplate.createForm"
@@ -568,12 +776,140 @@
         "Cs.sections.metrics.volumes.listView.detailView.actions.resize.createForm"
       ]
     },
-    "volumename": {
+    "status": {
       "labels": [
-        "label.volume"
+        "label.status"
       ],
       "components": [
-        "Cs.sections.storage.sections.snapshots.listView"
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "diskofferingdisplaytext": {
+      "labels": [
+        "label.disk.offering"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "storagetype": {
+      "labels": [
+        "label.storage.type"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "provisioningtype": {
+      "labels": [
+        "label.disk.provisioningtype"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "size": {
+      "labels": [
+        "label.size"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "clusterid": {
+      "labels": [
+        "label.cluster"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "clustername": {
+      "labels": [
+        "label.cluster"
+      ],
+      "components": [
+        "Cs.sections.metrics.storagepool.listView.detailView.tabs.details"
+      ]
+    },
+    "physicalsize": {
+      "labels": [
+        "label.disk.physicalsize"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "utilization": {
+      "labels": [
+        "label.disk.utilisation"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "virtualsize": {
+      "labels": [
+        "label.disk.virtualsize"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "miniops": {
+      "labels": [
+        "label.disk.iops.min"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "maxiops": {
+      "labels": [
+        "label.disk.iops.max"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "virtualmachineid": {
+      "labels": [
+        "label.vm.id"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "vmstate": {
+      "labels": [
+        "label.vm.state"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "deviceid": {
+      "labels": [
+        "label.device.id"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "storage": {
+      "labels": [
+        "label.storage"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView.detailView.tabs.details"
+      ]
+    },
+    "volumename": {
+      "labels": [
+        "label.volume.name"
+      ],
+      "components": [
+        "Cs.sections.storage.sections.snapshots.listView.detailView.tabs.details"
       ]
     },
     "intervaltype": {
@@ -581,15 +917,7 @@
         "label.interval.type"
       ],
       "components": [
-        "Cs.sections.storage.sections.snapshots.listView"
-      ]
-    },
-    "created": {
-      "labels": [
-        "label.date"
-      ],
-      "components": [
-        "Cs.sections.events.sections.events.listView"
+        "Cs.sections.storage.sections.snapshots.listView.detailView.tabs.details"
       ]
     },
     "zoneid": {
@@ -611,30 +939,6 @@
     "parentName": {
       "labels": [
         "label.vmsnapshot.parentname"
-      ],
-      "components": [
-        "Cs.sections.storage.sections.vmsnapshots.listView.detailView.tabs.details"
-      ]
-    },
-    "id": {
-      "labels": [
-        "label.id"
-      ],
-      "components": [
-        "Cs.vpc.sections.networkACLLists.listView"
-      ]
-    },
-    "domain": {
-      "labels": [
-        "label.domain"
-      ],
-      "components": [
-        "Cs.zoneWizard.forms.zone"
-      ]
-    },
-    "virtualmachineid": {
-      "labels": [
-        "label.vm.id"
       ],
       "components": [
         "Cs.sections.storage.sections.vmsnapshots.listView.detailView.tabs.details"
@@ -666,10 +970,10 @@
     },
     "vpcid": {
       "labels": [
-        "label.vpc"
+        "label.vpc.id"
       ],
       "components": [
-        "Cs.sections.network.sections.networks.listView.actions.add.createForm"
+        "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.details"
       ]
     },
     "externalId": {
@@ -757,7 +1061,7 @@
         "label.subdomain.access"
       ],
       "components": [
-        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.network.listView.actions.add.createForm"
+        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.network.listView.detailView.tabs.details"
       ]
     },
     "projectId": {
@@ -800,22 +1104,6 @@
         "Cs.sections.system.subsections.guestIpRanges.listView.actions.add.createForm"
       ]
     },
-    "ip6gateway": {
-      "labels": [
-        "label.ipv6.gateway"
-      ],
-      "components": [
-        "Cs.sections.system.subsections.guestIpRanges.listView.actions.add.createForm"
-      ]
-    },
-    "ip6cidr": {
-      "labels": [
-        "label.ipv6.CIDR"
-      ],
-      "components": [
-        "Cs.sections.system.subsections.guestIpRanges.listView.actions.add.createForm"
-      ]
-    },
     "startipv6": {
       "labels": [
         "label.ipv6.start.ip"
@@ -850,10 +1138,10 @@
     },
     "cidr": {
       "labels": [
-        "label.ipv4.cidr"
+        "label.cidr"
       ],
       "components": [
-        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.network.listView"
+        "Cs.vpc.tiers.detailView.tabs.details"
       ]
     },
     "cleanup": {
@@ -872,12 +1160,68 @@
         "Cs.sections.network.sections.vpc.listView.detailView.actions.restart.createForm"
       ]
     },
-    "publicip": {
+    "displaytext": {
       "labels": [
-        "label.ip.address"
+        "label.description"
       ],
       "components": [
-        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView"
+        "Cs.vpc.tiers.detailView.tabs.details"
+      ]
+    },
+    "ispersistent": {
+      "labels": [
+        "label.persistent"
+      ],
+      "components": [
+        "Cs.vpc.tiers.detailView.tabs.details"
+      ]
+    },
+    "restartrequired": {
+      "labels": [
+        "label.restart.required"
+      ],
+      "components": [
+        "Cs.vpc.tiers.detailView.tabs.details"
+      ]
+    },
+    "networkofferingid": {
+      "labels": [
+        "label.network.offering"
+      ],
+      "components": [
+        "Cs.vpc.tiers.detailView.tabs.details"
+      ]
+    },
+    "networkcidr": {
+      "labels": [
+        "label.network.cidr"
+      ],
+      "components": [
+        "Cs.sections.network.sections.networks.listView.detailView.tabs.details"
+      ]
+    },
+    "reservediprange": {
+      "labels": [
+        "label.reserved.ip.range"
+      ],
+      "components": [
+        "Cs.sections.network.sections.networks.listView.detailView.tabs.details"
+      ]
+    },
+    "redundantrouter": {
+      "labels": [
+        "label.redundant.router"
+      ],
+      "components": [
+        "Cs.sections.network.sections.networks.listView.detailView.tabs.details"
+      ]
+    },
+    "networkdomaintext": {
+      "labels": [
+        "label.network.domain.text"
+      ],
+      "components": [
+        "Cs.vpc.tiers.detailView.tabs.details"
       ]
     },
     "routerType": {
@@ -890,18 +1234,10 @@
     },
     "guestnetworkname": {
       "labels": [
-        "label.network"
+        "label.network.name"
       ],
       "components": [
-        "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView"
-      ]
-    },
-    "hostname": {
-      "labels": [
-        "label.host.name"
-      ],
-      "components": [
-        "Cs.zoneWizard.forms.host"
+        "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.details"
       ]
     },
     "requiresupgrade": {
@@ -909,7 +1245,7 @@
         "label.requires.upgrade"
       ],
       "components": [
-        "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView"
+        "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.details"
       ]
     },
     "destination": {
@@ -936,6 +1272,78 @@
         "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView.detailView.actions.scaleUp.createForm"
       ]
     },
+    "projectid": {
+      "labels": [
+        "label.project.id"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.details"
+      ]
+    },
+    "version": {
+      "labels": [
+        "label.version"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.details"
+      ]
+    },
+    "guestnetworkid": {
+      "labels": [
+        "label.network.id"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.details"
+      ]
+    },
+    "vpcname": {
+      "labels": [
+        "label.vpc"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.details"
+      ]
+    },
+    "guestipaddress": {
+      "labels": [
+        "label.guest.ip"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.details"
+      ]
+    },
+    "linklocalip": {
+      "labels": [
+        "label.linklocal.ip"
+      ],
+      "components": [
+        "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView.detailView.tabs.details"
+      ]
+    },
+    "isredundantrouter": {
+      "labels": [
+        "label.redundant.router"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.details"
+      ]
+    },
+    "redundantRouterState": {
+      "labels": [
+        "label.redundant.state"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.details"
+      ]
+    },
+    "traffictype": {
+      "labels": [
+        "label.traffic.type"
+      ],
+      "components": [
+        "Cs.vpc.acl.multiEdit"
+      ]
+    },
     "virtualmachinedisplayname": {
       "labels": [
         "label.vm.name"
@@ -946,10 +1354,10 @@
     },
     "associatednetworkname": {
       "labels": [
-        "label.network"
+        "label.network.name"
       ],
       "components": [
-        "Cs.sections.network.sections.ipAddresses.listView"
+        "Cs.sections.network.sections.ipAddresses.listView.detailView.tabs.details"
       ]
     },
     "isportable": {
@@ -957,15 +1365,63 @@
         "label.cross.zones"
       ],
       "components": [
-        "Cs.sections.network.sections.ipAddresses.listView.actions.add.createForm"
+        "Cs.sections.network.sections.ipAddresses.listView.detailView.tabs.details"
       ]
     },
-    "displaytext": {
+    "associatednetworkid": {
       "labels": [
-        "label.description"
+        "label.associated.network.id"
       ],
       "components": [
-        "Cs.sections.configuration.sections.diskOfferings.listView"
+        "Cs.sections.network.sections.ipAddresses.listView.detailView.tabs.details"
+      ]
+    },
+    "issourcenat": {
+      "labels": [
+        "label.source.nat"
+      ],
+      "components": [
+        "Cs.sections.network.sections.ipAddresses.listView.detailView.tabs.details"
+      ]
+    },
+    "isstaticnat": {
+      "labels": [
+        "label.static.nat"
+      ],
+      "components": [
+        "Cs.sections.network.sections.ipAddresses.listView.detailView.tabs.details"
+      ]
+    },
+    "vmipaddress": {
+      "labels": [
+        "label.vm.ip"
+      ],
+      "components": [
+        "Cs.sections.network.sections.ipAddresses.listView.detailView.tabs.details"
+      ]
+    },
+    "issystem": {
+      "labels": [
+        "label.is.system"
+      ],
+      "components": [
+        "Cs.sections.network.sections.ipAddresses.listView.detailView.tabs.details"
+      ]
+    },
+    "purpose": {
+      "labels": [
+        "label.purpose"
+      ],
+      "components": [
+        "Cs.sections.network.sections.ipAddresses.listView.detailView.tabs.details"
+      ]
+    },
+    "vlanname": {
+      "labels": [
+        "label.vlan.only"
+      ],
+      "components": [
+        "Cs.sections.network.sections.ipAddresses.listView.detailView.tabs.details"
       ]
     },
     "vpcoffering": {
@@ -976,20 +1432,36 @@
         "Cs.sections.network.sections.vpc.listView.actions.add.createForm"
       ]
     },
-    "gateway": {
+    "redundantvpcrouter": {
       "labels": [
-        "label.gateway"
+        "label.redundant.vpc"
       ],
       "components": [
-        "Cs.vpc.tiers.actions.add.createForm"
+        "Cs.sections.network.sections.vpc.listView.detailView.tabs.details"
+      ]
+    },
+    "redundantstate": {
+      "labels": [
+        "label.redundant.state"
+      ],
+      "components": [
+        "Cs.sections.network.sections.vpc.listView.detailView.tabs.router"
+      ]
+    },
+    "dns1": {
+      "labels": [
+        "label.dns.1"
+      ],
+      "components": [
+        "Cs.sections.metrics.zones.listView.detailView.tabs.details"
       ]
     },
     "cidrlist": {
       "labels": [
-        "label.cidr"
+        "label.CIDR.list"
       ],
       "components": [
-        "Cs.vpc.acl.multiEdit"
+        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details"
       ]
     },
     "ipsecpsk": {
@@ -997,7 +1469,7 @@
         "label.IPsec.preshared.key"
       ],
       "components": [
-        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView"
+        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details"
       ]
     },
     "ikeEncryption": {
@@ -1005,7 +1477,7 @@
         "label.IKE.encryption"
       ],
       "components": [
-        "Cs.sections.network.sections.vpnCustomerGateway.listView.actions.add.createForm"
+        "Cs.sections.network.sections.vpnCustomerGateway.listView.detailView.tabs.details"
       ]
     },
     "ikeHash": {
@@ -1013,7 +1485,7 @@
         "label.IKE.hash"
       ],
       "components": [
-        "Cs.sections.network.sections.vpnCustomerGateway.listView.actions.add.createForm"
+        "Cs.sections.network.sections.vpnCustomerGateway.listView.detailView.tabs.details"
       ]
     },
     "ikeDh": {
@@ -1021,7 +1493,7 @@
         "label.IKE.DH"
       ],
       "components": [
-        "Cs.sections.network.sections.vpnCustomerGateway.listView.actions.add.createForm"
+        "Cs.sections.network.sections.vpnCustomerGateway.listView.detailView.tabs.details"
       ]
     },
     "espEncryption": {
@@ -1029,7 +1501,7 @@
         "label.ESP.encryption"
       ],
       "components": [
-        "Cs.sections.network.sections.vpnCustomerGateway.listView.actions.add.createForm"
+        "Cs.sections.network.sections.vpnCustomerGateway.listView.detailView.tabs.details"
       ]
     },
     "espHash": {
@@ -1037,7 +1509,7 @@
         "label.ESP.hash"
       ],
       "components": [
-        "Cs.sections.network.sections.vpnCustomerGateway.listView.actions.add.createForm"
+        "Cs.sections.network.sections.vpnCustomerGateway.listView.detailView.tabs.details"
       ]
     },
     "perfectForwardSecrecy": {
@@ -1045,7 +1517,7 @@
         "label.perfect.forward.secrecy"
       ],
       "components": [
-        "Cs.sections.network.sections.vpnCustomerGateway.listView.actions.add.createForm"
+        "Cs.sections.network.sections.vpnCustomerGateway.listView.detailView.tabs.details"
       ]
     },
     "ikelifetime": {
@@ -1053,7 +1525,7 @@
         "label.IKE.lifetime"
       ],
       "components": [
-        "Cs.sections.network.sections.vpnCustomerGateway.listView.actions.add.createForm"
+        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details"
       ]
     },
     "esplifetime": {
@@ -1061,7 +1533,7 @@
         "label.ESP.lifetime"
       ],
       "components": [
-        "Cs.sections.network.sections.vpnCustomerGateway.listView.actions.add.createForm"
+        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details"
       ]
     },
     "dpd": {
@@ -1069,7 +1541,7 @@
         "label.dead.peer.detection"
       ],
       "components": [
-        "Cs.sections.network.sections.vpnCustomerGateway.listView.actions.add.createForm"
+        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details"
       ]
     },
     "forceencap": {
@@ -1077,7 +1549,7 @@
         "label.vpn.force.encapsulation"
       ],
       "components": [
-        "Cs.sections.network.sections.vpnCustomerGateway.listView.actions.add.createForm"
+        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details"
       ]
     },
     "username": {
@@ -1109,7 +1581,7 @@
         "label.zone"
       ],
       "components": [
-        "Cs.sections.templates.sections.isos.listView.actions.uploadISOFromLocal.createForm"
+        "Cs.sections.configuration.sections.vpcOfferings.listView.detailView.tabs.details"
       ]
     },
     "directdownload": {
@@ -1117,7 +1589,7 @@
         "label.direct.download"
       ],
       "components": [
-        "Cs.sections.templates.sections.isos.listView.actions.add.createForm"
+        "Cs.sections.templates.sections.isos.listView.detailView.tabs.details"
       ]
     },
     "rootDiskControllerTypeKVM": {
@@ -1216,12 +1688,60 @@
         "Cs.sections.templates.sections.templates.listView.detailView.actions.shareTemplate.createForm"
       ]
     },
-    "status": {
+    "isextractable": {
       "labels": [
-        "label.status"
+        "label.extractable.lower"
       ],
       "components": [
-        "Cs.sections.templates.sections.isos.listView.detailView.tabs.zones.listView"
+        "Cs.sections.templates.sections.isos.listView.detailView.tabs.zones.listView.detailView.tabs.details"
+      ]
+    },
+    "passwordenabled": {
+      "labels": [
+        "label.password.enabled"
+      ],
+      "components": [
+        "Cs.sections.templates.sections.templates.listView.detailView.tabs.zones.listView.detailView.tabs.details"
+      ]
+    },
+    "ispublic": {
+      "labels": [
+        "label.public"
+      ],
+      "components": [
+        "Cs.sections.templates.sections.isos.listView.detailView.tabs.zones.listView.detailView.tabs.details"
+      ]
+    },
+    "isfeatured": {
+      "labels": [
+        "label.featured"
+      ],
+      "components": [
+        "Cs.sections.templates.sections.isos.listView.detailView.tabs.zones.listView.detailView.tabs.details"
+      ]
+    },
+    "ostypeid": {
+      "labels": [
+        "label.os.type"
+      ],
+      "components": [
+        "Cs.sections.templates.sections.isos.listView.detailView.tabs.zones.listView.detailView.tabs.details"
+      ]
+    },
+    "crossZones": {
+      "labels": [
+        "label.cross.zones"
+      ],
+      "components": [
+        "Cs.sections.templates.sections.isos.listView.detailView.tabs.details"
+      ]
+    },
+    "templatetype": {
+      "labels": [
+        "label.quota.email.template"
+      ],
+      "components": [
+        "Cs.sections.quota.sections.emailTemplates.listView.detailView.tabs.details"
       ]
     },
     "isready": {
@@ -1229,7 +1749,7 @@
         "state.Ready"
       ],
       "components": [
-        "Cs.sections.templates.sections.isos.listView.detailView.tabs.zones.listView"
+        "Cs.sections.templates.sections.isos.listView.detailView.tabs.zones.listView.detailView.tabs.details"
       ]
     },
     "isBootable": {
@@ -1238,6 +1758,14 @@
       ],
       "components": [
         "Cs.sections.templates.sections.isos.listView.actions.uploadISOFromLocal.createForm"
+      ]
+    },
+    "bootable": {
+      "labels": [
+        "label.bootable"
+      ],
+      "components": [
+        "Cs.sections.templates.sections.isos.listView.detailView.tabs.zones.listView.detailView.tabs.details"
       ]
     },
     "destinationZoneId": {
@@ -1253,7 +1781,7 @@
         "label.level"
       ],
       "components": [
-        "Cs.sections.events.sections.events.listView"
+        "Cs.sections.events.sections.events.listView.detailView.tabs.details"
       ]
     },
     "startdate": {
@@ -1277,15 +1805,63 @@
         "label.date"
       ],
       "components": [
-        "Cs.sections.events.sections.alerts.listView"
+        "Cs.sections.events.sections.alerts.listView.detailView.tabs.details"
       ]
     },
-    "projectid": {
+    "vmtotal": {
       "labels": [
-        "label.project.id"
+        "label.total.of.vm"
       ],
       "components": [
-        "Cs.sections.projects.sections.invitations.listView.actions.enterToken.createForm"
+        "Cs.sections.accounts.sections.accounts.listView.detailView.tabs.details"
+      ]
+    },
+    "memorytotal": {
+      "labels": [
+        "label.metrics.allocated"
+      ],
+      "components": [
+        "Cs.sections.metrics.instances.listView_columns_columns"
+      ]
+    },
+    "cputotal": {
+      "labels": [
+        "label.metrics.cpu.total"
+      ],
+      "components": [
+        "Cs.sections.metrics.instances.listView_columns"
+      ]
+    },
+    "volumetotal": {
+      "labels": [
+        "label.volume"
+      ],
+      "components": [
+        "Cs.sections.projects.sections.projects.listView.detailView.tabs.details"
+      ]
+    },
+    "primarystoragetotal": {
+      "labels": [
+        "label.primary.storage"
+      ],
+      "components": [
+        "Cs.sections.projects.sections.projects.listView.detailView.tabs.details"
+      ]
+    },
+    "iptotal": {
+      "labels": [
+        "label.total.of.ip"
+      ],
+      "components": [
+        "Cs.sections.accounts.sections.accounts.listView.detailView.tabs.details"
+      ]
+    },
+    "templatetotal": {
+      "labels": [
+        "label.template"
+      ],
+      "components": [
+        "Cs.sections.projects.sections.projects.listView.detailView.tabs.details"
       ]
     },
     "token": {
@@ -1301,7 +1877,7 @@
         "label.role"
       ],
       "components": [
-        "Cs.sections.accounts.sections.accounts.listView"
+        "Cs.sections.accounts.sections.users.listView.detailView.tabs.details"
       ]
     },
     "roletype": {
@@ -1309,7 +1885,7 @@
         "label.roletype"
       ],
       "components": [
-        "Cs.sections.accounts.sections.accounts.listView"
+        "Cs.sections.accounts.sections.users.listView.detailView.tabs.details"
       ]
     },
     "domainpath": {
@@ -1317,7 +1893,111 @@
         "label.domain"
       ],
       "components": [
-        "Cs.sections.accounts.sections.accounts.listView"
+        "Cs.sections.accounts.sections.accounts.listView.detailView.tabs.details"
+      ]
+    },
+    "vmLimit": {
+      "labels": [
+        "label.instance.limits"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "ipLimit": {
+      "labels": [
+        "label.ip.limits"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "volumeLimit": {
+      "labels": [
+        "label.volume.limits"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "snapshotLimit": {
+      "labels": [
+        "label.snapshot.limits"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "templateLimit": {
+      "labels": [
+        "label.template.limits"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "vpcLimit": {
+      "labels": [
+        "label.VPC.limits"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "cpuLimit": {
+      "labels": [
+        "label.cpu.limits"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "memoryLimit": {
+      "labels": [
+        "label.memory.limits"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "networkLimit": {
+      "labels": [
+        "label.network.limits"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "primaryStorageLimit": {
+      "labels": [
+        "label.primary.storage.limits"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "secondaryStorageLimit": {
+      "labels": [
+        "label.secondary.storage.limits"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "receivedbytes": {
+      "labels": [
+        "label.bytes.received"
+      ],
+      "components": [
+        "Cs.sections.accounts.sections.accounts.listView.detailView.tabs.details"
+      ]
+    },
+    "sentbytes": {
+      "labels": [
+        "label.bytes.sent"
+      ],
+      "components": [
+        "Cs.sections.accounts.sections.accounts.listView.detailView.tabs.details"
       ]
     },
     "certificate": {
@@ -1333,7 +2013,7 @@
         "label.private.key"
       ],
       "components": [
-        "Cs.sections.accounts.sections.sshkeypairs.listView"
+        "Cs.sections.accounts.sections.sshkeypairs.listView.detailView.tabs.details"
       ]
     },
     "certchain": {
@@ -1349,7 +2029,7 @@
         "label.first.name"
       ],
       "components": [
-        "Cs.sections.accounts.sections.users.listView.actions.add.createForm"
+        "Cs.sections.accounts.sections.users.listView.detailView.tabs.details"
       ]
     },
     "lastname": {
@@ -1357,7 +2037,7 @@
         "label.last.name"
       ],
       "components": [
-        "Cs.sections.accounts.sections.users.listView.actions.add.createForm"
+        "Cs.sections.accounts.sections.users.listView.detailView.tabs.details"
       ]
     },
     "password-confirm": {
@@ -1381,7 +2061,7 @@
         "label.timezone"
       ],
       "components": [
-        "Cs.sections.accounts.sections.users.listView.actions.add.createForm"
+        "Cs.sections.accounts.sections.users.listView.detailView.tabs.details"
       ]
     },
     "samlEnable": {
@@ -1400,12 +2080,36 @@
         "Cs.sections.accounts.sections.users.listView.actions.add.createForm"
       ]
     },
+    "apikey": {
+      "labels": [
+        "label.api.key"
+      ],
+      "components": [
+        "Cs.sections.accounts.sections.users.listView.detailView.tabs.details"
+      ]
+    },
+    "secretkey": {
+      "labels": [
+        "label.s3.secret_key"
+      ],
+      "components": [
+        "Cs.zoneWizard.forms.secondaryStorage"
+      ]
+    },
     "publickey": {
       "labels": [
         "label.public.key"
       ],
       "components": [
         "Cs.sections.accounts.sections.sshkeypairs.listView.actions.add.createForm"
+      ]
+    },
+    "fingerprint": {
+      "labels": [
+        "label.fingerprint"
+      ],
+      "components": [
+        "Cs.sections.accounts.sections.sshkeypairs.listView.detailView.tabs.details"
       ]
     },
     "isForced": {
@@ -1432,6 +2136,38 @@
         "Cs.sections.domains.treeView.detailView.actions.linktoldap.createForm"
       ]
     },
+    "path": {
+      "labels": [
+        "label.path"
+      ],
+      "components": [
+        "Cs.zoneWizard.forms.secondaryStorage"
+      ]
+    },
+    "accountTotal": {
+      "labels": [
+        "label.accounts"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "vmTotal": {
+      "labels": [
+        "label.instances"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
+    "volumeTotal": {
+      "labels": [
+        "label.volumes"
+      ],
+      "components": [
+        "Cs.sections.domains.treeView.detailView.tabs.details"
+      ]
+    },
     "endpoint": {
       "labels": [
         "label.s3.endpoint"
@@ -1445,7 +2181,7 @@
         "label.gslb.domain.name"
       ],
       "components": [
-        "Cs.sections.regions.sections.GSLB.listView.actions.add.createForm"
+        "Cs.sections.regions.sections.GSLB.listView.detailView.tabs.details"
       ]
     },
     "gslblbmethod": {
@@ -1453,7 +2189,7 @@
         "label.algorithm"
       ],
       "components": [
-        "Cs.sections.regions.sections.GSLB.listView.actions.add.createForm"
+        "Cs.sections.regions.sections.GSLB.listView.detailView.tabs.details"
       ]
     },
     "gslbservicetype": {
@@ -1461,7 +2197,7 @@
         "label.gslb.servicetype"
       ],
       "components": [
-        "Cs.sections.regions.sections.GSLB.listView.actions.add.createForm"
+        "Cs.sections.regions.sections.GSLB.listView.detailView.tabs.details"
       ]
     },
     "startip": {
@@ -1480,12 +2216,12 @@
         "Cs.sections.system.subsections.guestIpRanges.listView"
       ]
     },
-    "netmask": {
+    "portableipaddress": {
       "labels": [
-        "label.netmask"
+        "label.portable.ips"
       ],
       "components": [
-        "Cs.vpc.tiers.actions.add.createForm"
+        "Cs.sections.regions.sections.portableIpRanges.listView.detailView.tabs.details"
       ]
     },
     "publicport": {
@@ -1493,7 +2229,7 @@
         "label.public.port"
       ],
       "components": [
-        "Cs.sections.regions.sections.lbUnderGSLB.listView"
+        "Cs.sections.regions.sections.lbUnderGSLB.listView.detailView.tabs.details"
       ]
     },
     "privateport": {
@@ -1501,7 +2237,7 @@
         "label.private.port"
       ],
       "components": [
-        "Cs.sections.regions.sections.lbUnderGSLB.listView"
+        "Cs.sections.regions.sections.lbUnderGSLB.listView.detailView.tabs.details"
       ]
     },
     "algorithm": {
@@ -1509,7 +2245,7 @@
         "label.algorithm"
       ],
       "components": [
-        "Cs.vpc.sections.internalLoadBalancers.listView.actions.add.createForm"
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.details"
       ]
     },
     "loadbalancerrule": {
@@ -1525,7 +2261,7 @@
         "label.id"
       ],
       "components": [
-        "Cs.sections.regions.sections.NCC.listView"
+        "Cs.sections.regions.sections.NCC.listView.detailView.tabs.details"
       ]
     },
     "numretries": {
@@ -1536,20 +2272,100 @@
         "Cs.zoneWizard.forms.basicPhysicalNetwork"
       ]
     },
-    "broadcasturi": {
+    "broadcastdomaintype": {
       "labels": [
-        "label.broadcat.uri"
+        "label.broadcast.domain.type"
       ],
       "components": [
-        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.network.listView"
+        "Cs.sections.system.naas.mainNetworks.management.detailView.tabs.details"
+      ]
+    },
+    "xennetworklabel": {
+      "labels": [
+        "label.xenserver.traffic.label"
+      ],
+      "components": [
+        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.details"
+      ]
+    },
+    "kvmnetworklabel": {
+      "labels": [
+        "label.kvm.traffic.label"
+      ],
+      "components": [
+        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.details"
+      ]
+    },
+    "vmwarenetworklabel": {
+      "labels": [
+        "label.vmware.traffic.label"
+      ],
+      "components": [
+        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.details"
+      ]
+    },
+    "ovmnetworklabel": {
+      "labels": [
+        "label.ovm.traffic.label"
+      ],
+      "components": [
+        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.details"
+      ]
+    },
+    "lxcnetworklabel": {
+      "labels": [
+        "label.lxc.traffic.label"
+      ],
+      "components": [
+        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.details"
+      ]
+    },
+    "hypervnetworklabel": {
+      "labels": [
+        "label.hyperv.traffic.label"
+      ],
+      "components": [
+        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.details"
+      ]
+    },
+    "ovm3networklabel": {
+      "labels": [
+        "label.ovm3.traffic.label"
+      ],
+      "components": [
+        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.details"
+      ]
+    },
+    "broadcastdomainrange": {
+      "labels": [
+        "label.broadcast.domain.range"
+      ],
+      "components": [
+        "Cs.sections.system.naas.networks.listView"
+      ]
+    },
+    "networkofferingdisplaytext": {
+      "labels": [
+        "label.network.offering"
+      ],
+      "components": [
+        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.network.listView.detailView.tabs.details"
+      ]
+    },
+    "networkofferingidText": {
+      "labels": [
+        "label.network.offering.id"
+      ],
+      "components": [
+        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.network.listView.detailView.tabs.details"
       ]
     },
     "guestvlanrange": {
       "labels": [
-        "label.vlan.vni.ranges"
+        "label.vlan.ranges"
       ],
       "components": [
-        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.dedicatedGuestVlanRanges.listView"
+        "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.dedicatedGuestVlanRanges.listView.detailView.tabs.details"
       ]
     },
     "vlanrange": {
@@ -1568,12 +2384,28 @@
         "Cs.sections.system.naas.networks.listView"
       ]
     },
-    "broadcastdomainrange": {
+    "physicalnetworkid": {
       "labels": [
-        "label.broadcast.domain.range"
+        "label.physical.network"
       ],
       "components": [
-        "Cs.sections.system.naas.networks.listView"
+        "Cs.vpc.gateways.add.createForm"
+      ]
+    },
+    "destinationphysicalnetworkid": {
+      "labels": [
+        "label.destination.physical.network.id"
+      ],
+      "components": [
+        "Cs.sections.system.naas.networkProviders.types.Ovs.tabs.network"
+      ]
+    },
+    "supportedServices": {
+      "labels": [
+        "label.supported.services"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.vpcOfferings.listView.detailView.tabs.details"
       ]
     },
     "ip": {
@@ -1669,7 +2501,7 @@
         "label.timeout"
       ],
       "components": [
-        "Cs.sections.system.subsections.paDevices.listView.actions.add.createForm"
+        "Cs.sections.system.subsections.paDevices.listView.detailView.tabs.details"
       ]
     },
     "publicnetwork": {
@@ -1725,7 +2557,7 @@
         "label.nicira.transportzoneuuid"
       ],
       "components": [
-        "Cs.sections.system.subsections.niciraNvpDevices.listView.actions.add.createForm"
+        "Cs.sections.system.subsections.niciraNvpDevices.listView.detailView.tabs.details"
       ]
     },
     "l3gatewayserviceuuid": {
@@ -1733,7 +2565,7 @@
         "label.nicira.l3gatewayserviceuuid"
       ],
       "components": [
-        "Cs.sections.system.subsections.niciraNvpDevices.listView.actions.add.createForm"
+        "Cs.sections.system.subsections.niciraNvpDevices.listView.detailView.tabs.details"
       ]
     },
     "l2gatewayserviceuuid": {
@@ -1741,7 +2573,7 @@
         "label.nicira.l2gatewayserviceuuid"
       ],
       "components": [
-        "Cs.sections.system.subsections.niciraNvpDevices.listView.actions.add.createForm"
+        "Cs.sections.system.subsections.niciraNvpDevices.listView.detailView.tabs.details"
       ]
     },
     "nat": {
@@ -1752,12 +2584,20 @@
         "Cs.sections.system.subsections.bigswitchBcfDevices.listView.actions.add.createForm"
       ]
     },
+    "servicelist": {
+      "labels": [
+        "label.services"
+      ],
+      "components": [
+        "Cs.sections.system.naas.networkProviders.types.CiscoVnmc.tabs.details"
+      ]
+    },
     "networktype": {
       "labels": [
         "label.network.type"
       ],
       "components": [
-        "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones"
+        "Cs.sections.metrics.zones.listView.detailView.tabs.details"
       ]
     },
     "allocationstate": {
@@ -1765,7 +2605,7 @@
         "label.allocation.state"
       ],
       "components": [
-        "Cs.sections.system.subsections.clusters.listView"
+        "Cs.sections.metrics.zones.listView.detailView.tabs.details"
       ]
     },
     "vcenter": {
@@ -1784,12 +2624,124 @@
         "Cs.sections.metrics.hosts.listView.detailView.actions.dedicate.createForm"
       ]
     },
+    "dns2": {
+      "labels": [
+        "label.dns.2"
+      ],
+      "components": [
+        "Cs.sections.metrics.zones.listView.detailView.tabs.details"
+      ]
+    },
+    "ip6dns1": {
+      "labels": [
+        "label.ipv6.dns1"
+      ],
+      "components": [
+        "Cs.zoneWizard.forms.zone"
+      ]
+    },
+    "ip6dns2": {
+      "labels": [
+        "label.ipv6.dns2"
+      ],
+      "components": [
+        "Cs.zoneWizard.forms.zone"
+      ]
+    },
+    "internaldns1": {
+      "labels": [
+        "label.internal.dns.1"
+      ],
+      "components": [
+        "Cs.zoneWizard.forms.zone"
+      ]
+    },
+    "internaldns2": {
+      "labels": [
+        "label.internal.dns.2"
+      ],
+      "components": [
+        "Cs.zoneWizard.forms.zone"
+      ]
+    },
+    "domainname": {
+      "labels": [
+        "label.domain"
+      ],
+      "components": [
+        "Cs.sections.metrics.zones.listView.detailView.tabs.details"
+      ]
+    },
+    "guestcidraddress": {
+      "labels": [
+        "label.guest.cidr"
+      ],
+      "components": [
+        "Cs.zoneWizard.forms.zone"
+      ]
+    },
+    "localstorageenabled": {
+      "labels": [
+        "label.local.storage.enabled"
+      ],
+      "components": [
+        "Cs.zoneWizard.forms.zone"
+      ]
+    },
+    "isdedicated": {
+      "labels": [
+        "label.dedicated"
+      ],
+      "components": [
+        "Cs.zoneWizard.forms.zone"
+      ]
+    },
+    "vmwaredcName": {
+      "labels": [
+        "label.vmware.datacenter.name"
+      ],
+      "components": [
+        "Cs.sections.metrics.zones.listView.detailView.tabs.details"
+      ]
+    },
+    "vmwaredcVcenter": {
+      "labels": [
+        "label.vmware.datacenter.vcenter"
+      ],
+      "components": [
+        "Cs.sections.metrics.zones.listView.detailView.tabs.details"
+      ]
+    },
+    "vmwaredcId": {
+      "labels": [
+        "label.vmware.datacenter.id"
+      ],
+      "components": [
+        "Cs.sections.metrics.zones.listView.detailView.tabs.details"
+      ]
+    },
     "systemvmtype": {
       "labels": [
         "label.type"
       ],
       "components": [
-        "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView"
+        "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView.detailView.tabs.details"
+      ]
+    },
+    "privateip": {
+      "labels": [
+        "label.private.ip"
+      ],
+      "components": [
+        "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView.detailView.tabs.details"
+      ]
+    },
+    "activeviewersessions": {
+      "labels": [
+        "label.active.sessions"
+      ],
+      "components": [
+        "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView.detailView.tabs.details"
       ]
     },
     "routerCount": {
@@ -1797,7 +2749,7 @@
         "label.total.virtual.routers"
       ],
       "components": [
-        "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByAccount.listView"
+        "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByAccount.listView.detailView.tabs.details"
       ]
     },
     "routerRequiresUpgrade": {
@@ -1805,7 +2757,23 @@
         "label.upgrade.required"
       ],
       "components": [
-        "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByAccount.listView"
+        "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByAccount.listView.detailView.tabs.details"
+      ]
+    },
+    "numberOfRouterRequiresUpgrade": {
+      "labels": [
+        "label.total.virtual.routers.upgrade"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByAccount.listView.detailView.tabs.details"
+      ]
+    },
+    "podname": {
+      "labels": [
+        "label.pod"
+      ],
+      "components": [
+        "Cs.sections.metrics.storagepool.listView.detailView.tabs.details"
       ]
     },
     "agentstate": {
@@ -1821,7 +2789,39 @@
         "label.status"
       ],
       "components": [
-        "Cs.sections.system.subsections.f5Devices.listView"
+        "Cs.sections.system.subsections.f5Devices.listView.detailView.tabs.details"
+      ]
+    },
+    "lbdeviceid": {
+      "labels": [
+        "label.id"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.f5Devices.listView.detailView.tabs.details"
+      ]
+    },
+    "lbdevicename": {
+      "labels": [
+        "label.type"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.f5Devices.listView.detailView.tabs.details"
+      ]
+    },
+    "lbdevicecapacity": {
+      "labels": [
+        "label.capacity"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.f5Devices.listView.detailView.tabs.details"
+      ]
+    },
+    "lbdevicededicated": {
+      "labels": [
+        "label.dedicated"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.f5Devices.listView.detailView.tabs.details"
       ]
     },
     "fwdevicestate": {
@@ -1829,7 +2829,7 @@
         "label.status"
       ],
       "components": [
-        "Cs.sections.system.subsections.paDevices.listView"
+        "Cs.sections.system.subsections.paDevices.listView.detailView.tabs.details"
       ]
     },
     "fwdevicename": {
@@ -1837,15 +2837,47 @@
         "label.type"
       ],
       "components": [
-        "Cs.sections.system.subsections.paDevices.listView"
+        "Cs.sections.system.subsections.paDevices.listView.detailView.tabs.details"
       ]
     },
-    "podname": {
+    "fwdeviceid": {
       "labels": [
-        "label.pod"
+        "label.id"
       ],
       "components": [
-        "Cs.sections.system.subsections.clusters.listView"
+        "Cs.sections.system.subsections.paDevices.listView.detailView.tabs.details"
+      ]
+    },
+    "fwdevicecapacity": {
+      "labels": [
+        "label.capacity"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.paDevices.listView.detailView.tabs.details"
+      ]
+    },
+    "nvpdeviceid": {
+      "labels": [
+        "label.id"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.niciraNvpDevices.listView.detailView.tabs.details"
+      ]
+    },
+    "vcsdeviceid": {
+      "labels": [
+        "label.id"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.brocadeVcsDevices.listView.detailView.tabs.details"
+      ]
+    },
+    "bcfdeviceid": {
+      "labels": [
+        "label.id"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.bigswitchBcfDevices.listView.detailView.tabs.details"
       ]
     },
     "reservedSystemGateway": {
@@ -1893,7 +2925,7 @@
         "label.hypervisor"
       ],
       "components": [
-        "Cs.sections.system.subsections.clusters.listView"
+        "Cs.sections.metrics.clusters.listView.detailView.tabs.details"
       ]
     },
     "managedstate": {
@@ -2056,6 +3088,14 @@
         "Cs.sections.system.subsections.clusters.listView.actions.add.createForm"
       ]
     },
+    "clustertype": {
+      "labels": [
+        "label.cluster.type"
+      ],
+      "components": [
+        "Cs.sections.metrics.clusters.listView.detailView.tabs.details"
+      ]
+    },
     "vsmdeviceid": {
       "labels": [
         "label.name"
@@ -2096,20 +3136,12 @@
         "Cs.sections.metrics.clusters.listView.detailView.tabs.nexusVswitch.listView.detailView.tabs.details"
       ]
     },
-    "clustername": {
-      "labels": [
-        "label.cluster"
-      ],
-      "components": [
-        "Cs.sections.system.subsections.primary-storage.listView"
-      ]
-    },
     "resourcestate": {
       "labels": [
         "label.resource.state"
       ],
       "components": [
-        "Cs.sections.system.subsections.hosts.listView"
+        "Cs.sections.metrics.hosts.listView.detailView.tabs.details"
       ]
     },
     "powerstate": {
@@ -2240,12 +3272,12 @@
         "Cs.sections.metrics.hosts.listView.detailView.actions.changeOutOfBandManagementPassword.createForm"
       ]
     },
-    "haenable": {
+    "hypervisorversion": {
       "labels": [
-        "label.ha.enabled"
+        "label.hypervisor.version"
       ],
       "components": [
-        "Cs.sections.metrics.hosts.listView.detailView.tabs.ha"
+        "Cs.sections.metrics.hosts.listView.detailView.tabs.details"
       ]
     },
     "hastate": {
@@ -2264,17 +3296,65 @@
         "Cs.sections.metrics.hosts.listView.detailView.tabs.ha"
       ]
     },
+    "hahost": {
+      "labels": [
+        "label.ha.enabled"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView.detailView.tabs.details"
+      ]
+    },
+    "oscategoryid": {
+      "labels": [
+        "label.os.preference"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView.detailView.tabs.details"
+      ]
+    },
+    "annotation": {
+      "labels": [
+        "label.annotation"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView.detailView.tabs.details"
+      ]
+    },
+    "lastannotated": {
+      "labels": [
+        "label.last.annotated"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView.detailView.tabs.details"
+      ]
+    },
+    "disconnected": {
+      "labels": [
+        "label.last.disconnected"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView.detailView.tabs.details"
+      ]
+    },
+    "cpusockets": {
+      "labels": [
+        "label.number.of.cpu.sockets"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView.detailView.tabs.details"
+      ]
+    },
+    "managementServers": {
+      "labels": [
+        "label.number.of.management.servers"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView.detailView.tabs.details"
+      ]
+    },
     "cpuallocated": {
       "labels": [
         "label.cpu.allocated.for.VMs"
-      ],
-      "components": [
-        "Cs.sections.metrics.hosts.listView.detailView.tabs.stats"
-      ]
-    },
-    "memorytotal": {
-      "labels": [
-        "label.memory.total"
       ],
       "components": [
         "Cs.sections.metrics.hosts.listView.detailView.tabs.stats"
@@ -2290,18 +3370,10 @@
     },
     "memoryused": {
       "labels": [
-        "label.memory.used"
+        "label.metrics.memory.used.avg"
       ],
       "components": [
-        "Cs.sections.metrics.hosts.listView.detailView.tabs.stats"
-      ]
-    },
-    "path": {
-      "labels": [
-        "label.path"
-      ],
-      "components": [
-        "Cs.zoneWizard.forms.secondaryStorage"
+        "Cs.sections.metrics.instances.listView_columns_columns"
       ]
     },
     "protocol": {
@@ -2456,6 +3528,38 @@
         "Cs.zoneWizard.forms.primaryStorage"
       ]
     },
+    "disksizetotal": {
+      "labels": [
+        "label.disk.total"
+      ],
+      "components": [
+        "Cs.sections.metrics.storagepool.listView.detailView.tabs.details"
+      ]
+    },
+    "disksizeallocated": {
+      "labels": [
+        "label.disk.allocated"
+      ],
+      "components": [
+        "Cs.sections.metrics.storagepool.listView.detailView.tabs.details"
+      ]
+    },
+    "capacityiops": {
+      "labels": [
+        "label.disk.iops.total"
+      ],
+      "components": [
+        "Cs.sections.metrics.storagepool.listView.detailView.tabs.details"
+      ]
+    },
+    "allocatediops": {
+      "labels": [
+        "label.disk.iops.allocated"
+      ],
+      "components": [
+        "Cs.sections.metrics.storagepool.listView.detailView.tabs.details"
+      ]
+    },
     "chassis": {
       "labels": [
         "label.chassis"
@@ -2515,14 +3619,6 @@
     "accesskey": {
       "labels": [
         "label.s3.access_key"
-      ],
-      "components": [
-        "Cs.zoneWizard.forms.secondaryStorage"
-      ]
-    },
-    "secretkey": {
-      "labels": [
-        "label.s3.secret_key"
       ],
       "components": [
         "Cs.zoneWizard.forms.secondaryStorage"
@@ -2621,7 +3717,15 @@
         "label.provider"
       ],
       "components": [
-        "Cs.sections.system.subsections.secondary-storage.sections.cacheStorage.listView"
+        "Cs.sections.system.subsections.secondary-storage.sections.cacheStorage.listView.detailView.tabs.details"
+      ]
+    },
+    "details": {
+      "labels": [
+        "label.details"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.networkOfferings.listView.detailView.tabs.details"
       ]
     },
     "resourcename": {
@@ -2629,7 +3733,15 @@
         "label.resource.name"
       ],
       "components": [
-        "Cs.sections.system.subsections.vnmcDevices.listView"
+        "Cs.sections.system.subsections.vnmcDevices.listView.detailView.tabs.details"
+      ]
+    },
+    "resourceid": {
+      "labels": [
+        "label.reource.id"
+      ],
+      "components": [
+        "Cs.sections.system.subsections.asa1000v.listView.detailView.tabs.details"
       ]
     },
     "insideportprofile": {
@@ -2637,15 +3749,15 @@
         "label.inside.port.profile"
       ],
       "components": [
-        "Cs.sections.system.subsections.asa1000v.listView.actions.add.createForm"
+        "Cs.sections.system.subsections.asa1000v.listView.detailView.tabs.details"
       ]
     },
-    "clusterid": {
+    "RESOURCE_NAME": {
       "labels": [
-        "label.cluster"
+        "label.resource.name"
       ],
       "components": [
-        "Cs.sections.system.subsections.asa1000v.listView.actions.add.createForm"
+        "Cs.sections.system.subsections.asa1000v.listView.detailView.tabs.details"
       ]
     },
     "value": {
@@ -2656,20 +3768,12 @@
         "Cs.sections.quota.sections.fullSummary.listView.detailView.actions.add.createForm"
       ]
     },
-    "hypervisorversion": {
-      "labels": [
-        "label.hypervisor.version"
-      ],
-      "components": [
-        "Cs.sections.global-settings.sections.hypervisorCapabilities.listView"
-      ]
-    },
     "maxguestslimit": {
       "labels": [
         "label.max.guest.limit"
       ],
       "components": [
-        "Cs.sections.global-settings.sections.hypervisorCapabilities.listView"
+        "Cs.sections.global-settings.sections.hypervisorCapabilities.listView.detailView.tabs.details"
       ]
     },
     "storageType": {
@@ -2765,7 +3869,7 @@
         "label.disk.bytes.read.rate"
       ],
       "components": [
-        "Cs.sections.configuration.sections.diskOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.diskOfferings.listView.detailView.tabs.details"
       ]
     },
     "diskBytesWriteRate": {
@@ -2773,7 +3877,7 @@
         "label.disk.bytes.write.rate"
       ],
       "components": [
-        "Cs.sections.configuration.sections.diskOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.diskOfferings.listView.detailView.tabs.details"
       ]
     },
     "diskIopsReadRate": {
@@ -2781,7 +3885,7 @@
         "label.disk.iops.read.rate"
       ],
       "components": [
-        "Cs.sections.configuration.sections.diskOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.diskOfferings.listView.detailView.tabs.details"
       ]
     },
     "diskIopsWriteRate": {
@@ -2789,7 +3893,7 @@
         "label.disk.iops.write.rate"
       ],
       "components": [
-        "Cs.sections.configuration.sections.diskOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.diskOfferings.listView.detailView.tabs.details"
       ]
     },
     "offerHA": {
@@ -2837,7 +3941,7 @@
         "label.planner.mode"
       ],
       "components": [
-        "Cs.sections.configuration.sections.serviceOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.serviceOfferings.listView.detailView.tabs.details"
       ]
     },
     "pciDevice": {
@@ -2845,7 +3949,7 @@
         "label.gpu"
       ],
       "components": [
-        "Cs.sections.configuration.sections.serviceOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.serviceOfferings.listView.detailView.tabs.details"
       ]
     },
     "vgpuType": {
@@ -2853,7 +3957,63 @@
         "label.vgpu.type"
       ],
       "components": [
-        "Cs.sections.configuration.sections.serviceOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.serviceOfferings.listView.detailView.tabs.details"
+      ]
+    },
+    "networkrate": {
+      "labels": [
+        "label.network.rate"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.networkOfferings.listView.detailView.tabs.details"
+      ]
+    },
+    "iscustomizediops": {
+      "labels": [
+        "label.custom.disk.iops"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.diskOfferings.listView.detailView.tabs.details"
+      ]
+    },
+    "hypervisorsnapshotreserve": {
+      "labels": [
+        "label.hypervisor.snapshot.reserve"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.diskOfferings.listView.detailView.tabs.details"
+      ]
+    },
+    "offerha": {
+      "labels": [
+        "label.offer.ha"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.systemServiceOfferings.listView.detailView.tabs.details"
+      ]
+    },
+    "limitcpuuse": {
+      "labels": [
+        "label.CPU.cap"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.systemServiceOfferings.listView.detailView.tabs.details"
+      ]
+    },
+    "isvolatile": {
+      "labels": [
+        "label.volatile"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.serviceOfferings.listView.detailView.tabs.details"
+      ]
+    },
+    "deploymentplanner": {
+      "labels": [
+        "label.deployment.planner"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.serviceOfferings.listView.detailView.tabs.details"
       ]
     },
     "iscustomized": {
@@ -2861,7 +4021,7 @@
         "label.custom.disk.size"
       ],
       "components": [
-        "Cs.sections.configuration.sections.diskOfferings.listView"
+        "Cs.sections.configuration.sections.diskOfferings.listView.detailView.tabs.details"
       ]
     },
     "disksize": {
@@ -2869,7 +4029,7 @@
         "label.disk.size.gb"
       ],
       "components": [
-        "Cs.sections.configuration.sections.diskOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.diskOfferings.listView.detailView.tabs.details"
       ]
     },
     "isCustomized": {
@@ -2885,7 +4045,7 @@
         "label.cache.mode"
       ],
       "components": [
-        "Cs.sections.configuration.sections.diskOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.diskOfferings.listView.detailView.tabs.details"
       ]
     },
     "guestIpType": {
@@ -2958,14 +4118,6 @@
       ],
       "components": [
         "Cs.sections.configuration.sections.networkOfferings.listView.actions.add.createForm"
-      ]
-    },
-    "supportedServices": {
-      "labels": [
-        "label.supported.services"
-      ],
-      "components": [
-        "Cs.sections.configuration.sections.vpcOfferings.listView.actions.add.createForm"
       ]
     },
     "service.SourceNat.redundantRouterCapabilityCheckbox": {
@@ -3045,7 +4197,7 @@
         "label.supportsstrechedl2subnet"
       ],
       "components": [
-        "Cs.sections.configuration.sections.networkOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.networkOfferings.listView.detailView.tabs.details"
       ]
     },
     "supportspublicaccess": {
@@ -3053,7 +4205,7 @@
         "label.supportspublicaccess"
       ],
       "components": [
-        "Cs.sections.configuration.sections.networkOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.networkOfferings.listView.detailView.tabs.details"
       ]
     },
     "conservemode": {
@@ -3061,7 +4213,7 @@
         "label.conserve.mode"
       ],
       "components": [
-        "Cs.sections.configuration.sections.networkOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.networkOfferings.listView.detailView.tabs.details"
       ]
     },
     "availability": {
@@ -3069,15 +4221,47 @@
         "label.availability"
       ],
       "components": [
-        "Cs.sections.configuration.sections.networkOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.networkOfferings.listView.detailView.tabs.details"
       ]
     },
     "egressdefaultpolicy": {
       "labels": [
-        "label.default.egress.policy"
+        "label.egress.default.policy"
       ],
       "components": [
-        "Cs.sections.configuration.sections.networkOfferings.listView.actions.add.createForm"
+        "Cs.sections.configuration.sections.networkOfferings.listView.detailView.tabs.details"
+      ]
+    },
+    "guestiptype": {
+      "labels": [
+        "label.guest.type"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.networkOfferings.listView.detailView.tabs.details"
+      ]
+    },
+    "specifyvlan": {
+      "labels": [
+        "label.specify.vlan"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.networkOfferings.listView.detailView.tabs.details"
+      ]
+    },
+    "specifyipranges": {
+      "labels": [
+        "label.specify.IP.ranges"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.networkOfferings.listView.detailView.tabs.details"
+      ]
+    },
+    "serviceCapabilities": {
+      "labels": [
+        "label.service.capabilities"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.vpcOfferings.listView.detailView.tabs.details"
       ]
     },
     "service.Connectivity.regionLevelVpcCapabilityCheckbox": {
@@ -3096,6 +4280,22 @@
         "Cs.sections.configuration.sections.vpcOfferings.listView.actions.add.createForm"
       ]
     },
+    "distributedvpcrouter": {
+      "labels": [
+        "label.vpc.distributedvpcrouter"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.vpcOfferings.listView.detailView.tabs.details"
+      ]
+    },
+    "supportsregionLevelvpc": {
+      "labels": [
+        "label.vpc.supportsregionlevelvpc"
+      ],
+      "components": [
+        "Cs.sections.configuration.sections.vpcOfferings.listView.detailView.tabs.details"
+      ]
+    },
     "clusters": {
       "labels": [
         "label.metrics.clusters"
@@ -3104,12 +4304,28 @@
         "Cs.sections.metrics.zones.listView"
       ]
     },
+    "cpumaxdeviation": {
+      "labels": [
+        "label.metrics.cpu.max.dev"
+      ],
+      "components": [
+        "Cs.sections.metrics.clusters.listView_columns"
+      ]
+    },
     "memused": {
       "labels": [
         "label.metrics.memory.usage"
       ],
       "components": [
-        "Cs.sections.metrics.instances.listView"
+        "Cs.sections.metrics.instances.listView_columns"
+      ]
+    },
+    "memorymaxdeviation": {
+      "labels": [
+        "label.metrics.memory.max.dev"
+      ],
+      "components": [
+        "Cs.sections.metrics.clusters.listView_columns_columns_columns"
       ]
     },
     "memallocated": {
@@ -3117,7 +4333,7 @@
         "label.metrics.memory.allocated"
       ],
       "components": [
-        "Cs.sections.metrics.clusters.listView"
+        "Cs.sections.metrics.clusters.listView_columns_columns_columns"
       ]
     },
     "hosts": {
@@ -3136,12 +4352,84 @@
         "Cs.sections.metrics.hosts.listView"
       ]
     },
+    "cputotalghz": {
+      "labels": [
+        "label.metrics.cpu.total"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView_columns"
+      ]
+    },
+    "cpuusedghz": {
+      "labels": [
+        "label.metrics.cpu.used.avg"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView_columns"
+      ]
+    },
+    "cpuallocatedghz": {
+      "labels": [
+        "label.metrics.allocated"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView_columns"
+      ]
+    },
+    "memorytotalgb": {
+      "labels": [
+        "label.metrics.memory.total"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView_columns_columns"
+      ]
+    },
+    "memoryusedgb": {
+      "labels": [
+        "label.metrics.memory.used.avg"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView_columns_columns"
+      ]
+    },
+    "memoryallocatedgb": {
+      "labels": [
+        "label.metrics.allocated"
+      ],
+      "components": [
+        "Cs.sections.metrics.hosts.listView_columns_columns"
+      ]
+    },
+    "networkread": {
+      "labels": [
+        "label.metrics.network.read"
+      ],
+      "components": [
+        "Cs.sections.metrics.instances.listView_columns_columns_columns"
+      ]
+    },
+    "networkwrite": {
+      "labels": [
+        "label.metrics.network.write"
+      ],
+      "components": [
+        "Cs.sections.metrics.instances.listView_columns_columns_columns"
+      ]
+    },
     "disk": {
       "labels": [
         "label.metrics.disk"
       ],
       "components": [
-        "Cs.sections.metrics.storagepool.listView"
+        "Cs.sections.metrics.storagepool.listView_columns"
+      ]
+    },
+    "diskiopstotal": {
+      "labels": [
+        "label.metrics.disk.iops.total"
+      ],
+      "components": [
+        "Cs.sections.metrics.volumes.listView_columns"
       ]
     },
     "vmname": {
@@ -3160,44 +4448,44 @@
         "Cs.sections.metrics.volumes.listView"
       ]
     },
-    "physicalsize": {
-      "labels": [
-        "label.disk.physicalsize"
-      ],
-      "components": [
-        "Cs.sections.metrics.volumes.listView"
-      ]
-    },
-    "utilization": {
-      "labels": [
-        "label.disk.utilisation"
-      ],
-      "components": [
-        "Cs.sections.metrics.volumes.listView"
-      ]
-    },
-    "storagetype": {
-      "labels": [
-        "label.metrics.disk.storagetype"
-      ],
-      "components": [
-        "Cs.sections.metrics.volumes.listView"
-      ]
-    },
-    "storage": {
-      "labels": [
-        "label.metrics.storagepool"
-      ],
-      "components": [
-        "Cs.sections.metrics.volumes.listView"
-      ]
-    },
     "property": {
       "labels": [
         "label.metrics.property"
       ],
       "components": [
         "Cs.sections.metrics.storagepool.listView"
+      ]
+    },
+    "disksizeusedgb": {
+      "labels": [
+        "label.metrics.disk.used"
+      ],
+      "components": [
+        "Cs.sections.metrics.storagepool.listView_columns_columns"
+      ]
+    },
+    "disksizetotalgb": {
+      "labels": [
+        "label.metrics.disk.total"
+      ],
+      "components": [
+        "Cs.sections.metrics.storagepool.listView_columns_columns"
+      ]
+    },
+    "disksizeallocatedgb": {
+      "labels": [
+        "label.metrics.disk.allocated"
+      ],
+      "components": [
+        "Cs.sections.metrics.storagepool.listView_columns_columns"
+      ]
+    },
+    "disksizeunallocatedgb": {
+      "labels": [
+        "label.metrics.disk.unallocated"
+      ],
+      "components": [
+        "Cs.sections.metrics.storagepool.listView_columns_columns"
       ]
     },
     "balance": {
@@ -3230,6 +4518,14 @@
       ],
       "components": [
         "Cs.sections.quota.sections.fullSummary.listView.detailView.actions.add.createForm"
+      ]
+    },
+    "startquota": {
+      "labels": [
+        "label.quota.value"
+      ],
+      "components": [
+        "Cs.sections.quota.sections.fullSummary.listView.detailView.tabs.details"
       ]
     },
     "unit": {
@@ -3280,20 +4576,12 @@
         "Cs.sections.quota.sections.tariffView.listView"
       ]
     },
-    "templatetype": {
-      "labels": [
-        "label.quota.email.template"
-      ],
-      "components": [
-        "Cs.sections.quota.sections.emailTemplates.listView"
-      ]
-    },
     "templatesubject": {
       "labels": [
         "label.quota.email.subject"
       ],
       "components": [
-        "Cs.sections.quota.sections.emailTemplates.listView"
+        "Cs.sections.quota.sections.emailTemplates.listView.detailView.tabs.details"
       ]
     },
     "templatebody": {
@@ -3301,7 +4589,7 @@
         "label.quota.email.body"
       ],
       "components": [
-        "Cs.sections.quota.sections.emailTemplates.listView"
+        "Cs.sections.quota.sections.emailTemplates.listView.detailView.tabs.details"
       ]
     },
     "last_updated": {
@@ -3309,7 +4597,7 @@
         "label.quota.email.lastupdated"
       ],
       "components": [
-        "Cs.sections.quota.sections.emailTemplates.listView"
+        "Cs.sections.quota.sections.emailTemplates.listView.detailView.tabs.details"
       ]
     },
     "counterid": {
@@ -3352,14 +4640,6 @@
         "Cs.autoscaler.forms.scaleDownPolicy"
       ]
     },
-    "add-user": {
-      "labels": [
-        ""
-      ],
-      "components": [
-        "Cs.projects.addUserForm"
-      ]
-    },
     "role": {
       "labels": [
         "label.role"
@@ -3373,7 +4653,7 @@
         "label.source.ip.address"
       ],
       "components": [
-        "Cs.vpc.sections.internalLoadBalancers.listView.actions.add.createForm"
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.details"
       ]
     },
     "sourceport": {
@@ -3381,7 +4661,7 @@
         "label.source.port"
       ],
       "components": [
-        "Cs.vpc.sections.internalLoadBalancers.listView.actions.add.createForm"
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.details"
       ]
     },
     "instanceport": {
@@ -3389,7 +4669,15 @@
         "label.instance.port"
       ],
       "components": [
-        "Cs.vpc.sections.internalLoadBalancers.listView.actions.add.createForm"
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.details"
+      ]
+    },
+    "loadbalancerinstance": {
+      "labels": [
+        "label.assigned.vms"
+      ],
+      "components": [
+        "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.details"
       ]
     },
     "number": {
@@ -3440,14 +4728,6 @@
         "Cs.vpc.acl.multiEdit"
       ]
     },
-    "traffictype": {
-      "labels": [
-        "label.traffic.type"
-      ],
-      "components": [
-        "Cs.vpc.acl.multiEdit"
-      ]
-    },
     "reason": {
       "labels": [
         "label.acl.reason"
@@ -3472,14 +4752,6 @@
         "Cs.vpc.acl.listView.listView"
       ]
     },
-    "physicalnetworkid": {
-      "labels": [
-        "label.physical.network"
-      ],
-      "components": [
-        "Cs.vpc.gateways.add.createForm"
-      ]
-    },
     "sourceNat": {
       "labels": [
         "label.source.nat"
@@ -3501,7 +4773,7 @@
         "label.IKE.policy"
       ],
       "components": [
-        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView"
+        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details"
       ]
     },
     "esppolicy": {
@@ -3509,7 +4781,7 @@
         "label.ESP.policy"
       ],
       "components": [
-        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView"
+        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details"
       ]
     },
     "vpncustomergatewayid": {
@@ -3525,7 +4797,23 @@
         "label.passive"
       ],
       "components": [
-        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.actions.add.createForm"
+        "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details"
+      ]
+    },
+    "networkofferingname": {
+      "labels": [
+        "label.network.offering"
+      ],
+      "components": [
+        "Cs.vpc.tiers.detailView.tabs.details"
+      ]
+    },
+    "aclname": {
+      "labels": [
+        "label.acl.name"
+      ],
+      "components": [
+        "Cs.vpc.tiers.detailView.tabs.details"
       ]
     },
     "ip4dns1": {
@@ -3539,62 +4827,6 @@
     "ip4dns2": {
       "labels": [
         "label.ipv4.dns2"
-      ],
-      "components": [
-        "Cs.zoneWizard.forms.zone"
-      ]
-    },
-    "ip6dns1": {
-      "labels": [
-        "label.ipv6.dns1"
-      ],
-      "components": [
-        "Cs.zoneWizard.forms.zone"
-      ]
-    },
-    "ip6dns2": {
-      "labels": [
-        "label.ipv6.dns2"
-      ],
-      "components": [
-        "Cs.zoneWizard.forms.zone"
-      ]
-    },
-    "internaldns1": {
-      "labels": [
-        "label.internal.dns.1"
-      ],
-      "components": [
-        "Cs.zoneWizard.forms.zone"
-      ]
-    },
-    "internaldns2": {
-      "labels": [
-        "label.internal.dns.2"
-      ],
-      "components": [
-        "Cs.zoneWizard.forms.zone"
-      ]
-    },
-    "guestcidraddress": {
-      "labels": [
-        "label.guest.cidr"
-      ],
-      "components": [
-        "Cs.zoneWizard.forms.zone"
-      ]
-    },
-    "isdedicated": {
-      "labels": [
-        "label.dedicated"
-      ],
-      "components": [
-        "Cs.zoneWizard.forms.zone"
-      ]
-    },
-    "localstorageenabled": {
-      "labels": [
-        "label.local.storage.enabled"
       ],
       "components": [
         "Cs.zoneWizard.forms.zone"
@@ -3651,15 +4883,15 @@
     "Cs.sections.instances.listView.detailView.actions.scaleUp.createForm": "'serviceofferingid', 'cpuSpeed', 'cpuNumber', 'memory'",
     "Cs.sections.instances.listView.detailView.actions.resetSSHKeyForVirtualMachine.createForm": "'sshkeypair'",
     "Cs.sections.instances.listView.detailView.actions.assignVmToAnotherAccount.createForm": "'accountType', 'domainid', 'account', 'project', 'network', 'securitygroup'",
-    "Cs.sections.instances.listView.detailView.tabs.details": "",
+    "Cs.sections.instances.listView.detailView.tabs.details": "''displayname', 'name', 'state', 'templatename', 'isdynamicallyscalable', 'guestosid', 'hypervisor', 'xenserverToolsVersion61plus', 'isoname', 'serviceofferingname', 'cpunumber', 'cpuspeed', 'memory', 'vgpu', 'haenable', 'publicip', 'group', 'zonename', 'hostname', 'keypair', 'domain', 'account', 'created', 'id', '",
     "Cs.sections.instances.listView.detailView.tabs.nics.actions.add.createForm": "'networkid', 'ipaddress'",
     "Cs.sections.instances.listView.detailView.tabs.nics.actions.updateIpaddr.createForm": "'ipaddress1', 'ipaddress2'",
-    "Cs.sections.instances.listView.detailView.tabs.nics": "",
-    "Cs.sections.instances.listView.detailView.tabs.securityGroups": "",
+    "Cs.sections.instances.listView.detailView.tabs.nics": "''id', 'name', 'networkname', 'type', 'macaddress', 'ipaddress', 'secondaryips', 'gateway', 'netmask', 'ip6address', 'ip6gateway', 'ip6cidr', 'broadcasturi', 'isolationuri', 'isdefault', '",
+    "Cs.sections.instances.listView.detailView.tabs.securityGroups": "''id', 'name', 'description', '",
     "Cs.sections.instances.listView.detailView.tabs.stats": "'totalCPU', 'cpuused', 'networkkbsread', 'networkkbswrite', 'diskkbsread', 'diskkbswrite', 'diskioread', 'diskiowrite'",
     "Cs.sections.affinityGroups.listView": "'name', 'type'",
     "Cs.sections.affinityGroups.listView.actions.add.createForm": "'name', 'description', 'type'",
-    "Cs.sections.affinityGroups.listView.detailView.tabs.details": "",
+    "Cs.sections.affinityGroups.listView.detailView.tabs.details": "''name', ', ''description', 'type', 'id', '",
     "Cs.sections.storage.sections.volumes.listView": "'name', 'type', 'vmdisplayname', 'hypervisor', 'account', 'zonename', 'state'",
     "Cs.sections.storage.sections.volumes.listView.actions.add.createForm": "'name', 'availabilityZone', 'diskOffering', 'diskSize', 'minIops', 'maxIops'",
     "Cs.sections.storage.sections.volumes.listView.actions.uploadVolume.createForm": "'url', 'name', 'availabilityZone', 'format', 'diskOffering', 'checksum'",
@@ -3670,11 +4902,11 @@
     "Cs.sections.storage.sections.volumes.listView.detailView.actions.createTemplate.createForm": "'name', 'displayText', 'xenserverToolsVersion61plus', 'osTypeId', 'isPublic', 'isPasswordEnabled', 'isFeatured', 'isdynamicallyscalable', 'requireshvm'",
     "Cs.sections.storage.sections.volumes.listView.detailView.actions.migrateToAnotherStorage.createForm": "'storagePool', 'useNewDiskOffering', 'newDiskOffering'",
     "Cs.sections.storage.sections.volumes.listView.detailView.actions.resize.createForm": "'newdiskoffering', 'newsize', 'shrinkok', 'minIops', 'maxIops'",
-    "Cs.sections.storage.sections.volumes.listView.detailView.tabs.details": "",
+    "Cs.sections.storage.sections.volumes.listView.detailView.tabs.details": "''name', ', ''id', 'zonename', 'state', 'status', 'diskofferingdisplaytext', 'type', 'storagetype', 'provisioningtype', 'hypervisor', 'size', 'clusterid', 'clustername', 'physicalsize', 'utilization', 'virtualsize', 'miniops', 'maxiops', 'virtualmachineid', 'vmdisplayname', 'vmstate', 'deviceid', 'storage', 'created', 'domain', 'account', '",
     "Cs.sections.storage.sections.snapshots.listView": "'volumename', 'name', 'intervaltype', 'created', 'state'",
     "Cs.sections.storage.sections.snapshots.listView.detailView.actions.createTemplate.createForm": "'name', 'displayText', 'xenserverToolsVersion61plus', 'osTypeId', 'isPublic', 'isPasswordEnabled', 'isFeatured', 'isdynamicallyscalable', 'requireshvm'",
     "Cs.sections.storage.sections.snapshots.listView.detailView.actions.createVolume.createForm": "'name', 'zoneid', 'diskOffering', 'diskSize', 'minIops', 'maxIops'",
-    "Cs.sections.storage.sections.snapshots.listView.detailView.tabs.details": "",
+    "Cs.sections.storage.sections.snapshots.listView.detailView.tabs.details": "''name', ', ''id', 'volumename', 'state', 'intervaltype', 'domain', 'account', 'created', '",
     "Cs.sections.storage.sections.vmsnapshots.listView": "'displayname', 'state', 'type', 'current', 'parentName', 'created'",
     "Cs.sections.storage.sections.vmsnapshots.listView.detailView.tabs.details": "'id', 'name', 'displayname', 'type', 'description', 'state', 'current', 'parentName', 'domain', 'account', 'virtualmachineid', 'created'",
     "Cs.sections.storage.sections.vmsnapshots.listView.detailView.actions.takeSnapshot.createForm": "'name', 'volume'",
@@ -3683,235 +4915,235 @@
     "Cs.sections.network.sections.networks.listView.actions.AddL2Network.createForm": "'name', 'displayText', 'zoneId', 'domain', 'networkOfferingId', 'vlan', 'bypassVlanOverlapCheck', 'account'",
     "Cs.sections.network.sections.networks.listView": "'name', 'type', 'cidr', 'ip6cidr', 'account', 'zonename', 'state'",
     "Cs.sections.network.sections.networks.listView.detailView.actions.restart.createForm": "'cleanup', 'makeredundant'",
-    "Cs.sections.network.sections.networks.listView.detailView.tabs.details": "",
+    "Cs.sections.network.sections.networks.listView.detailView.tabs.details": "''name', ', ''id', 'zonename', 'displaytext', 'type', 'state', 'vpcid', 'ispersistent', 'restartrequired', 'vlan', 'broadcasturi', 'networkofferingid', 'gateway', 'cidr', 'networkcidr', 'ip6gateway', 'ip6cidr', 'reservediprange', 'redundantrouter', 'networkdomaintext', 'networkdomain', 'domain', 'account', '",
     "Cs.sections.network.sections.networks.listView.detailView.tabs.virtualRouters.listView": "'name', 'publicip', 'routerType', 'guestnetworkname', 'account', 'hostname', 'state', 'requiresupgrade'",
     "Cs.sections.network.sections.networks.listView.detailView.tabs.virtualRouters.listView.detailView.actions.stop.createForm": "'forced'",
     "Cs.sections.network.sections.networks.listView.detailView.tabs.virtualRouters.listView.detailView.actions.migrate.createForm": "'hostId'",
     "Cs.sections.network.sections.networks.listView.detailView.tabs.virtualRouters.listView.detailView.actions.diagnostics.createForm": "'type', 'destination', 'extra'",
     "Cs.sections.network.sections.networks.listView.detailView.tabs.virtualRouters.listView.detailView.actions.scaleUp.createForm": "'serviceOfferingId'",
-    "Cs.sections.network.sections.networks.listView.detailView.tabs.virtualRouters.listView.detailView.tabs.details": "",
-    "Cs.sections.network.sections.networks.listView.detailView.tabs.virtualRouters.listView.detailView.tabs.nics": "",
+    "Cs.sections.network.sections.networks.listView.detailView.tabs.virtualRouters.listView.detailView.tabs.details": "''name', 'project', ', ''id', 'projectid', 'state', 'version', 'requiresupgrade', 'guestnetworkid', 'guestnetworkname', 'vpcid', 'vpcname', 'publicip', 'guestipaddress', 'linklocalip', 'hostname', 'serviceofferingname', 'networkdomain', 'domain', 'account', 'created', 'isredundantrouter', 'redundantRouterState', '",
+    "Cs.sections.network.sections.networks.listView.detailView.tabs.virtualRouters.listView.detailView.tabs.nics": "''name', 'type', 'traffictype', 'networkname', 'netmask', 'ipaddress', 'id', 'networkid', 'isolationuri', 'broadcasturi', '",
     "Cs.sections.network.sections.secondaryNicIps.listView": "'virtualmachinedisplayname', 'ipaddress'",
     "Cs.sections.network.sections.secondaryNicIps.listView.actions.add.createForm": "'ipaddress'",
-    "Cs.sections.network.sections.secondaryNicIps.listView.detailView.tabs.details": "",
+    "Cs.sections.network.sections.secondaryNicIps.listView.detailView.tabs.details": "''ipaddress', ', ''id', 'virtualmachinedisplayname', 'zonename', '",
     "Cs.sections.network.sections.ipAddresses.listView": "'ipaddress', 'associatednetworkname', 'virtualmachinedisplayname', 'account', 'zonename', 'state'",
     "Cs.sections.network.sections.ipAddresses.listView.actions.add.createForm": "'isportable'",
-    "Cs.sections.network.sections.ipAddresses.listView.detailView.tabs.details": "",
+    "Cs.sections.network.sections.ipAddresses.listView.detailView.tabs.details": "''ipaddress', ', ''isportable', 'id', 'associatednetworkid', 'associatednetworkname', 'state', 'networkid', 'issourcenat', 'isstaticnat', 'vmipaddress', 'issystem', 'purpose', 'virtualmachinedisplayname', 'domain', 'account', 'zonename', 'vlanname', '",
     "Cs.sections.network.sections.securityGroups.listView": "'name', 'description', 'domain', 'account'",
     "Cs.sections.network.sections.securityGroups.listView.actions.add.createForm": "'name', 'description'",
-    "Cs.sections.network.sections.securityGroups.listView.detailView.tabs.details": "",
+    "Cs.sections.network.sections.securityGroups.listView.detailView.tabs.details": "''name', ', ''id', 'description', 'domain', 'account', '",
     "Cs.sections.network.sections.vpc.listView": "'name', 'displaytext', 'zonename', 'cidr', 'state'",
     "Cs.sections.network.sections.vpc.listView.actions.add.createForm": "'name', 'displaytext', 'zoneid', 'cidr', 'networkdomain', 'vpcoffering'",
     "Cs.sections.network.sections.vpc.listView.detailView.actions.restart.createForm": "'cleanup', 'makeredundant'",
-    "Cs.sections.network.sections.vpc.listView.detailView.tabs.details": "",
-    "Cs.sections.network.sections.vpc.listView.detailView.tabs.router": "",
+    "Cs.sections.network.sections.vpc.listView.detailView.tabs.details": "''name', ', ''displaytext', 'account', 'domain', 'zonename', 'cidr', 'networkdomain', 'state', 'ispersistent', 'redundantvpcrouter', 'restartrequired', 'id', '",
+    "Cs.sections.network.sections.vpc.listView.detailView.tabs.router": "''name', ', ''state', 'hostname', 'linklocalip', 'isredundantrouter', 'redundantstate', 'id', 'serviceofferingname', 'zonename', 'gateway', 'publicip', 'guestipaddress', 'dns1', 'account', 'domain', '",
     "Cs.sections.network.sections.vpc.listView.detailView.tabs.virtualRouters.listView": "'name', 'publicip', 'routerType', 'guestnetworkname', 'account', 'hostname', 'state', 'requiresupgrade'",
     "Cs.sections.network.sections.vpc.listView.detailView.tabs.virtualRouters.listView.detailView.actions.stop.createForm": "'forced'",
     "Cs.sections.network.sections.vpc.listView.detailView.tabs.virtualRouters.listView.detailView.actions.migrate.createForm": "'hostId'",
     "Cs.sections.network.sections.vpc.listView.detailView.tabs.virtualRouters.listView.detailView.actions.diagnostics.createForm": "'type', 'destination', 'extra'",
     "Cs.sections.network.sections.vpc.listView.detailView.tabs.virtualRouters.listView.detailView.actions.scaleUp.createForm": "'serviceOfferingId'",
-    "Cs.sections.network.sections.vpc.listView.detailView.tabs.virtualRouters.listView.detailView.tabs.details": "",
-    "Cs.sections.network.sections.vpc.listView.detailView.tabs.virtualRouters.listView.detailView.tabs.nics": "",
+    "Cs.sections.network.sections.vpc.listView.detailView.tabs.virtualRouters.listView.detailView.tabs.details": "''name', 'project', ', ''id', 'projectid', 'state', 'version', 'requiresupgrade', 'guestnetworkid', 'guestnetworkname', 'vpcid', 'vpcname', 'publicip', 'guestipaddress', 'linklocalip', 'hostname', 'serviceofferingname', 'networkdomain', 'domain', 'account', 'created', 'isredundantrouter', 'redundantRouterState', '",
+    "Cs.sections.network.sections.vpc.listView.detailView.tabs.virtualRouters.listView.detailView.tabs.nics": "''name', 'type', 'traffictype', 'networkname', 'netmask', 'ipaddress', 'id', 'networkid', 'isolationuri', 'broadcasturi', '",
     "Cs.sections.network.sections.vpnCustomerGateway.listView": "'name', 'gateway', 'cidrlist', 'ipsecpsk'",
     "Cs.sections.network.sections.vpnCustomerGateway.listView.actions.add.createForm": "'name', 'gateway', 'cidrlist', 'ipsecpsk', 'ikeEncryption', 'ikeHash', 'ikeDh', 'espEncryption', 'espHash', 'perfectForwardSecrecy', 'ikelifetime', 'esplifetime', 'dpd', 'forceencap'",
-    "Cs.sections.network.sections.vpnCustomerGateway.listView.detailView.tabs.details": "",
+    "Cs.sections.network.sections.vpnCustomerGateway.listView.detailView.tabs.details": "''name', ', ''gateway', 'cidrlist', 'ipsecpsk', 'ikeEncryption', 'ikeHash', 'ikeDh', 'espEncryption', 'espHash', 'perfectForwardSecrecy', 'ikelifetime', 'esplifetime', 'dpd', 'forceencap', 'id', 'domain', 'account', '",
     "Cs.sections.network.sections.vpnuser.listView": "'username', 'domain', 'state'",
     "Cs.sections.network.sections.vpnuser.listView.actions.add.createForm": "'username', 'password', 'domain', 'account'",
-    "Cs.sections.network.sections.vpnuser.listView.detailView.tabs.details": "",
+    "Cs.sections.network.sections.vpnuser.listView.detailView.tabs.details": "''username', ', ''domain', 'state', '",
     "Cs.sections.templates.sections.templates.listView": "'name', 'hypervisor', 'ostypename', 'account'",
     "Cs.sections.templates.sections.templates.listView.actions.add.createForm": "'url', 'name', 'description', 'zone', 'hypervisor', 'xenserverToolsVersion61plus', 'directdownload', 'checksum', 'rootDiskControllerTypeKVM', 'rootDiskControllerType', 'nicAdapterType', 'keyboardType', 'format', 'osTypeId', 'isExtractable', 'isPasswordEnabled', 'isdynamicallyscalable', 'isPublic', 'isFeatured', 'isrouting', 'requireshvm'",
     "Cs.sections.templates.sections.templates.listView.actions.uploadTemplateFromLocal.createForm": "'templateFileUpload', 'name', 'description', 'zone', 'hypervisor', 'xenserverToolsVersion61plus', 'rootDiskControllerTypeKVM', 'rootDiskControllerType', 'nicAdapterType', 'keyboardType', 'format', 'osTypeId', 'isExtractable', 'isPasswordEnabled', 'isdynamicallyscalable', 'isPublic', 'isFeatured', 'isrouting', 'requireshvm'",
     "Cs.sections.templates.sections.templates.listView.detailView.actions.shareTemplate.createForm": "'operation', 'shareWith', 'accountlist', 'accounts', 'projects'",
-    "Cs.sections.templates.sections.templates.listView.detailView.tabs.details": "",
+    "Cs.sections.templates.sections.templates.listView.detailView.tabs.details": "''name', ', ''hypervisor', 'xenserverToolsVersion61plus', 'size', 'directdownload', 'isextractable', 'passwordenabled', 'isdynamicallyscalable', 'ispublic', 'isfeatured', 'ostypeid', 'crossZones', 'displaytext', 'domain', 'account', 'created', 'templatetype', 'id', '",
     "Cs.sections.templates.sections.templates.listView.detailView.tabs.zones.listView": "'zonename', 'status', 'isready'",
     "Cs.sections.templates.sections.templates.listView.detailView.tabs.zones.listView.detailView.actions.remove.createForm": "'forced'",
-    "Cs.sections.templates.sections.templates.listView.detailView.tabs.zones.listView.detailView.tabs.details": "",
+    "Cs.sections.templates.sections.templates.listView.detailView.tabs.zones.listView.detailView.tabs.details": "''name', ', ''id', 'zonename', 'zoneid', 'isready', 'status', ', ''hypervisor', 'xenserverToolsVersion61plus', 'size', 'isextractable', 'passwordenabled', 'isdynamicallyscalable', 'ispublic', 'isfeatured', 'ostypeid', 'displaytext', 'domain', 'account', 'created', 'templatetype', '",
     "Cs.sections.templates.sections.isos.listView": "'name', 'ostypename', 'account'",
     "Cs.sections.templates.sections.isos.listView.actions.add.createForm": "'name', 'description', 'url', 'directdownload', 'checksum', 'zone', 'isBootable', 'osTypeId', 'isExtractable', 'isPublic', 'isFeatured'",
     "Cs.sections.templates.sections.isos.listView.actions.uploadISOFromLocal.createForm": "'templateFileUpload', 'name', 'description', 'zone', 'isBootable', 'osTypeId', 'isExtractable', 'isPublic', 'isFeatured'",
-    "Cs.sections.templates.sections.isos.listView.detailView.tabs.details": "",
+    "Cs.sections.templates.sections.isos.listView.detailView.tabs.details": "''name', ', ''id', 'displaytext', 'directdownload', 'size', 'isextractable', 'bootable', 'ispublic', 'isfeatured', 'crossZones', 'ostypeid', 'domain', 'account', 'created', '",
     "Cs.sections.templates.sections.isos.listView.detailView.tabs.zones.listView": "'zonename', 'status', 'isready'",
     "Cs.sections.templates.sections.isos.listView.detailView.tabs.zones.listView.detailView.actions.copyISO.createForm": "'destinationZoneId'",
-    "Cs.sections.templates.sections.isos.listView.detailView.tabs.zones.listView.detailView.tabs.details": "",
+    "Cs.sections.templates.sections.isos.listView.detailView.tabs.zones.listView.detailView.tabs.details": "''name', ', ''id', 'zonename', 'zoneid', 'isready', 'status', ', ''displaytext', 'size', 'isextractable', 'bootable', 'ispublic', 'isfeatured', 'ostypeid', 'domain', 'account', 'created', '",
     "Cs.sections.events.sections.events.listView": "'description', 'level', 'type', 'account', 'username', 'domain', 'created'",
     "Cs.sections.events.sections.events.listView.actions.remove.createForm": "'type', 'startdate', 'enddate'",
     "Cs.sections.events.sections.events.listView.actions.archive.createForm": "'type', 'startdate', 'enddate'",
-    "Cs.sections.events.sections.events.listView.detailView.tabs.details": "",
+    "Cs.sections.events.sections.events.listView.detailView.tabs.details": "''description', 'state', 'level', 'type', 'domain', 'account', 'username', 'created', 'id', '",
     "Cs.sections.events.sections.alerts.listView": "'description', 'type', 'sent'",
     "Cs.sections.events.sections.alerts.listView.actions.remove.createForm": "'type', 'startdate', 'enddate'",
     "Cs.sections.events.sections.alerts.listView.actions.archive.createForm": "'type', 'startdate', 'enddate'",
-    "Cs.sections.events.sections.alerts.listView.detailView.tabs.details": "",
+    "Cs.sections.events.sections.alerts.listView.detailView.tabs.details": "''id', 'description', 'sent', '",
     "Cs.sections.projects.sections.projects.listView": "'name', 'displaytext', 'domain', 'account', 'state'",
-    "Cs.sections.projects.sections.projects.listView.detailView.tabs.details": "",
+    "Cs.sections.projects.sections.projects.listView.detailView.tabs.details": "''name', ', ''displaytext', 'id', 'domain', 'account', 'state', ', ''vmtotal', 'memorytotal', 'cputotal', 'volumetotal', 'primarystoragetotal', 'iptotal', 'templatetotal', '",
     "Cs.sections.projects.sections.invitations.listView": "'project', 'domain', 'state'",
     "Cs.sections.projects.sections.invitations.listView.actions.enterToken.createForm": "'projectid', 'token'",
     "Cs.sections.roles.listView": "'name', 'type', 'description'",
     "Cs.sections.roles.listView.actions.add.createForm": "'name', 'description', 'type'",
     "Cs.sections.roles.listView.detailView.tabs.details": "'id', 'name', 'type', 'description'",
     "Cs.sections.accounts.sections.accounts.listView": "'name', 'rolename', 'roletype', 'domainpath', 'state'",
-    "Cs.sections.accounts.sections.accounts.listView.detailView.tabs.details": "",
+    "Cs.sections.accounts.sections.accounts.listView.detailView.tabs.details": "''name', ', ''id', 'rolename', 'roletype', 'domainpath', 'state', 'networkdomain', 'vmLimit', 'ipLimit', 'volumeLimit', 'snapshotLimit', 'templateLimit', 'vpcLimit', 'cpuLimit', 'memoryLimit', 'networkLimit', 'primaryStorageLimit', 'secondaryStorageLimit', 'vmtotal', 'iptotal', 'receivedbytes', 'sentbytes', '",
     "Cs.sections.accounts.sections.accounts.listView.detailView.tabs.sslCertificates.listView": "'name', 'id'",
     "Cs.sections.accounts.sections.accounts.listView.detailView.tabs.sslCertificates.listView.actions.add.createForm": "'name', 'certificate', 'privatekey', 'certchain', 'password'",
     "Cs.sections.accounts.sections.accounts.listView.detailView.tabs.sslCertificates.listView.detailView.tabs.details": "'name', 'certificate', 'certchain'",
     "Cs.sections.accounts.sections.users.listView": "'username', 'firstname', 'lastname'",
     "Cs.sections.accounts.sections.users.listView.actions.add.createForm": "'username', 'password', 'password-confirm', 'email', 'firstname', 'lastname', 'timezone', 'samlEnable', 'samlEntity'",
-    "Cs.sections.accounts.sections.users.listView.detailView.tabs.details": "",
+    "Cs.sections.accounts.sections.users.listView.detailView.tabs.details": "''username', ', ''id', 'state', 'account', 'rolename', 'roletype', 'domain', 'apikey', 'secretkey', 'email', 'firstname', 'lastname', 'timezone', '",
     "Cs.sections.accounts.sections.sshkeypairs.listView": "'name', 'domain', 'account', 'privatekey'",
     "Cs.sections.accounts.sections.sshkeypairs.listView.actions.add.createForm": "'name', 'publickey', 'domain', 'account'",
-    "Cs.sections.accounts.sections.sshkeypairs.listView.detailView.tabs.details": "",
+    "Cs.sections.accounts.sections.sshkeypairs.listView.detailView.tabs.details": "''name', ', ''domain', 'account', 'privatekey', 'fingerprint', '",
     "Cs.sections.domains.treeView.detailView.actions.delete.createForm": "'isForced'",
     "Cs.sections.domains.treeView.detailView.actions.create.createForm": "'name', 'networkdomain', 'domainid'",
     "Cs.sections.domains.treeView.detailView.actions.linktoldap.createForm": "'type', 'name', 'accounttype', 'admin'",
-    "Cs.sections.domains.treeView.detailView.tabs.details": "",
+    "Cs.sections.domains.treeView.detailView.tabs.details": "''name', ', ''id', 'path', 'networkdomain', 'vmLimit', 'ipLimit', 'volumeLimit', 'snapshotLimit', 'templateLimit', 'vpcLimit', 'cpuLimit', 'memoryLimit', 'networkLimit', 'primaryStorageLimit', 'secondaryStorageLimit', 'accountTotal', 'vmTotal', 'volumeTotal', '",
     "Cs.sections.regions.sections.regions.listView": "'name', 'id', 'endpoint'",
     "Cs.sections.regions.sections.regions.listView.actions.add.createForm": "'id', 'name', 'endpoint'",
-    "Cs.sections.regions.sections.regions.listView.detailView.tabs.details": "",
+    "Cs.sections.regions.sections.regions.listView.detailView.tabs.details": "''id', ', ''name', 'endpoint', '",
     "Cs.sections.regions.sections.GSLB.listView": "'name', 'gslbdomainname', 'gslblbmethod'",
     "Cs.sections.regions.sections.GSLB.listView.actions.add.createForm": "'name', 'description', 'gslbdomainname', 'gslblbmethod', 'gslbservicetype', 'domainid', 'account'",
-    "Cs.sections.regions.sections.GSLB.listView.detailView.tabs.details": "",
+    "Cs.sections.regions.sections.GSLB.listView.detailView.tabs.details": "''name', ', ''description', 'gslbdomainname', 'gslblbmethod', 'gslbservicetype', 'id', '",
     "Cs.sections.regions.sections.portableIpRanges.listView": "'startip', 'endip', 'gateway', 'netmask', 'vlan'",
     "Cs.sections.regions.sections.portableIpRanges.listView.actions.add.createForm": "'startip', 'endip', 'gateway', 'netmask', 'vlan'",
-    "Cs.sections.regions.sections.portableIpRanges.listView.detailView.tabs.details": "",
+    "Cs.sections.regions.sections.portableIpRanges.listView.detailView.tabs.details": "''id', ', ''startip', 'endip', 'gateway', 'netmask', 'vlan', 'portableipaddress', '",
     "Cs.sections.regions.sections.lbUnderGSLB.listView": "'name', 'publicport', 'privateport', 'algorithm'",
     "Cs.sections.regions.sections.lbUnderGSLB.listView.actions.add.createForm": "'loadbalancerrule'",
-    "Cs.sections.regions.sections.lbUnderGSLB.listView.detailView.tabs.details": "",
+    "Cs.sections.regions.sections.lbUnderGSLB.listView.detailView.tabs.details": "''name', ', ''publicport', 'privateport', 'algorithm', 'publicip', 'state', 'id', 'cidrlist', 'domain', 'account', '",
     "Cs.sections.regions.sections.NCC.listView": "'uuid', 'ipaddress', 'numretries'",
     "Cs.sections.regions.sections.NCC.listView.actions.add.createForm": "'ipaddress', 'username', 'password', 'numretries'",
-    "Cs.sections.regions.sections.NCC.listView.detailView.tabs.details": "",
+    "Cs.sections.regions.sections.NCC.listView.detailView.tabs.details": "''uuid', ', ''ipaddress', 'numretries', '",
     "Cs.sections.system.naas.providerListView": "'name', 'state'",
-    "Cs.sections.system.naas.mainNetworks.public.detailView.tabs.details": "",
-    "Cs.sections.system.naas.mainNetworks.storage.detailView.tabs.details": "",
-    "Cs.sections.system.naas.mainNetworks.management.detailView.tabs.details": "",
-    "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.details": "",
+    "Cs.sections.system.naas.mainNetworks.public.detailView.tabs.details": "''traffictype', 'broadcastdomaintype', ', ''xennetworklabel', 'kvmnetworklabel', 'vmwarenetworklabel', 'ovmnetworklabel', 'lxcnetworklabel', 'hypervnetworklabel', 'ovm3networklabel', '",
+    "Cs.sections.system.naas.mainNetworks.storage.detailView.tabs.details": "''traffictype', 'broadcastdomaintype', ', ''xennetworklabel', 'kvmnetworklabel', 'vmwarenetworklabel', 'ovmnetworklabel', 'lxcnetworklabel', 'hypervnetworklabel', 'ovm3networklabel', '",
+    "Cs.sections.system.naas.mainNetworks.management.detailView.tabs.details": "''traffictype', 'broadcastdomaintype', ', ''xennetworklabel', 'kvmnetworklabel', 'vmwarenetworklabel', 'ovmnetworklabel', 'lxcnetworklabel', 'hypervnetworklabel', 'ovm3networklabel', '",
+    "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.details": "''state', 'vlan', 'tags', 'broadcastdomainrange', ', ''xennetworklabel', 'kvmnetworklabel', 'vmwarenetworklabel', 'ovmnetworklabel', 'lxcnetworklabel', 'hypervnetworklabel', 'ovm3networklabel', '",
     "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.network.listView": "'name', 'type', 'vlan', 'broadcasturi', 'cidr', 'ip6cidr'",
     "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.network.listView.actions.add.createForm": "'name', 'description', 'zoneId', 'physicalNetworkId', 'vlanId', 'bypassVlanOverlapCheck', 'isolatedpvlanId', 'scope', 'domainId', 'subdomainaccess', 'account', 'projectId', 'networkOfferingId', 'ip4gateway', 'ip4Netmask', 'startipv4', 'endipv4', 'ip6gateway', 'ip6cidr', 'startipv6', 'endipv6', 'networkdomain', 'hideipaddressusage'",
     "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.network.listView.detailView.actions.restart.createForm": "'cleanup'",
-    "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.network.listView.detailView.tabs.details": "",
+    "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.network.listView.detailView.tabs.details": "''name', ', ''id', 'displaytext', 'type', 'state', 'restartrequired', 'vlan', 'broadcasturi', 'scope', 'networkofferingdisplaytext', 'networkofferingid', 'networkofferingidText', 'gateway', 'cidr', 'ip6gateway', 'ip6cidr', 'networkdomaintext', 'networkdomain', 'domain', 'subdomainaccess', 'account', 'project', '",
     "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.dedicatedGuestVlanRanges.listView": "'guestvlanrange', 'domain', 'account'",
     "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.dedicatedGuestVlanRanges.listView.actions.add.createForm": "'vlanrange', 'scope', 'domainId', 'account', 'projectId'",
-    "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.dedicatedGuestVlanRanges.listView.detailView.tabs.details": "",
+    "Cs.sections.system.naas.mainNetworks.guest.detailView.tabs.dedicatedGuestVlanRanges.listView.detailView.tabs.details": "''guestvlanrange', ', ''domain', 'account', 'id', '",
     "Cs.sections.system.naas.networks.listView": "'name', 'state', 'isolationmethods', 'vlan', 'broadcastdomainrange'",
     "Cs.sections.system.naas.networkProviders.types.virtualRouter": "'name', 'ipaddress', 'state'",
-    "Cs.sections.system.naas.networkProviders.types.virtualRouter.tabs.network": "",
+    "Cs.sections.system.naas.networkProviders.types.virtualRouter.tabs.network": "''name', ', ''id', 'state', 'physicalnetworkid', 'destinationphysicalnetworkid', 'supportedServices', '",
     "Cs.sections.system.naas.networkProviders.types.virtualRouter.tabs.instances.listView": "'name', 'zonename', 'routerType', 'state'",
     "Cs.sections.system.naas.networkProviders.types.virtualRouter.tabs.instances.listView.detailView.actions.stop.createForm": "'forced'",
     "Cs.sections.system.naas.networkProviders.types.virtualRouter.tabs.instances.listView.detailView.actions.migrate.createForm": "'hostId'",
-    "Cs.sections.system.naas.networkProviders.types.virtualRouter.tabs.instances.listView.detailView.tabs.details": "",
-    "Cs.sections.system.naas.networkProviders.types.virtualRouter.tabs.instances.listView.detailView.tabs.nics": "",
+    "Cs.sections.system.naas.networkProviders.types.virtualRouter.tabs.instances.listView.detailView.tabs.details": "''name', 'project', ', ''id', 'projectid', 'state', 'guestnetworkid', 'guestnetworkname', 'vpcid', 'vpcname', 'publicip', 'guestipaddress', 'linklocalip', 'hostname', 'serviceofferingname', 'networkdomain', 'domain', 'account', 'created', 'isredundantrouter', 'redundantRouterState', '",
+    "Cs.sections.system.naas.networkProviders.types.virtualRouter.tabs.instances.listView.detailView.tabs.nics": "''name', 'type', 'traffictype', 'networkname', 'netmask', 'ipaddress', 'id', 'networkid', 'isolationuri', 'broadcasturi', '",
     "Cs.sections.system.naas.networkProviders.types.InternalLbVm": "'name', 'ipaddress', 'state'",
-    "Cs.sections.system.naas.networkProviders.types.InternalLbVm.tabs.network": "",
+    "Cs.sections.system.naas.networkProviders.types.InternalLbVm.tabs.network": "''name', ', ''id', 'state', 'physicalnetworkid', 'destinationphysicalnetworkid', 'supportedServices', '",
     "Cs.sections.system.naas.networkProviders.types.InternalLbVm.tabs.instances.listView": "'name', 'zonename', 'routerType', 'state'",
     "Cs.sections.system.naas.networkProviders.types.InternalLbVm.tabs.instances.listView.detailView.actions.stop.createForm": "'forced'",
     "Cs.sections.system.naas.networkProviders.types.InternalLbVm.tabs.instances.listView.detailView.actions.migrate.createForm": "'hostId'",
-    "Cs.sections.system.naas.networkProviders.types.InternalLbVm.tabs.instances.listView.detailView.tabs.details": "",
-    "Cs.sections.system.naas.networkProviders.types.InternalLbVm.tabs.instances.listView.detailView.tabs.nics": "",
+    "Cs.sections.system.naas.networkProviders.types.InternalLbVm.tabs.instances.listView.detailView.tabs.details": "''name', 'project', ', ''id', 'projectid', 'state', 'guestnetworkid', 'guestnetworkname', 'vpcid', 'vpcname', 'publicip', 'guestipaddress', 'linklocalip', 'hostname', 'serviceofferingname', 'networkdomain', 'domain', 'account', 'created', 'isredundantrouter', 'redundantRouterState', '",
+    "Cs.sections.system.naas.networkProviders.types.InternalLbVm.tabs.instances.listView.detailView.tabs.nics": "''name', 'type', 'traffictype', 'networkname', 'netmask', 'ipaddress', 'id', 'networkid', 'isolationuri', 'broadcasturi', '",
     "Cs.sections.system.naas.networkProviders.types.vpcVirtualRouter": "'name', 'ipaddress', 'state'",
-    "Cs.sections.system.naas.networkProviders.types.vpcVirtualRouter.tabs.network": "",
+    "Cs.sections.system.naas.networkProviders.types.vpcVirtualRouter.tabs.network": "''name', ', ''id', 'state', 'physicalnetworkid', 'destinationphysicalnetworkid', 'supportedServices', '",
     "Cs.sections.system.naas.networkProviders.types.vpcVirtualRouter.tabs.instances.listView": "'name', 'zonename', 'routerType', 'state'",
     "Cs.sections.system.naas.networkProviders.types.vpcVirtualRouter.tabs.instances.listView.detailView.actions.stop.createForm": "'forced'",
     "Cs.sections.system.naas.networkProviders.types.vpcVirtualRouter.tabs.instances.listView.detailView.actions.migrate.createForm": "'hostId'",
     "Cs.sections.system.naas.networkProviders.types.vpcVirtualRouter.tabs.instances.listView.detailView.actions.diagnostics.createForm": "'type', 'destination', 'extra'",
-    "Cs.sections.system.naas.networkProviders.types.vpcVirtualRouter.tabs.instances.listView.detailView.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.vpcVirtualRouter.tabs.instances.listView.detailView.tabs.details": "''name', 'project', ', ''id', 'projectid', 'state', 'publicip', 'guestipaddress', 'linklocalip', 'hostname', 'serviceofferingname', 'networkdomain', 'domain', 'account', 'created', 'isredundantrouter', 'redundantRouterState', 'vpcid', '",
     "Cs.sections.system.naas.networkProviders.types.Ovs": "'name', 'ipaddress', 'state'",
-    "Cs.sections.system.naas.networkProviders.types.Ovs.tabs.network": "",
+    "Cs.sections.system.naas.networkProviders.types.Ovs.tabs.network": "''name', ', ''id', 'state', 'physicalnetworkid', 'destinationphysicalnetworkid', 'supportedServices', '",
     "Cs.sections.system.naas.networkProviders.types.Ovs.tabs.instances.listView": "'name', 'zonename', 'routerType', 'state'",
     "Cs.sections.system.naas.networkProviders.types.Ovs.tabs.instances.listView.detailView.actions.stop.createForm": "'forced'",
     "Cs.sections.system.naas.networkProviders.types.Ovs.tabs.instances.listView.detailView.actions.migrate.createForm": "'hostId'",
-    "Cs.sections.system.naas.networkProviders.types.Ovs.tabs.instances.listView.detailView.tabs.details": "",
-    "Cs.sections.system.naas.networkProviders.types.Ovs.tabs.instances.listView.detailView.tabs.nics": "",
-    "Cs.sections.system.naas.networkProviders.types.netscaler.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.Ovs.tabs.instances.listView.detailView.tabs.details": "''name', 'project', ', ''id', 'projectid', 'state', 'guestnetworkid', 'guestnetworkname', 'vpcid', 'vpcname', 'publicip', 'guestipaddress', 'linklocalip', 'hostname', 'serviceofferingname', 'networkdomain', 'domain', 'account', 'created', 'isredundantrouter', 'redundantRouterState', '",
+    "Cs.sections.system.naas.networkProviders.types.Ovs.tabs.instances.listView.detailView.tabs.nics": "''name', 'type', 'traffictype', 'networkname', 'netmask', 'ipaddress', 'id', 'networkid', 'isolationuri', 'broadcasturi', '",
+    "Cs.sections.system.naas.networkProviders.types.netscaler.tabs.details": "''name', ', ''state', '",
     "Cs.sections.system.naas.networkProviders.types.netscaler.actions.add.createForm": "'ip', 'username', 'password', 'networkdevicetype', 'publicinterface', 'privateinterface', 'gslbprovider', 'gslbproviderpublicip', 'gslbproviderprivateip', 'numretries', 'dedicated', 'capacity'",
-    "Cs.sections.system.naas.networkProviders.types.BaremetalDhcpProvider.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.BaremetalDhcpProvider.tabs.details": "''name', ', ''state', '",
     "Cs.sections.system.naas.networkProviders.types.BaremetalDhcpProvider.actions.add.createForm": "'url', 'username', 'password'",
-    "Cs.sections.system.naas.networkProviders.types.BaremetalPxeProvider.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.BaremetalPxeProvider.tabs.details": "''name', ', ''state', '",
     "Cs.sections.system.naas.networkProviders.types.BaremetalPxeProvider.actions.add.createForm": "'url', 'username', 'password', 'tftpdir'",
-    "Cs.sections.system.naas.networkProviders.types.f5.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.f5.tabs.details": "''name', ', ''state', '",
     "Cs.sections.system.naas.networkProviders.types.f5.actions.add.createForm": "'ip', 'username', 'password', 'networkdevicetype', 'publicinterface', 'privateinterface', 'numretries', 'dedicated', 'capacity'",
-    "Cs.sections.system.naas.networkProviders.types.srx.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.srx.tabs.details": "''name', ', ''state', '",
     "Cs.sections.system.naas.networkProviders.types.srx.actions.add.createForm": "'ip', 'username', 'password', 'networkdevicetype', 'publicinterface', 'privateinterface', 'usageinterface', 'numretries', 'timeout', 'publicnetwork', 'privatenetwork', 'capacity', 'dedicated'",
-    "Cs.sections.system.naas.networkProviders.types.pa.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.pa.tabs.details": "''name', ', ''state', '",
     "Cs.sections.system.naas.networkProviders.types.pa.actions.add.createForm": "'ip', 'username', 'password', 'networkdevicetype', 'publicinterface', 'privateinterface', 'numretries', 'timeout', 'publicnetwork', 'privatenetwork', 'pavr', 'patp', 'palp', 'capacity', 'dedicated'",
-    "Cs.sections.system.naas.networkProviders.types.securityGroups.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.securityGroups.tabs.details": "''name', ', ''state', '",
     "Cs.sections.system.naas.networkProviders.types.securityGroups": "'id', 'name'",
-    "Cs.sections.system.naas.networkProviders.types.niciraNvp.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.niciraNvp.tabs.details": "''name', ', ''state', '",
     "Cs.sections.system.naas.networkProviders.types.niciraNvp.actions.add.createForm": "'host', 'username', 'password', 'numretries', 'transportzoneuuid', 'l3gatewayserviceuuid', 'l2gatewayserviceuuid'",
-    "Cs.sections.system.naas.networkProviders.types.brocadeVcs.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.brocadeVcs.tabs.details": "''name', ', ''state', '",
     "Cs.sections.system.naas.networkProviders.types.brocadeVcs.actions.add.createForm": "'host', 'username', 'password'",
-    "Cs.sections.system.naas.networkProviders.types.bigswitchBcf.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.bigswitchBcf.tabs.details": "''name', ', ''state', '",
     "Cs.sections.system.naas.networkProviders.types.bigswitchBcf.actions.add.createForm": "'host', 'username', 'password', 'nat', 'numretries'",
-    "Cs.sections.system.naas.networkProviders.types.Opendaylight.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.Opendaylight.tabs.details": "''name', ', ''state', '",
     "Cs.sections.system.naas.networkProviders.types.Opendaylight.tabs.controllers.listView": "'name', 'url', 'username'",
-    "Cs.sections.system.naas.networkProviders.types.Opendaylight.tabs.controllers.listView.detailView.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.Opendaylight.tabs.controllers.listView.detailView.tabs.details": "''name', 'url', 'username', '",
     "Cs.sections.system.naas.networkProviders.types.Opendaylight.actions.add.createForm": "'url', 'username', 'password', 'numretries'",
-    "Cs.sections.system.naas.networkProviders.types.GloboDns.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.GloboDns.tabs.details": "''name', ', ''state', '",
     "Cs.sections.system.naas.networkProviders.types.GloboDns.actions.add.createForm": "'username', 'password', 'url'",
     "Cs.sections.system.naas.networkProviders.types.ConfigDrive": "'name', 'state'",
-    "Cs.sections.system.naas.networkProviders.types.ConfigDrive.tabs.network": "",
-    "Cs.sections.system.naas.networkProviders.types.CiscoVnmc.tabs.details": "",
+    "Cs.sections.system.naas.networkProviders.types.ConfigDrive.tabs.network": "''name', ', ''state', 'supportedServices', 'id', 'physicalnetworkid', '",
+    "Cs.sections.system.naas.networkProviders.types.CiscoVnmc.tabs.details": "''name', ', ''state', 'id', 'servicelist', '",
     "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones": "'name', 'networktype', 'domainid', 'allocationstate'",
     "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones.detailView.actions.addVmwareDc.createForm": "'name', 'vcenter', 'username', 'password'",
     "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones.detailView.actions.updateVmwareDc.createForm": "'name', 'vcenter', 'username', 'password'",
     "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones.detailView.actions.dedicateZone.createForm": "'domainId', 'accountId'",
-    "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones.detailView.tabs.details": "",
+    "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones.detailView.tabs.details": "''name', ', ''id', 'allocationstate', 'dns1', 'dns2', 'ip6dns1', 'ip6dns2', 'internaldns1', 'internaldns2', 'domainname', 'networktype', 'guestcidraddress', 'domain', 'localstorageenabled', ', ''isdedicated', 'domainid', ', ''vmwaredcName', 'vmwaredcVcenter', 'vmwaredcId', '",
     "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones.detailView.tabs.systemVMs.listView": "'name', 'systemvmtype', 'zonename', 'state'",
     "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones.detailView.tabs.systemVMs.listView.detailView.actions.migrate.createForm": "'hostId'",
     "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones.detailView.tabs.systemVMs.listView.detailView.actions.diagnostics.createForm": "'type', 'destination', 'extra'",
     "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones.detailView.tabs.systemVMs.listView.detailView.actions.scaleUp.createForm": "'serviceOfferingId'",
-    "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones.detailView.tabs.systemVMs.listView.detailView.tabs.details": "",
+    "Cs.sections.system.physicalResourceSection.sections.physicalResources.listView.zones.detailView.tabs.systemVMs.listView.detailView.tabs.details": "''name', ', ''id', 'state', 'systemvmtype', 'zonename', 'publicip', 'privateip', 'linklocalip', 'hostname', 'gateway', 'created', 'activeviewersessions', '",
     "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView": "'name', 'publicip', 'routerType', 'guestnetworkname', 'account', 'hostname', 'state', 'requiresupgrade'",
     "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.actions.stop.createForm": "'forced'",
     "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.actions.migrate.createForm": "'hostId'",
     "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.actions.diagnostics.createForm": "'type', 'destination', 'extra'",
     "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.actions.scaleUp.createForm": "'serviceOfferingId'",
-    "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.details": "",
-    "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.nics": "",
+    "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.details": "''name', 'project', ', ''id', 'projectid', 'state', 'version', 'requiresupgrade', 'guestnetworkid', 'guestnetworkname', 'vpcid', 'vpcname', 'publicip', 'guestipaddress', 'linklocalip', 'hostname', 'serviceofferingname', 'networkdomain', 'domain', 'account', 'created', 'isredundantrouter', 'redundantRouterState', '",
+    "Cs.sections.system.subsections.virtualRouters.sections.routerNoGroup.listView.detailView.tabs.nics": "''name', 'type', 'traffictype', 'networkname', 'netmask', 'ipaddress', 'id', 'networkid', 'isolationuri', 'broadcasturi', '",
     "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByZone.listView": "'name', 'routerCount', 'routerRequiresUpgrade'",
-    "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByZone.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByZone.listView.detailView.tabs.details": "''name', ', ''routerCount', 'routerRequiresUpgrade', 'numberOfRouterRequiresUpgrade', '",
     "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByPod.listView": "'name', 'routerCount', 'routerRequiresUpgrade'",
-    "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByPod.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByPod.listView.detailView.tabs.details": "''name', ', ''routerCount', 'routerRequiresUpgrade', 'numberOfRouterRequiresUpgrade', 'zonename', '",
     "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByCluster.listView": "'name', 'routerCount', 'routerRequiresUpgrade'",
-    "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByCluster.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByCluster.listView.detailView.tabs.details": "''name', ', ''routerCount', 'routerRequiresUpgrade', 'numberOfRouterRequiresUpgrade', 'podname', 'zonename', '",
     "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByAccount.listView": "'name', 'domain', 'routerCount', 'routerRequiresUpgrade'",
-    "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByAccount.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.virtualRouters.sections.routerGroupByAccount.listView.detailView.tabs.details": "''name', 'domain', ', ''routerCount', 'routerRequiresUpgrade', 'numberOfRouterRequiresUpgrade', '",
     "Cs.sections.system.subsections.systemVms.listView": "'name', 'systemvmtype', 'publicip', 'hostname', 'zonename', 'state', 'agentstate'",
     "Cs.sections.system.subsections.systemVms.listView.detailView.actions.migrate.createForm": "'hostId'",
     "Cs.sections.system.subsections.systemVms.listView.detailView.actions.diagnostics.createForm": "'type', 'destination', 'extra'",
     "Cs.sections.system.subsections.systemVms.listView.detailView.actions.scaleUp.createForm": "'serviceOfferingId'",
-    "Cs.sections.system.subsections.systemVms.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.systemVms.listView.detailView.tabs.details": "''name', ', ''id', 'state', 'systemvmtype', 'zonename', 'publicip', 'privateip', 'linklocalip', 'hostname', 'gateway', 'created', 'activeviewersessions', '",
     "Cs.sections.system.subsections.netscalerDevices.listView": "'ipaddress', 'lbdevicestate'",
     "Cs.sections.system.subsections.netscalerDevices.listView.actions.add.createForm": "'ip', 'username', 'password', 'networkdevicetype', 'publicinterface', 'privateinterface', 'gslbprovider', 'gslbproviderpublicip', 'gslbproviderprivateip', 'numretries', 'dedicated', 'capacity'",
-    "Cs.sections.system.subsections.netscalerDevices.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.netscalerDevices.listView.detailView.tabs.details": "''lbdeviceid', 'ipaddress', 'lbdevicestate', 'lbdevicename', 'lbdevicecapacity', 'lbdevicededicated', 'gslbprovider', 'gslbproviderpublicip', 'gslbproviderprivateip', '",
     "Cs.sections.system.subsections.BaremetalDhcpDevices.listView": "'url'",
     "Cs.sections.system.subsections.BaremetalDhcpDevices.listView.actions.add.createForm": "'url', 'username', 'password'",
     "Cs.sections.system.subsections.BaremetalPxeDevices.listView": "'url'",
     "Cs.sections.system.subsections.BaremetalPxeDevices.listView.actions.add.createForm": "'url', 'username', 'password', 'tftpdir'",
     "Cs.sections.system.subsections.f5Devices.listView": "'ipaddress', 'lbdevicestate'",
     "Cs.sections.system.subsections.f5Devices.listView.actions.add.createForm": "'ip', 'username', 'password', 'networkdevicetype', 'publicinterface', 'privateinterface', 'numretries', 'dedicated', 'capacity'",
-    "Cs.sections.system.subsections.f5Devices.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.f5Devices.listView.detailView.tabs.details": "''lbdeviceid', 'ipaddress', 'lbdevicestate', 'lbdevicename', 'lbdevicecapacity', 'lbdevicededicated', '",
     "Cs.sections.system.subsections.srxDevices.listView": "'ipaddress', 'fwdevicestate', 'fwdevicename'",
     "Cs.sections.system.subsections.srxDevices.listView.actions.add.createForm": "'ip', 'username', 'password', 'networkdevicetype', 'publicinterface', 'privateinterface', 'usageinterface', 'numretries', 'timeout', 'publicnetwork', 'privatenetwork', 'capacity', 'dedicated'",
-    "Cs.sections.system.subsections.srxDevices.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.srxDevices.listView.detailView.tabs.details": "''fwdeviceid', 'ipaddress', 'fwdevicestate', 'fwdevicename', 'fwdevicecapacity', 'timeout', '",
     "Cs.sections.system.subsections.paDevices.listView": "'ipaddress', 'fwdevicestate', 'fwdevicename'",
     "Cs.sections.system.subsections.paDevices.listView.actions.add.createForm": "'ip', 'username', 'password', 'networkdevicetype', 'publicinterface', 'privateinterface', 'numretries', 'timeout', 'publicnetwork', 'privatenetwork', 'pavr', 'patp', 'palp', 'capacity', 'dedicated'",
-    "Cs.sections.system.subsections.paDevices.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.paDevices.listView.detailView.tabs.details": "''fwdeviceid', 'ipaddress', 'fwdevicestate', 'fwdevicename', 'fwdevicecapacity', 'timeout', '",
     "Cs.sections.system.subsections.niciraNvpDevices.listView": "'hostname', 'transportzoneuuid', 'l3gatewayserviceuuid', 'l2gatewayserviceuuid'",
     "Cs.sections.system.subsections.niciraNvpDevices.listView.actions.add.createForm": "'host', 'username', 'password', 'numretries', 'transportzoneuuid', 'l3gatewayserviceuuid', 'l2gatewayserviceuuid'",
-    "Cs.sections.system.subsections.niciraNvpDevices.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.niciraNvpDevices.listView.detailView.tabs.details": "''nvpdeviceid', 'hostname', 'transportzoneuuid', 'l3gatewayserviceuuid', 'l2gatewayserviceuuid', '",
     "Cs.sections.system.subsections.brocadeVcsDevices.listView": "'hostname'",
     "Cs.sections.system.subsections.brocadeVcsDevices.listView.actions.add.createForm": "'host', 'username', 'password'",
-    "Cs.sections.system.subsections.brocadeVcsDevices.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.brocadeVcsDevices.listView.detailView.tabs.details": "''vcsdeviceid', 'hostname', '",
     "Cs.sections.system.subsections.bigswitchBcfDevices.listView": "'hostname'",
     "Cs.sections.system.subsections.bigswitchBcfDevices.listView.actions.add.createForm": "'host', 'username', 'password', 'nat', 'numretries'",
-    "Cs.sections.system.subsections.bigswitchBcfDevices.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.bigswitchBcfDevices.listView.detailView.tabs.details": "''bcfdeviceid', 'hostname', '",
     "Cs.sections.system.subsections.pods.listView": "'name', 'gateway', 'netmask', 'zonename', 'allocationstate'",
     "Cs.sections.system.subsections.pods.listView.actions.add.createForm": "'zoneid', 'podname', 'reservedSystemGateway', 'reservedSystemNetmask', 'reservedSystemStartIp', 'reservedSystemEndIp', 'isDedicated', 'domainId', 'accountId'",
     "Cs.sections.system.subsections.pods.listView.detailView.actions.dedicate.createForm": "'domainId', 'accountId'",
-    "Cs.sections.system.subsections.pods.listView.detailView.tabs.details": "",
-    "Cs.sections.system.subsections.pods.listView.detailView.tabs.ipAllocations": "",
+    "Cs.sections.system.subsections.pods.listView.detailView.tabs.details": "''name', ', ''id', 'netmask', 'gateway', 'allocationstate', ', ''isdedicated', 'domainid', '",
+    "Cs.sections.system.subsections.pods.listView.detailView.tabs.ipAllocations": "''id', 'gateway', 'netmask', 'startip', 'endip', '",
     "Cs.sections.system.subsections.clusters.listView": "'name', 'hypervisortype', 'zonename', 'podname', 'managedstate', 'allocationstate'",
     "Cs.sections.system.subsections.clusters.listView.actions.add.createForm": "'zoneid', 'hypervisor', 'podId', 'name', 'isDedicated', 'domainId', 'accountId', 'ovm3pool', 'ovm3cluster', 'ovm3vip', 'vCenterHost', 'vCenterUsername', 'vCenterPassword', 'vCenterDatacenter', 'overridepublictraffic', 'vSwitchPublicType', 'vSwitchPublicName', 'overrideguesttraffic', 'vSwitchGuestType', 'vSwitchGuestName', 'vsmipaddress', 'vsmipaddress_req', 'vsmusername', 'vsmusername_req', 'vsmpassword', 'vsmpassword_req'",
     "Cs.sections.system.subsections.clusters.listView.detailView.actions.dedicate.createForm": "'domainId', 'accountId'",
-    "Cs.sections.system.subsections.clusters.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.clusters.listView.detailView.tabs.details": "''name', ', ''id', 'zonename', 'podname', 'hypervisortype', 'clustertype', 'state', ', ''isdedicated', 'domainid', '",
     "Cs.sections.system.subsections.clusters.listView.detailView.tabs.nexusVswitch.listView": "'vsmdeviceid', 'vsmdevicestate'",
     "Cs.sections.system.subsections.clusters.listView.detailView.tabs.nexusVswitch.listView.detailView.tabs.details": "'vsmdeviceid', 'ipaddress', 'vsmctrlvlanid', 'vsmpktvlanid', 'vsmstoragevlanid', 'vsmdevicestate'",
     "Cs.sections.system.subsections.hosts.listView": "'name', 'ipaddress', 'hypervisor', 'zonename', 'clustername', 'resourcestate', 'state', 'powerstate'",
@@ -3922,76 +5154,76 @@
     "Cs.sections.system.subsections.hosts.listView.detailView.actions.configureOutOfBandManagement.createForm": "'address', 'port', 'username', 'password', 'driver'",
     "Cs.sections.system.subsections.hosts.listView.detailView.actions.issueOutOfBandManagementPowerAction.createForm": "'action'",
     "Cs.sections.system.subsections.hosts.listView.detailView.actions.changeOutOfBandManagementPassword.createForm": "'password', 'reenterpassword'",
-    "Cs.sections.system.subsections.hosts.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.hosts.listView.detailView.tabs.details": "''name', ', ''id', 'resourcestate', 'state', 'powerstate', 'type', 'hypervisor', 'hypervisorversion', 'hastate', 'haprovider', 'hosttags', 'hahost', 'oscategoryid', 'zonename', 'podname', 'clustername', 'ipaddress', 'annotation', 'lastannotated', 'username', 'disconnected', 'cpusockets', 'managementServers', ', ''isdedicated', 'domainid', '",
     "Cs.sections.system.subsections.hosts.listView.detailView.tabs.ha": "'haenable', 'hastate', 'haprovider'",
     "Cs.sections.system.subsections.hosts.listView.detailView.tabs.outofbandmanagement": "'powerstate', 'driver', 'username', 'address', 'port'",
     "Cs.sections.system.subsections.hosts.listView.detailView.tabs.stats": "'totalCPU', 'cpuused', 'cpuallocated', 'memorytotal', 'memoryallocated', 'memoryused', 'networkkbsread', 'networkkbswrite'",
     "Cs.sections.system.subsections.primary-storage.listView": "'name', 'ipaddress', 'path', 'type', 'scope', 'clustername', 'zonename', 'state'",
     "Cs.sections.system.subsections.primary-storage.listView.actions.add.createForm": "'scope', 'hypervisor', 'zoneid', 'podId', 'clusterId', 'hostId', 'name', 'protocol', 'server', 'path', 'provider', 'isManaged', 'capacityBytes', 'capacityIops', 'url', 'smbUsername', 'smbPassword', 'smbDomain', 'iqn', 'lun', 'volumegroup', 'vCenterDataCenter', 'vCenterDataStore', 'rbdmonitor', 'rbdpool', 'rbdid', 'rbdsecret', 'glustervolume', 'storageTags'",
     "Cs.sections.system.subsections.primary-storage.listView.detailView.actions.remove.createForm": "'isForced'",
-    "Cs.sections.system.subsections.primary-storage.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.primary-storage.listView.detailView.tabs.details": "''name', ', ''id', 'state', 'tags', 'zonename', 'podname', 'clustername', 'type', 'ipaddress', 'path', 'disksizetotal', 'disksizeallocated', 'capacityiops', 'allocatediops', '",
     "Cs.sections.system.subsections.ucs.listView": "'name', 'url'",
     "Cs.sections.system.subsections.ucs.listView.actions.add.createForm": "'name', 'url', 'username', 'password'",
-    "Cs.sections.system.subsections.ucs.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.ucs.listView.detailView.tabs.details": "''name', ', ''id', 'url', '",
     "Cs.sections.system.subsections.ucs.listView.detailView.tabs.blades.listView": "'chassis', 'bladeid', 'profiledn'",
     "Cs.sections.system.subsections.ucs.listView.detailView.tabs.blades.listView.actions.associateTemplateToBlade.createForm": "'templatedn', 'profilename'",
     "Cs.sections.system.subsections.ucs.listView.detailView.tabs.blades.listView.actions.disassociateProfileFromBlade.createForm": "'deleteprofile'",
     "Cs.sections.system.subsections.secondary-storage.sections.secondaryStorage.listView": "'name', 'url', 'protocol', 'scope', 'zonename'",
     "Cs.sections.system.subsections.secondary-storage.sections.secondaryStorage.listView.actions.add.createForm": "'name', 'provider', 'zoneid', 'nfsServer', 'path', 'smbUsername', 'smbPassword', 'smbDomain', 'accesskey', 'secretkey', 'bucket', 'endpoint', 'usehttps', 'connectiontimeout', 'maxerrorretry', 'sockettimeout', 'createNfsCache', 'nfsCacheZoneid', 'nfsCacheNfsServer', 'nfsCachePath', 'url', 'account', 'username', 'key', 'storagepolicy'",
-    "Cs.sections.system.subsections.secondary-storage.sections.secondaryStorage.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.secondary-storage.sections.secondaryStorage.listView.detailView.tabs.details": "''name', ', ''url', 'protocol', 'providername', 'scope', 'zonename', 'id', '",
     "Cs.sections.system.subsections.secondary-storage.sections.cacheStorage.listView": "'name', 'url', 'providername'",
     "Cs.sections.system.subsections.secondary-storage.sections.cacheStorage.listView.actions.add.createForm": "'zoneid', 'nfsServer', 'path'",
-    "Cs.sections.system.subsections.secondary-storage.sections.cacheStorage.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.secondary-storage.sections.cacheStorage.listView.detailView.tabs.details": "''name', ', ''url', 'providername', 'scope', 'zonename', 'details', 'id', '",
     "Cs.sections.system.subsections.guestIpRanges.listView": "'startip', 'endip', 'startipv6', 'endipv6', 'gateway', 'netmask'",
     "Cs.sections.system.subsections.guestIpRanges.listView.actions.add.createForm": "'gateway', 'netmask', 'startipv4', 'endipv4', 'ip6cidr', 'ip6gateway', 'startipv6', 'endipv6'",
     "Cs.sections.system.subsections.vnmcDevices.listView": "'resourcename', 'provider'",
     "Cs.sections.system.subsections.vnmcDevices.listView.actions.add.createForm": "'hostname', 'username', 'password'",
-    "Cs.sections.system.subsections.vnmcDevices.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.vnmcDevices.listView.detailView.tabs.details": "''resourcename', ', ''resourceid', 'provider', '",
     "Cs.sections.system.subsections.asa1000v.listView": "'hostname', 'insideportprofile'",
     "Cs.sections.system.subsections.asa1000v.listView.actions.add.createForm": "'hostname', 'insideportprofile', 'clusterid'",
-    "Cs.sections.system.subsections.asa1000v.listView.detailView.tabs.details": "",
+    "Cs.sections.system.subsections.asa1000v.listView.detailView.tabs.details": "''hostname', ', ''insideportprofile', 'RESOURCE_NAME', 'resourceid', '",
     "Cs.sections.global-settings.sections.globalSettings.listView": "'name', 'description', 'value'",
     "Cs.sections.global-settings.sections.ldapConfiguration.listView": "'hostname', 'port'",
-    "Cs.sections.global-settings.sections.ldapConfiguration.listView.detailView.tabs.details": "",
+    "Cs.sections.global-settings.sections.ldapConfiguration.listView.detailView.tabs.details": "''hostname', 'port', '",
     "Cs.sections.global-settings.sections.ldapConfiguration.listView.actions.add.createForm": "'hostname', 'port'",
     "Cs.sections.global-settings.sections.baremetalRct.listView": "'id', 'url'",
     "Cs.sections.global-settings.sections.baremetalRct.listView.actions.add.createForm": "'url'",
-    "Cs.sections.global-settings.sections.baremetalRct.listView.detailView.tabs.details": "",
+    "Cs.sections.global-settings.sections.baremetalRct.listView.detailView.tabs.details": "''id', 'url', '",
     "Cs.sections.global-settings.sections.hypervisorCapabilities.listView": "'hypervisor', 'hypervisorversion', 'maxguestslimit'",
-    "Cs.sections.global-settings.sections.hypervisorCapabilities.listView.detailView.tabs.details": "",
+    "Cs.sections.global-settings.sections.hypervisorCapabilities.listView.detailView.tabs.details": "''id', 'hypervisor', 'hypervisorversion', 'maxguestslimit', '",
     "Cs.sections.configuration.sections.serviceOfferings.listView": "'name', 'displaytext'",
     "Cs.sections.configuration.sections.serviceOfferings.listView.actions.add.createForm": "'name', 'description', 'storageType', 'provisioningType', 'offeringType', 'cpuNumber', 'cpuSpeed', 'memory', 'minCPUNumber', 'maxCPUNumber', 'minMemory', 'maxMemory', 'networkRate', 'qosType', 'isCustomizedIops', 'minIops', 'maxIops', 'hypervisorSnapshotReserve', 'diskBytesReadRate', 'diskBytesWriteRate', 'diskIopsReadRate', 'diskIopsWriteRate', 'offerHA', 'storageTags', 'hostTags', 'cpuCap', 'isPublic', 'isVolatile', 'deploymentPlanner', 'plannerMode', 'pciDevice', 'vgpuType', 'domainId', 'zoneId'",
     "Cs.sections.configuration.sections.serviceOfferings.listView.detailView.actions.updateOfferingAccess.createForm": "'isPublic', 'domainId', 'zoneId'",
-    "Cs.sections.configuration.sections.serviceOfferings.listView.detailView.tabs.details": "",
+    "Cs.sections.configuration.sections.serviceOfferings.listView.detailView.tabs.details": "''name', ', ''id', 'displaytext', 'storagetype', 'provisioningtype', 'cpunumber', 'cpuspeed', 'memory', 'networkrate', 'iscustomizediops', 'miniops', 'maxiops', 'hypervisorsnapshotreserve', 'diskBytesReadRate', 'diskBytesWriteRate', 'diskIopsReadRate', 'diskIopsWriteRate', 'offerha', 'limitcpuuse', 'isvolatile', 'deploymentplanner', 'plannerMode', 'pciDevice', 'vgpuType', 'tags', 'hosttags', 'domain', 'zone', 'created', '",
     "Cs.sections.configuration.sections.systemServiceOfferings.listView": "'name', 'displaytext'",
     "Cs.sections.configuration.sections.systemServiceOfferings.listView.actions.add.createForm": "'name', 'description', 'systemvmtype', 'storageType', 'provisioningType', 'cpuNumber', 'cpuSpeed', 'memory', 'networkRate', 'qosType', 'minIops', 'maxIops', 'diskBytesReadRate', 'diskBytesWriteRate', 'diskIopsReadRate', 'diskIopsWriteRate', 'offerHA', 'storageTags', 'hostTags', 'cpuCap', 'isPublic', 'domainId'",
-    "Cs.sections.configuration.sections.systemServiceOfferings.listView.detailView.tabs.details": "",
+    "Cs.sections.configuration.sections.systemServiceOfferings.listView.detailView.tabs.details": "''name', ', ''id', 'displaytext', 'systemvmtype', 'storagetype', 'provisioningtype', 'cpunumber', 'cpuspeed', 'memory', 'networkrate', 'miniops', 'maxiops', 'diskBytesReadRate', 'diskBytesWriteRate', 'diskIopsReadRate', 'diskIopsWriteRate', 'offerha', 'limitcpuuse', 'tags', 'hosttags', 'domain', 'created', '",
     "Cs.sections.configuration.sections.diskOfferings.listView": "'name', 'displaytext', 'iscustomized', 'disksize'",
     "Cs.sections.configuration.sections.diskOfferings.listView.actions.add.createForm": "'name', 'description', 'storageType', 'provisioningType', 'isCustomized', 'disksize', 'qosType', 'isCustomizedIops', 'minIops', 'maxIops', 'hypervisorSnapshotReserve', 'diskBytesReadRate', 'diskBytesWriteRate', 'diskIopsReadRate', 'diskIopsWriteRate', 'cacheMode', 'tags', 'isPublic', 'domainId', 'zoneId'",
     "Cs.sections.configuration.sections.diskOfferings.listView.detailView.actions.updateOfferingAccess.createForm": "'isPublic', 'domainId', 'zoneId'",
-    "Cs.sections.configuration.sections.diskOfferings.listView.detailView.tabs.details": "",
+    "Cs.sections.configuration.sections.diskOfferings.listView.detailView.tabs.details": "''name', ', ''id', 'displaytext', 'iscustomized', 'disksize', 'iscustomizediops', 'miniops', 'maxiops', 'hypervisorsnapshotreserve', 'diskBytesReadRate', 'diskBytesWriteRate', 'diskIopsReadRate', 'diskIopsWriteRate', 'cacheMode', 'tags', 'domain', 'zone', 'storagetype', 'provisioningtype', '",
     "Cs.sections.configuration.sections.networkOfferings.listView": "'name', 'state'",
     "Cs.sections.configuration.sections.networkOfferings.listView.actions.add.createForm": "'name', 'displayText', 'networkRate', 'guestIpType', 'isPersistent', 'specifyVlan', 'useVpc', 'userDataL2', 'lbType', 'promiscuousMode', 'macAddressChanges', 'forgedTransmits', 'supportedServices', 'serviceofferingid', 'service.SourceNat.redundantRouterCapabilityCheckbox', 'service.SourceNat.sourceNatTypeDropdown', 'service.Lb.elasticLbCheckbox', 'service.Lb.inlineModeDropdown', 'service.Lb.Netscaler.servicePackages', 'service.Lb.Netscaler.servicePackages.description', 'service.Lb.lbIsolationDropdown', 'service.StaticNat.elasticIpCheckbox', 'service.StaticNat.associatePublicIP', 'supportsstrechedl2subnet', 'supportspublicaccess', 'conservemode', 'tags', 'availability', 'egressdefaultpolicy', 'isPublic', 'domainId', 'zoneId'",
     "Cs.sections.configuration.sections.networkOfferings.listView.detailView.actions.updateOfferingAccess.createForm": "'isPublic', 'domainId', 'zoneId'",
-    "Cs.sections.configuration.sections.networkOfferings.listView.detailView.tabs.details": "",
+    "Cs.sections.configuration.sections.networkOfferings.listView.detailView.tabs.details": "''name', ', ''id', 'displaytext', 'state', 'guestiptype', 'ispersistent', 'egressdefaultpolicy', 'availability', 'isdefault', 'specifyvlan', 'specifyipranges', 'conservemode', 'networkrate', 'traffictype', 'supportsstrechedl2subnet', 'supportspublicaccess', 'supportedServices', 'serviceCapabilities', 'domain', 'zone', 'tags', 'details', '",
     "Cs.sections.configuration.sections.vpcOfferings.listView": "'name', 'state'",
     "Cs.sections.configuration.sections.vpcOfferings.listView.actions.add.createForm": "'name', 'displayText', 'supportedServices', 'service.Connectivity.regionLevelVpcCapabilityCheckbox', 'service.Connectivity.distributedRouterCapabilityCheckbox', 'service.SourceNat.redundantRouterCapabilityCheckbox', 'isPublic', 'domainId', 'zoneId'",
     "Cs.sections.configuration.sections.vpcOfferings.listView.detailView.actions.updateOfferingAccess.createForm": "'isPublic', 'domainId', 'zoneId'",
-    "Cs.sections.configuration.sections.vpcOfferings.listView.detailView.tabs.details": "",
+    "Cs.sections.configuration.sections.vpcOfferings.listView.detailView.tabs.details": "''name', ', ''id', 'displaytext', 'state', 'isdefault', 'supportedServices', 'serviceCapabilities', 'distributedvpcrouter', 'supportsregionLevelvpc', 'domain', 'zone', 'tags', '",
     "Cs.sections.metrics.listView": "'name'",
     "Cs.sections.metrics.zones.listView": "'name', 'state', 'clusters', 'cpuused', 'cpuallocated', 'memused', 'memallocated'",
     "Cs.sections.metrics.zones.listView.detailView.actions.addVmwareDc.createForm": "'name', 'vcenter', 'username', 'password'",
     "Cs.sections.metrics.zones.listView.detailView.actions.updateVmwareDc.createForm": "'name', 'vcenter', 'username', 'password'",
     "Cs.sections.metrics.zones.listView.detailView.actions.dedicateZone.createForm": "'domainId', 'accountId'",
-    "Cs.sections.metrics.zones.listView.detailView.tabs.details": "",
+    "Cs.sections.metrics.zones.listView.detailView.tabs.details": "''name', ', ''id', 'allocationstate', 'dns1', 'dns2', 'ip6dns1', 'ip6dns2', 'internaldns1', 'internaldns2', 'domainname', 'networktype', 'guestcidraddress', 'domain', 'localstorageenabled', ', ''isdedicated', 'domainid', ', ''vmwaredcName', 'vmwaredcVcenter', 'vmwaredcId', '",
     "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView": "'name', 'systemvmtype', 'zonename', 'state'",
     "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView.detailView.actions.migrate.createForm": "'hostId'",
     "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView.detailView.actions.diagnostics.createForm": "'type', 'destination', 'extra'",
     "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView.detailView.actions.scaleUp.createForm": "'serviceOfferingId'",
-    "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView.detailView.tabs.details": "",
+    "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView.detailView.tabs.details": "''name', ', ''id', 'state', 'systemvmtype', 'zonename', 'publicip', 'privateip', 'linklocalip', 'hostname', 'gateway', 'created', 'activeviewersessions', '",
     "Cs.sections.metrics.clusters.listView": "'name', 'state', 'hosts', 'cpuused', 'cpuallocated', 'memused', 'memallocated'",
     "Cs.sections.metrics.clusters.listView.detailView.actions.dedicate.createForm": "'domainId', 'accountId'",
-    "Cs.sections.metrics.clusters.listView.detailView.tabs.details": "",
+    "Cs.sections.metrics.clusters.listView.detailView.tabs.details": "''name', ', ''id', 'zonename', 'podname', 'hypervisortype', 'clustertype', 'state', ', ''isdedicated', 'domainid', '",
     "Cs.sections.metrics.clusters.listView.detailView.tabs.nexusVswitch.listView": "'vsmdeviceid', 'vsmdevicestate'",
     "Cs.sections.metrics.clusters.listView.detailView.tabs.nexusVswitch.listView.detailView.tabs.details": "'vsmdeviceid', 'ipaddress', 'vsmctrlvlanid', 'vsmpktvlanid', 'vsmstoragevlanid', 'vsmdevicestate'",
     "Cs.sections.metrics.hosts.listView": "'name', 'state', 'powerstate', 'instances', 'cpuused', 'memused', 'network'",
@@ -4001,7 +5233,7 @@
     "Cs.sections.metrics.hosts.listView.detailView.actions.configureOutOfBandManagement.createForm": "'address', 'port', 'username', 'password', 'driver'",
     "Cs.sections.metrics.hosts.listView.detailView.actions.issueOutOfBandManagementPowerAction.createForm": "'action'",
     "Cs.sections.metrics.hosts.listView.detailView.actions.changeOutOfBandManagementPassword.createForm": "'password', 'reenterpassword'",
-    "Cs.sections.metrics.hosts.listView.detailView.tabs.details": "",
+    "Cs.sections.metrics.hosts.listView.detailView.tabs.details": "''name', ', ''id', 'resourcestate', 'state', 'powerstate', 'type', 'hypervisor', 'hypervisorversion', 'hastate', 'haprovider', 'hosttags', 'hahost', 'oscategoryid', 'zonename', 'podname', 'clustername', 'ipaddress', 'annotation', 'lastannotated', 'username', 'disconnected', 'cpusockets', 'managementServers', ', ''isdedicated', 'domainid', '",
     "Cs.sections.metrics.hosts.listView.detailView.tabs.ha": "'haenable', 'hastate', 'haprovider'",
     "Cs.sections.metrics.hosts.listView.detailView.tabs.outofbandmanagement": "'powerstate', 'driver', 'username', 'address', 'port'",
     "Cs.sections.metrics.hosts.listView.detailView.tabs.stats": "'totalCPU', 'cpuused', 'cpuallocated', 'memorytotal', 'memoryallocated', 'memoryused', 'networkkbsread', 'networkkbswrite'",
@@ -4018,11 +5250,11 @@
     "Cs.sections.metrics.instances.listView.detailView.actions.scaleUp.createForm": "'serviceofferingid', 'cpuSpeed', 'cpuNumber', 'memory'",
     "Cs.sections.metrics.instances.listView.detailView.actions.resetSSHKeyForVirtualMachine.createForm": "'sshkeypair'",
     "Cs.sections.metrics.instances.listView.detailView.actions.assignVmToAnotherAccount.createForm": "'accountType', 'domainid', 'account', 'project', 'network', 'securitygroup'",
-    "Cs.sections.metrics.instances.listView.detailView.tabs.details": "",
+    "Cs.sections.metrics.instances.listView.detailView.tabs.details": "''displayname', 'name', 'state', 'templatename', 'isdynamicallyscalable', 'guestosid', 'hypervisor', 'xenserverToolsVersion61plus', 'isoname', 'serviceofferingname', 'cpunumber', 'cpuspeed', 'memory', 'vgpu', 'haenable', 'publicip', 'group', 'zonename', 'hostname', 'keypair', 'domain', 'account', 'created', 'id', '",
     "Cs.sections.metrics.instances.listView.detailView.tabs.nics.actions.add.createForm": "'networkid', 'ipaddress'",
     "Cs.sections.metrics.instances.listView.detailView.tabs.nics.actions.updateIpaddr.createForm": "'ipaddress1', 'ipaddress2'",
-    "Cs.sections.metrics.instances.listView.detailView.tabs.nics": "",
-    "Cs.sections.metrics.instances.listView.detailView.tabs.securityGroups": "",
+    "Cs.sections.metrics.instances.listView.detailView.tabs.nics": "''id', 'name', 'networkname', 'type', 'macaddress', 'ipaddress', 'secondaryips', 'gateway', 'netmask', 'ip6address', 'ip6gateway', 'ip6cidr', 'broadcasturi', 'isolationuri', 'isdefault', '",
+    "Cs.sections.metrics.instances.listView.detailView.tabs.securityGroups": "''id', 'name', 'description', '",
     "Cs.sections.metrics.instances.listView.detailView.tabs.stats": "'totalCPU', 'cpuused', 'networkkbsread', 'networkkbswrite', 'diskkbsread', 'diskkbswrite', 'diskioread', 'diskiowrite'",
     "Cs.sections.metrics.volumes.listView": "'name', 'state', 'vmname', 'sizegb', 'physicalsize', 'utilization', 'storagetype', 'storage', 'disk'",
     "Cs.sections.metrics.volumes.listView.detailView.actions.migrateVolume.createForm": "'storagePool', 'useNewDiskOffering', 'newDiskOffering'",
@@ -4031,16 +5263,16 @@
     "Cs.sections.metrics.volumes.listView.detailView.actions.createTemplate.createForm": "'name', 'displayText', 'xenserverToolsVersion61plus', 'osTypeId', 'isPublic', 'isPasswordEnabled', 'isFeatured', 'isdynamicallyscalable', 'requireshvm'",
     "Cs.sections.metrics.volumes.listView.detailView.actions.migrateToAnotherStorage.createForm": "'storagePool', 'useNewDiskOffering', 'newDiskOffering'",
     "Cs.sections.metrics.volumes.listView.detailView.actions.resize.createForm": "'newdiskoffering', 'newsize', 'shrinkok', 'minIops', 'maxIops'",
-    "Cs.sections.metrics.volumes.listView.detailView.tabs.details": "",
+    "Cs.sections.metrics.volumes.listView.detailView.tabs.details": "''name', ', ''id', 'zonename', 'state', 'status', 'diskofferingdisplaytext', 'type', 'storagetype', 'provisioningtype', 'hypervisor', 'size', 'clusterid', 'clustername', 'physicalsize', 'utilization', 'virtualsize', 'miniops', 'maxiops', 'virtualmachineid', 'vmdisplayname', 'vmstate', 'deviceid', 'storage', 'created', 'domain', 'account', '",
     "Cs.sections.metrics.storagepool.listView": "'name', 'property', 'disk'",
     "Cs.sections.metrics.storagepool.listView.detailView.actions.remove.createForm": "'isForced'",
-    "Cs.sections.metrics.storagepool.listView.detailView.tabs.details": "",
+    "Cs.sections.metrics.storagepool.listView.detailView.tabs.details": "''name', ', ''id', 'state', 'tags', 'zonename', 'podname', 'clustername', 'type', 'ipaddress', 'path', 'disksizetotal', 'disksizeallocated', 'capacityiops', 'allocatediops', '",
     "Cs.sections.quota.sections.summary.listView": "'account', 'domain', 'balance', 'quota', 'state'",
     "Cs.sections.quota.sections.summary.listView.detailView.actions.add.createForm": "'value', 'min_balance', 'quota_enforce'",
-    "Cs.sections.quota.sections.summary.listView.detailView.tabs.details": "",
+    "Cs.sections.quota.sections.summary.listView.detailView.tabs.details": "''id', ', ''startdate', 'startquota', '",
     "Cs.sections.quota.sections.fullSummary.listView": "'account', 'domain', 'balance', 'quota', 'state'",
     "Cs.sections.quota.sections.fullSummary.listView.detailView.actions.add.createForm": "'value', 'min_balance', 'quota_enforce'",
-    "Cs.sections.quota.sections.fullSummary.listView.detailView.tabs.details": "",
+    "Cs.sections.quota.sections.fullSummary.listView.detailView.tabs.details": "''id', ', ''startdate', 'startquota', '",
     "Cs.sections.quota.sections.quotastatement.listView": "'name', 'unit', 'quota'",
     "Cs.sections.quota.sections.quotastatement.listView.actions.add.createForm": "'startdate', 'enddate'",
     "Cs.sections.quota.sections.balancestatement.listView": "'date', 'quota', 'credit'",
@@ -4048,11 +5280,11 @@
     "Cs.sections.quota.sections.tariffEdit.listView": "'usageName', 'usageUnit', 'tariffValue', 'description'",
     "Cs.sections.quota.sections.tariffView.listView": "'usageName', 'usageUnit', 'tariffValue', 'description'",
     "Cs.sections.quota.sections.emailTemplates.listView": "'templatetype', 'templatesubject', 'templatebody', 'last_updated'",
-    "Cs.sections.quota.sections.emailTemplates.listView.detailView.tabs.details": "",
+    "Cs.sections.quota.sections.emailTemplates.listView.detailView.tabs.details": "''templatetype', ', ''templatesubject', 'templatebody', 'last_updated', '",
     "Cs.autoscaler.forms.scaleUpPolicy": "'counterid', 'relationaloperator', 'threshold', 'add-scaleUpcondition'",
     "Cs.autoscaler.forms.scaleDownPolicy": "'counterid', 'relationaloperator', 'threshold', 'add-scaleDowncondition'",
-    "Cs.projects.inviteForm": "'email', 'account', 'state', 'add-user'",
-    "Cs.projects.addUserForm": "'username', 'role', 'add-user'",
+    "Cs.projects.inviteForm": "'email', 'account', 'state'",
+    "Cs.projects.addUserForm": "'username', 'role'",
     "Cs.vpc.sections.internalLoadBalancers.listView": "'name', 'sourceipaddress', 'sourceport', 'instanceport', 'algorithm'",
     "Cs.vpc.sections.internalLoadBalancers.listView.actions.add.createForm": "'name', 'description', 'sourceipaddress', 'sourceport', 'instanceport', 'algorithm'",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView": "'name', 'instancename', 'displayname', 'ipaddress', 'account', 'zonename', 'state'",
@@ -4072,13 +5304,13 @@
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView.detailView.actions.scaleUp.createForm": "'serviceofferingid', 'cpuSpeed', 'cpuNumber', 'memory'",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView.detailView.actions.resetSSHKeyForVirtualMachine.createForm": "'sshkeypair'",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView.detailView.actions.assignVmToAnotherAccount.createForm": "'accountType', 'domainid', 'account', 'project', 'network', 'securitygroup'",
-    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView.detailView.tabs.details": "",
+    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView.detailView.tabs.details": "''displayname', 'name', 'state', 'templatename', 'isdynamicallyscalable', 'guestosid', 'hypervisor', 'xenserverToolsVersion61plus', 'isoname', 'serviceofferingname', 'cpunumber', 'cpuspeed', 'memory', 'vgpu', 'haenable', 'publicip', 'group', 'zonename', 'hostname', 'keypair', 'domain', 'account', 'created', 'id', '",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView.detailView.tabs.nics.actions.add.createForm": "'networkid', 'ipaddress'",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView.detailView.tabs.nics.actions.updateIpaddr.createForm": "'ipaddress1', 'ipaddress2'",
-    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView.detailView.tabs.nics": "",
-    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView.detailView.tabs.securityGroups": "",
+    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView.detailView.tabs.nics": "''id', 'name', 'networkname', 'type', 'macaddress', 'ipaddress', 'secondaryips', 'gateway', 'netmask', 'ip6address', 'ip6gateway', 'ip6cidr', 'broadcasturi', 'isolationuri', 'isdefault', '",
+    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView.detailView.tabs.securityGroups": "''id', 'name', 'description', '",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.actions.assignVMs.listView.detailView.tabs.stats": "'totalCPU', 'cpuused', 'networkkbsread', 'networkkbswrite', 'diskkbsread', 'diskkbswrite', 'diskioread', 'diskiowrite'",
-    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.details": "",
+    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.details": "''name', ', ''id', 'description', 'sourceipaddress', 'sourceport', 'instanceport', 'algorithm', 'loadbalancerinstance', '",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView": "'name', 'ipaddress'",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView": "'name', 'instancename', 'displayname', 'ipaddress', 'account', 'zonename', 'state'",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.actions.destroy.createForm": "'expunge', 'volumes', 'volumeids'",
@@ -4097,17 +5329,17 @@
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.actions.scaleUp.createForm": "'serviceofferingid', 'cpuSpeed', 'cpuNumber', 'memory'",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.actions.resetSSHKeyForVirtualMachine.createForm": "'sshkeypair'",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.actions.assignVmToAnotherAccount.createForm": "'accountType', 'domainid', 'account', 'project', 'network', 'securitygroup'",
-    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details": "",
+    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.details": "''displayname', 'name', 'state', 'templatename', 'isdynamicallyscalable', 'guestosid', 'hypervisor', 'xenserverToolsVersion61plus', 'isoname', 'serviceofferingname', 'cpunumber', 'cpuspeed', 'memory', 'vgpu', 'haenable', 'publicip', 'group', 'zonename', 'hostname', 'keypair', 'domain', 'account', 'created', 'id', '",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics.actions.add.createForm": "'networkid', 'ipaddress'",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics.actions.updateIpaddr.createForm": "'ipaddress1', 'ipaddress2'",
-    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics": "",
-    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.securityGroups": "",
+    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.nics": "''id', 'name', 'networkname', 'type', 'macaddress', 'ipaddress', 'secondaryips', 'gateway', 'netmask', 'ip6address', 'ip6gateway', 'ip6cidr', 'broadcasturi', 'isolationuri', 'isdefault', '",
+    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.securityGroups": "''id', 'name', 'description', '",
     "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.actions.add.listView.detailView.tabs.stats": "'totalCPU', 'cpuused', 'networkkbsread', 'networkkbswrite', 'diskkbsread', 'diskkbswrite', 'diskioread', 'diskiowrite'",
-    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.detailView.tabs.details": "",
+    "Cs.vpc.sections.internalLoadBalancers.listView.detailView.tabs.assignedVms.listView.detailView.tabs.details": "''name', ', ''ipaddress', '",
     "Cs.vpc.sections.publicLbIps.listView": "'ipaddress', 'zonename', 'virtualmachinedisplayname', 'state'",
     "Cs.vpc.sections.networkACLLists.listView": "'name', 'description', 'id'",
     "Cs.vpc.sections.networkACLLists.listView.actions.add.createForm": "'name', 'description'",
-    "Cs.vpc.sections.networkACLLists.listView.detailView.tabs.details": "",
+    "Cs.vpc.sections.networkACLLists.listView.detailView.tabs.details": "''name', 'description', 'id', '",
     "Cs.vpc.vmListView.listView": "'name', 'account', 'zonename', 'state'",
     "Cs.vpc.vmListView.listView.actions.stop.createForm": "'forced'",
     "Cs.vpc.acl.multiEdit": "'networkid', 'number', 'cidrlist', 'action', 'protocol', 'protocolnumber', 'startport', 'endport', 'icmptype', 'icmpcode', 'traffictype', 'reason'",
@@ -4115,13 +5347,13 @@
     "Cs.vpc.gateways.add.createForm": "'physicalnetworkid', 'vlan', 'ipaddress', 'gateway', 'netmask', 'sourceNat', 'aclid'",
     "Cs.vpc.siteToSiteVPN.add.createForm": "",
     "Cs.vpc.siteToSiteVPN.sections.vpnGateway.listView": "'publicip', 'account', 'domain'",
-    "Cs.vpc.siteToSiteVPN.sections.vpnGateway.listView.detailView.tabs.details": "",
+    "Cs.vpc.siteToSiteVPN.sections.vpnGateway.listView.detailView.tabs.details": "''publicip', ', ''id', 'domain', 'account', '",
     "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView": "'publicip', 'gateway', 'state', 'ipsecpsk', 'ikepolicy', 'esppolicy'",
     "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.actions.add.createForm": "'vpncustomergatewayid', 'passive'",
-    "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details": "",
+    "Cs.vpc.siteToSiteVPN.sections.vpnConnection.listView.detailView.tabs.details": "''id', 'passive', 'publicip', 'gateway', 'cidrlist', 'ipsecpsk', 'ikepolicy', 'esppolicy', 'ikelifetime', 'esplifetime', 'dpd', 'forceencap', 'state', 'created', '",
     "Cs.vpc.tiers.detailView.actions.restart.createForm": "'cleanup'",
     "Cs.vpc.tiers.detailView.actions.replaceacllist.createForm": "'aclid'",
-    "Cs.vpc.tiers.detailView.tabs.details": "",
+    "Cs.vpc.tiers.detailView.tabs.details": "''name', ', ''id', 'zonename', 'displaytext', 'type', 'state', 'ispersistent', 'restartrequired', 'vlan', 'networkofferingname', 'networkofferingid', 'gateway', 'cidr', 'networkdomaintext', 'networkdomain', 'aclname', 'domain', 'account', '",
     "Cs.vpc.tiers.actions.add.createForm": "'name', 'networkOfferingId', 'vlan', 'gateway', 'netmask', 'externalId', 'aclid', 'zoneid'",
     "Cs.zoneWizard.forms.zone": "'name', 'ip4dns1', 'ip4dns2', 'ip6dns1', 'ip6dns2', 'internaldns1', 'internaldns2', 'hypervisor', 'networkOfferingId', 'networkdomain', 'guestcidraddress', 'isdedicated', 'domain', 'account', 'localstorageenabled', 'localstorageenabledforsystemvm'",
     "Cs.zoneWizard.forms.pod": "'name', 'reservedSystemGateway', 'reservedSystemNetmask', 'reservedSystemStartIp', 'reservedSystemEndIp'",

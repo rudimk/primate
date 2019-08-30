@@ -286,6 +286,9 @@ export default {
       this.breadList = []
       this.name = this.$route.name
       this.$route.matched.forEach((item) => {
+        if (item.meta.title) {
+          item.meta.title = this.$t(item.meta.title)
+        }
         this.breadList.push(item)
       })
     },

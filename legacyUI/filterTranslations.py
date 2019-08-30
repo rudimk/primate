@@ -14,11 +14,18 @@ def loadJson(lfile):
     trans = cont[1].strip().replace("\n", "")
     if trans[-1] == ";":
         trans = trans[0: -1]
-    return json.loads(trans)
+    
+    try:
+        return json.loads(trans)
+    except expression as identifier:
+        print "Something went wrong in parsing old files. Perhaps incorrect formatting?"
+        exit(1)
     
 def loadTranslations(l10repo):
-    with open("olderLayout.json") as outfile:
-        olderLayout = json.load(outfile)["allFields"]
+    with open("fieldsFromOldLayout.json") as outfile:
+        fieldsFromOldLayout = json.load(outfile)["allFields"]
+    with open("manualNeededLabels.json") as outfile:
+        manualNeededLabels = json.load(outfile)
 
     newTranslations = {}
     for r, d, f in os.walk(l10repo):
@@ -29,10 +36,16 @@ def loadTranslations(l10repo):
                     oldTrans = loadJson(oldfile)
                     print len(oldTrans.keys())
                     newTrans = {}
-                    for apikey in olderLayout:      
-                        currLabel = olderLayout[apikey]["labels"][0]  
+                    for apikey in fieldsFromOldLayout:      
+                        currLabel = fieldsFromOldLayout[apikey]["labels"][0] # Just use the first label for now in case multiple labels exist
                         if currLabel in oldTrans:
                             newTrans[apikey] = oldTrans[currLabel]
+                    for label in manualNeededLabels:
+                        if label in oldTrans:
+                            newTrans[manualNeededLabels[label]] = oldTrans[label]
+                        else:
+                            newTrans[manualNeededLabels[label]] = manualNeededLabels[label]
+
                     newTranslations[file] = newTrans
 
     for file in newTranslations:

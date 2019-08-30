@@ -83,7 +83,7 @@ export default {
     },
     {
       name: 'ssh',
-      title: 'SSH Keys',
+      title: 'SSH Key Pairs',
       icon: 'key',
       permission: [ 'listSSHKeyPairs' ],
       component: () => import('@/components/CloudMonkey/Resource.vue'),

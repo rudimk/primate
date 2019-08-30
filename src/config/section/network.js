@@ -13,7 +13,7 @@ export default {
     },
     {
       name: 'vpc',
-      title: 'VPCs',
+      title: 'VPC',
       icon: 'deployment-unit',
       permission: [ 'listVPCs' ],
       component: () => import('@/components/CloudMonkey/Resource.vue'),
@@ -37,7 +37,7 @@ export default {
     },
     {
       name: 'vpngateway',
-      title: 'VPN Gateways',
+      title: 'VPN Gateway',
       icon: 'lock',
       permission: [ 'listVpnCustomerGateways' ],
       component: () => import('@/components/CloudMonkey/Resource.vue'),

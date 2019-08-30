@@ -37,7 +37,7 @@ def loadTranslations(l10repo):
 
     for file in newTranslations:
         with open("../src/locales/" + file[:-3] + ".json", "w") as newT:
-            json.dump(newTranslations[file], newT)
+            json.dump(newTranslations[file], newT, sort_keys=True, indent=4)
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

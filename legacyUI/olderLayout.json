@@ -1269,7 +1269,7 @@
         "label.compute.offering"
       ],
       "components": [
-        "Cs.sections.metrics.zones.listView.detailView.tabs.systemVMs.listView.detailView.actions.scaleUp.createForm"
+        "Cs.autoscaler.forms"
       ]
     },
     "projectid": {
@@ -4600,6 +4600,94 @@
         "Cs.sections.quota.sections.emailTemplates.listView.detailView.tabs.details"
       ]
     },
+    "templateNames": {
+      "labels": [
+        "label.template"
+      ],
+      "components": [
+        "Cs.autoscaler.forms"
+      ]
+    },
+    "minInstance": {
+      "labels": [
+        "label.min.instances"
+      ],
+      "components": [
+        "Cs.autoscaler.forms"
+      ]
+    },
+    "maxInstance": {
+      "labels": [
+        "label.max.instances"
+      ],
+      "components": [
+        "Cs.autoscaler.forms"
+      ]
+    },
+    "isAdvanced": {
+      "labels": [
+        "label.show.advanced.settings"
+      ],
+      "components": [
+        "Cs.autoscaler.forms"
+      ]
+    },
+    "interval": {
+      "labels": [
+        "label.polling.interval.sec"
+      ],
+      "components": [
+        "Cs.autoscaler.forms"
+      ]
+    },
+    "quietTime": {
+      "labels": [
+        "label.quiet.time.sec"
+      ],
+      "components": [
+        "Cs.autoscaler.forms"
+      ]
+    },
+    "destroyVMgracePeriod": {
+      "labels": [
+        "label.destroy.vm.graceperiod"
+      ],
+      "components": [
+        "Cs.autoscaler.forms"
+      ]
+    },
+    "securityGroups": {
+      "labels": [
+        "label.menu.security.groups"
+      ],
+      "components": [
+        "Cs.autoscaler.forms"
+      ]
+    },
+    "diskOfferingId": {
+      "labels": [
+        "label.menu.disk.offerings"
+      ],
+      "components": [
+        "Cs.autoscaler.forms"
+      ]
+    },
+    "snmpCommunity": {
+      "labels": [
+        "label.SNMP.community"
+      ],
+      "components": [
+        "Cs.autoscaler.forms"
+      ]
+    },
+    "snmpPort": {
+      "labels": [
+        "label.SNMP.port"
+      ],
+      "components": [
+        "Cs.autoscaler.forms"
+      ]
+    },
     "counterid": {
       "labels": [
         "label.counter"
@@ -5281,6 +5369,7 @@
     "Cs.sections.quota.sections.tariffView.listView": "'usageName', 'usageUnit', 'tariffValue', 'description'",
     "Cs.sections.quota.sections.emailTemplates.listView": "'templatetype', 'templatesubject', 'templatebody', 'last_updated'",
     "Cs.sections.quota.sections.emailTemplates.listView.detailView.tabs.details": "''templatetype', ', ''templatesubject', 'templatebody', 'last_updated', '",
+    "Cs.autoscaler.forms": "'isAdvanced', 'interval', 'quietTime', 'destroyVMgracePeriod', 'securityGroups', 'diskOfferingId', 'snmpCommunity', 'snmpPort', 'username'",
     "Cs.autoscaler.forms.scaleUpPolicy": "'counterid', 'relationaloperator', 'threshold', 'add-scaleUpcondition'",
     "Cs.autoscaler.forms.scaleDownPolicy": "'counterid', 'relationaloperator', 'threshold', 'add-scaleDowncondition'",
     "Cs.projects.inviteForm": "'email', 'account', 'state'",

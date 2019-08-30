@@ -44,7 +44,7 @@ var loadFields = function (data, prefix) {
   var allFields = {}
   var columnsOrder = {}
   $.each(Object.keys(data), function (idx, key) {
-    if (key === 'fields') {
+    if (key === 'fields' || key === 'bottomFields' || key === 'topFields') {
       var fields = data[key]
 	  var cols = ''
       if ($.type(fields) === 'object') {

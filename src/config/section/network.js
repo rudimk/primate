@@ -9,7 +9,17 @@ export default {
       icon: 'gateway',
       permission: [ 'listNetworks' ],
       component: () => import('@/components/CloudMonkey/Resource.vue'),
-      columns: ['name', 'state', 'type', 'cidr', 'ip6cidr', 'broadcasturi', 'account', 'zonename']
+      columns: ['name', 'state', 'type', 'cidr', 'ip6cidr', 'broadcasturi', 'account', 'zonename'],
+      actions: [
+        {
+          api: 'deleteNetwork',
+          icon: 'delete',
+          label: 'Delete Network',
+          params: ['id'],
+          listView: true,
+          dataView: true
+        },
+      ]
     },
     {
       name: 'vpc',

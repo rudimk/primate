@@ -5,22 +5,22 @@
       <a-icon type="global"></a-icon>
     </span>
     <a-menu slot="overlay" @click="onClick">
-      <a-menu-item key="en" :value="enUS">English</a-menu-item>
-      <a-menu-item key="ar" :value="arEG">Arabic</a-menu-item>     
-      <a-menu-item key="de_DE" :value="deDE">German</a-menu-item>
-      <a-menu-item key="es" :value="esES">Espanol</a-menu-item>
-      <a-menu-item key="fr_FR" :value="frFR">French</a-menu-item>
-      <a-menu-item key="it_IT" :value="itIT">Italian</a-menu-item>
-      <a-menu-item key="ja_JP" :value="jpJP">Japanese</a-menu-item>
-      <a-menu-item key="zh_CN" :value="zhCN">Chinese</a-menu-item>
-      <a-menu-item key="ko_KR" :value="koKR">Korean</a-menu-item>      
-      <a-menu-item key="ru_RU" :value="ruRU">Russian</a-menu-item>     
-      <a-menu-item key="ca" :value="caES">Canadian</a-menu-item>       
-      <a-menu-item key="nb_NO" :value="nbNO">Norwegian</a-menu-item>       
-      <a-menu-item key="nl_NL" :value="nlNL">Dutch</a-menu-item>       
-      <a-menu-item key="hu" :value="huHU">Hungarian</a-menu-item>    
-      <a-menu-item key="pl" :value="plPL">Polish</a-menu-item>       
-      <a-menu-item key="pt_BR" :value="ptBR">Portugese</a-menu-item>       
+      <a-menu-item key="en"    :value="enUS">English</a-menu-item>
+      <a-menu-item key="fr_FR" :value="frFR">Français</a-menu-item>
+      <a-menu-item key="ja_JP" :value="jpJP">日本語</a-menu-item>
+      <a-menu-item key="zh_CN" :value="zhCN">简体中文</a-menu-item>
+      <a-menu-item key="ar"    :value="arEG">Arabic</a-menu-item>
+      <a-menu-item key="ca"    :value="caES">Catalan</a-menu-item>
+      <a-menu-item key="de_DE" :value="deDE">Deutsch</a-menu-item>
+      <a-menu-item key="es"    :value="esES">Españo</a-menu-item>
+      <a-menu-item key="hu"    :value="huHU">Magyar</a-menu-item>
+      <a-menu-item key="it_IT" :value="itIT">Italiano</a-menu-item>
+      <a-menu-item key="ko_KR" :value="koKR">한국어</a-menu-item>
+      <a-menu-item key="nb_NO" :value="nbNO">Norsk</a-menu-item>
+      <a-menu-item key="nl_NL" :value="nlNL">Nederlands</a-menu-item>
+      <a-menu-item key="ru_RU" :value="ruRU">Русский</a-menu-item>
+      <a-menu-item key="pl"    :value="plPL">Polish</a-menu-item>
+      <a-menu-item key="pt_BR" :value="ptBR">Português brasileiro</a-menu-item>
     </a-menu>
   </a-dropdown>
 
@@ -84,7 +84,7 @@ export default {
       } else {
         moment.locale(localeValue)
         console.log(this)
-        this.$i18n.locale = e.key        
+        this.$i18n.locale = e.key
         Vue.ls.set('current_locale', e.key)
         this.$router.go(0)
       }

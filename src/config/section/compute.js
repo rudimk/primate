@@ -53,10 +53,45 @@ export default {
           dataView: true
         },
         {
+          api: 'createVMSnaphot',
+          icon: 'camera',
+          label: 'Create VM Snapshot',
+          dataView: true,
+          params: ['virtualmachineid', 'description', 'name', 'quiescevm', 'snapshotmemory']
+        },
+        {
+          api: 'restoreVirtualMachine',
+          icon: 'to-top',
+          label: 'Reinstall Instance',
+          dataView: true,
+          params: ['virtualmachineid']
+        },
+        {
+          api: 'attachIso',
+          icon: 'paper-clip',
+          label: 'Attach ISO to Instance',
+          dataView: true,
+          params: ['id', 'virtualmachineid']
+        },
+        {
           api: 'migrateVirtualMachine',
           icon: 'drag',
           label: 'Migrate VM',
           dataView: true
+        },
+        {
+          api: 'changeServiceForVirtualMachine',
+          icon: 'swap',
+          label: 'Change Service Offering',
+          dataView: true,
+          params: ['id', 'serviceofferingid']
+        },
+        {
+          api: 'resetPasswordForVirtualMachine',
+          icon: 'key',
+          label: 'Reset Instance Password',
+          dataView: true,
+          params: ['id']
         },
         {
           api: 'resetSSHKeyForVirtualMachine',

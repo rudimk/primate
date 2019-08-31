@@ -114,7 +114,7 @@ export default {
       title: 'Demo',
       icon: 'radar-chart',
       permission: [ 'listVirtualMachines' ],
-      component: () => import('@/components/CloudMonkey/Resource.vue')
+      component: () => import('@/components/Test.vue')
     },
     {
       name: 'ssh',

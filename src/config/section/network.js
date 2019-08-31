@@ -18,7 +18,7 @@ export default {
           params: ['id'],
           listView: true,
           dataView: true
-        },
+        }
       ]
     },
     {

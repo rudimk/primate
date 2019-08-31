@@ -5,20 +5,20 @@
       <a-icon type="global"></a-icon>
     </span>
     <a-menu slot="overlay" @click="onClick">
-      <a-menu-item key="en"    :value="enUS"><flag iso="gb"/> English</a-menu-item>
+      <a-menu-item key="en" :value="enUS"><flag iso="gb"/> English</a-menu-item>
       <a-menu-item key="ja_JP" :value="jpJP"><flag iso="jp"/> 日本語</a-menu-item>
       <a-menu-item key="ko_KR" :value="koKR"><flag iso="kr"/> 한국어</a-menu-item>
       <a-menu-item key="zh_CN" :value="zhCN"><flag iso="cn"/> 简体中文</a-menu-item>
-      <a-menu-item key="ar"    :value="arEG"><flag iso="ae"/> Arabic</a-menu-item>
-      <a-menu-item key="ca"    :value="caES"><flag iso="ca"/> Catalan</a-menu-item>
+      <a-menu-item key="ar" :value="arEG"><flag iso="ae"/> Arabic</a-menu-item>
+      <a-menu-item key="ca" :value="caES"><flag iso="ca"/> Catalan</a-menu-item>
       <a-menu-item key="de_DE" :value="deDE"><flag iso="de"/> Deutsch</a-menu-item>
-      <a-menu-item key="es"    :value="esES"><flag iso="es"/> Españo</a-menu-item>
+      <a-menu-item key="es" :value="esES"><flag iso="es"/> Españo</a-menu-item>
       <a-menu-item key="fr_FR" :value="frFR"><flag iso="fr"/> Français</a-menu-item>
       <a-menu-item key="it_IT" :value="itIT"><flag iso="it"/> Italiano</a-menu-item>
-      <a-menu-item key="hu"    :value="huHU"><flag iso="hu"/> Magyar</a-menu-item>
+      <a-menu-item key="hu" :value="huHU"><flag iso="hu"/> Magyar</a-menu-item>
       <a-menu-item key="nl_NL" :value="nlNL"><flag iso="nl"/> Nederlands</a-menu-item>
       <a-menu-item key="nb_NO" :value="nbNO"><flag iso="no"/> Norsk</a-menu-item>
-      <a-menu-item key="pl"    :value="plPL"><flag iso="pl"/> Polish</a-menu-item>
+      <a-menu-item key="pl" :value="plPL"><flag iso="pl"/> Polish</a-menu-item>
       <a-menu-item key="pt_BR" :value="ptBR"><flag iso="pt"/> Português brasileiro</a-menu-item>
       <a-menu-item key="ru_RU" :value="ruRU"><flag iso="ru"/> Русский</a-menu-item>
     </a-menu>

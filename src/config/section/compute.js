@@ -53,11 +53,10 @@ export default {
           dataView: true
         },
         {
-          api: 'createVMSnaphot',
+          api: 'createVMSnapshot',
           icon: 'camera',
           label: 'Create VM Snapshot',
-          dataView: true,
-          params: ['virtualmachineid', 'description', 'name', 'quiescevm', 'snapshotmemory']
+          dataView: true
         },
         {
           api: 'restoreVirtualMachine',
@@ -80,13 +79,6 @@ export default {
           dataView: true
         },
         {
-          api: 'changeServiceForVirtualMachine',
-          icon: 'swap',
-          label: 'Change Service Offering',
-          dataView: true,
-          params: ['id', 'serviceofferingid']
-        },
-        {
           api: 'resetPasswordForVirtualMachine',
           icon: 'key',
           label: 'Reset Instance Password',
@@ -98,6 +90,13 @@ export default {
           icon: 'lock',
           label: 'Reset SSH Key',
           dataView: true
+        },
+        {
+          api: 'changeServiceForVirtualMachine',
+          icon: 'swap',
+          label: 'Change Service Offering',
+          dataView: true,
+          params: ['id', 'serviceofferingid']
         },
         {
           api: 'destroyVirtualMachine',

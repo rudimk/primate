@@ -279,6 +279,11 @@ export default {
       if (to.fullPath !== from.fullPath) {
         this.fetchData()
       }
+    },
+    '$i18n.locale' (to, from) {
+      if (to !== from) {
+        this.fetchData()
+      }
     }
   },
   beforeCreate () {
@@ -289,9 +294,6 @@ export default {
       this.breadList = []
       this.name = this.$route.name
       this.$route.matched.forEach((item) => {
-        if (item.meta.title) {
-          item.meta.title = this.$t(item.meta.title)
-        }
         this.breadList.push(item)
       })
     },
@@ -347,6 +349,7 @@ export default {
       }
 
       var counter = 0
+      console.log('Executed Resource fetch data')
       for (var key of this.columnKeys) {
         if (typeof key === 'object') {
           key = Object.keys(key)[0]

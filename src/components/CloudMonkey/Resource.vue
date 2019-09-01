@@ -321,8 +321,6 @@ export default {
       } else {
         this.dataView = false
       }
-      console.log(this.$route)
-      console.log(this.routeName)
       if (this.$route && this.$route.meta && this.$route.meta.permission) {
         this.apiName = this.$route.meta.permission[0]
         if (this.$route.meta.columns) {
@@ -349,7 +347,6 @@ export default {
       }
 
       var counter = 0
-      console.log('Executed Resource fetch data')
       for (var key of this.columnKeys) {
         if (typeof key === 'object') {
           key = Object.keys(key)[0]

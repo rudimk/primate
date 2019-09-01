@@ -111,20 +111,6 @@ export default {
           params: ['id']
         },
         {
-          api: 'changeServiceForVirtualMachine',
-          icon: 'swap',
-          label: 'Change Service Offering',
-          dataView: true,
-          params: ['id', 'serviceofferingid']
-        },
-        {
-          api: 'resetPasswordForVirtualMachine',
-          icon: 'key',
-          label: 'Reset Instance Password',
-          dataView: true,
-          params: ['id']
-        },
-        {
           api: 'resetSSHKeyForVirtualMachine',
           icon: 'lock',
           label: 'Reset SSH Key',

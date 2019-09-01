@@ -13,7 +13,6 @@ import {
   DEFAULT_FIXED_SIDEMENU,
   DEFAULT_CONTENT_WIDTH_TYPE,
   DEFAULT_MULTI_TAB
-  // CURRENT_LOCALE
 } from '@/store/mutation-types'
 import config from '@/config/settings'
 

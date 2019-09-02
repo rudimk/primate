@@ -39,8 +39,6 @@ const user = {
       state.apis = apis
     },
     SET_ASYNC_JOB_IDS: (state, jobsJsonArray) => {
-      console.log('Committing jobids')
-      console.log(jobsJsonArray)
       Vue.ls.set(ASYNC_JOB_IDS, jobsJsonArray)
       state.asyncJobIds = jobsJsonArray
     }
@@ -140,10 +138,7 @@ const user = {
     },
     AddAsyncJob ({ commit }, jobJson) {
       var jobsArray = Vue.ls.get(ASYNC_JOB_IDS, [])
-      console.log('Adding async job:')
-      console.log(jobJson)
       jobsArray.push(jobJson)
-      console.log(jobsArray)
       commit('SET_ASYNC_JOB_IDS', jobsArray)
     }
   }

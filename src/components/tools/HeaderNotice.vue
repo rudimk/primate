@@ -17,7 +17,7 @@
           </a-list-item>
           <a-list-item v-for="(job, index) in jobs" :key="index">
             <a-list-item-meta :title="job.title" :description="job.description">
-              <a-avatar :style="job.style" :icon="job.icon" slot="avatar"/>
+              <a-avatar :style="notificationAvatar[job.status].style" :icon="notificationAvatar[job.status].icon" slot="avatar"/>
             </a-list-item-meta>
           </a-list-item>
         </a-list>
@@ -32,7 +32,9 @@
 </template>
 
 <script>
+import { api } from '@/api'
 import store from '@/store'
+import { constants } from 'crypto';
 
 export default {
   name: 'HeaderNotice',
@@ -40,7 +42,13 @@ export default {
     return {
       loading: false,
       visible: false,
-      jobs: []
+      jobs: [],
+      poller: null,
+      notificationAvatar: {
+        'done': { 'icon': 'check-circle', 'style': 'backgroundColor:#87d068' },
+        'progress': { 'icon': 'loading', 'style': 'backgroundColor:#ffbf00' },
+        'failed': { 'icon': 'close-circle', 'style': 'backgroundColor:#f56a00' }      
+      }
     }
   },
   methods: {
@@ -51,50 +59,46 @@ export default {
     clearJobs () {
       this.visible = false
       this.jobs = []
+      this.$store.commit('SET_ASYNC_JOB_IDS', [])
     },
-    startPolling () {
-      // TODO: start polling API calls here
-      console.log('Started polling' + this.jobs)
+    startPolling() {
+      this.poller = setInterval(() => {
+        this.pollJobs()
+      }, 2000)
+    },
+    pollJobs () {
+      for (var i in this.jobs) {
+        if (this.jobs[i].status === 'progress') {
+          api('queryAsyncJobResult', {'jobid': this.jobs[i].jobid}).then(json => {        
+            var result = json.queryasyncjobresultresponse      
+            if (result.jobstatus === 0 && this.jobs[i].status !== 'progress') {
+              this.jobs[i].status = 'progress'
+            } else if (result.jobstatus === 1 && this.jobs[i].status !== 'done') {              
+              this.jobs[i].status = 'done'
+            } else if (result.jobstatus === 2 && this.jobs[i].status !== 'failed') {
+              this.jobs[i].status = 'failed'
+            }
+            // this.$store.commit('SET_ASYNC_JOB_IDS', this.jobs.reverse)
+          }).catch(function (e) {
+            console.log('Error encountered while fetching async job result' + this.jobs[i].jobid)
+          })
+        }
+      }      
     }
   },
+  beforeDestroy () {
+	  clearInterval(this.poller)
+  },
+  created () {
+	  this.startPolling()
+  },
   mounted () {
-    this.jobs = store.getters.asyncJobIds
+    this.jobs = store.getters.asyncJobIds.reverse()
     this.$store.watch(
       (state, getters) => getters.asyncJobIds,
       (newValue, oldValue) => {
-        if (newValue !== undefined) {
-          var newJobs = []
-          for (var jobJson in newValue) {
-            if (jobJson.status === 'done') {
-              newJobs.add({
-                'title': newValue.title,
-                'description': newValue.description,
-                'icon': 'check-circle',
-                'status': 'done',
-                'style': 'backgroundColor:#87d068',
-                'jobId': newValue.jobId
-              })
-            } else if (newValue.status === 'progress') {
-              newJobs.add({
-                'title': newValue.title,
-                'description': newValue.description,
-                'icon': 'check-circle',
-                'status': 'loading',
-                'style': 'backgroundColor:#ffbf00',
-                'jobId': newValue.jobId
-              })
-            } else if (newValue.status === 'failed') {
-              newJobs.add({
-                'title': newValue.title,
-                'description': newValue.description,
-                'icon': 'close-circle',
-                'status': 'failed',
-                'style': 'backgroundColor:#f56a00',
-                'jobId': newValue.jobId
-              })
-            }
-          }
-          this.startPolling()
+        if (oldValue !== newValue && newValue !== undefined) {
+          this.jobs = newValue.reverse()          
         }
       }
     )

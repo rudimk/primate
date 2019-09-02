@@ -52,7 +52,7 @@ export default {
       this.visible = false
       this.jobs = []
     },
-    startPolling() {
+    startPolling () {
       // TODO: start polling API calls here
       console.log('Started polling' + this.jobs)
     }
@@ -64,8 +64,8 @@ export default {
       (newValue, oldValue) => {
         if (newValue !== undefined) {
           var newJobs = []
-          for (jobJson in newValue) {
-            if (newValue.status === 'done') {
+          for (var jobJson in newValue) {
+            if (jobJson.status === 'done') {
               newJobs.add({
                 'title': newValue.title,
                 'description': newValue.description,

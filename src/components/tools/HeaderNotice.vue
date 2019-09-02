@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import store from '@/store'
+
 export default {
   name: 'HeaderNotice',
   data () {
@@ -44,14 +46,58 @@ export default {
   methods: {
     showNotifications () {
       this.visible = !this.visible
-      this.jobs.push({ 'title': 'Start VM', description: 'VM Deployment', icon: 'check-circle', status: 'done', style: 'backgroundColor:#87d068' })
-      this.jobs.push({ 'title': 'Start VM', description: 'VM Deployment', icon: 'loading', status: 'progress', style: 'backgroundColor:#ffbf00' })
-      this.jobs.push({ 'title': 'Start VM', description: 'VM Deployment', icon: 'close-circle', status: 'failed', style: 'backgroundColor:#f56a00' })
+      this.startPolling()
     },
     clearJobs () {
       this.visible = false
       this.jobs = []
+    },
+    startPolling() {
+      // TODO: start polling API calls here
+      console.log('Started polling' + this.jobs)
     }
+  },
+  mounted () {
+    this.jobs = store.getters.asyncJobIds
+    this.$store.watch(
+      (state, getters) => getters.asyncJobIds,
+      (newValue, oldValue) => {
+        if (newValue !== undefined) {
+          var newJobs = []
+          for (jobJson in newValue) {
+            if (newValue.status === 'done') {
+              newJobs.add({
+                'title': newValue.title,
+                'description': newValue.description,
+                'icon': 'check-circle',
+                'status': 'done',
+                'style': 'backgroundColor:#87d068',
+                'jobId': newValue.jobId
+              })
+            } else if (newValue.status === 'progress') {
+              newJobs.add({
+                'title': newValue.title,
+                'description': newValue.description,
+                'icon': 'check-circle',
+                'status': 'loading',
+                'style': 'backgroundColor:#ffbf00',
+                'jobId': newValue.jobId
+              })
+            } else if (newValue.status === 'failed') {
+              newJobs.add({
+                'title': newValue.title,
+                'description': newValue.description,
+                'icon': 'close-circle',
+                'status': 'failed',
+                'style': 'backgroundColor:#f56a00',
+                'jobId': newValue.jobId
+              })
+            }
+          }
+          this.startPolling()
+        }
+      }
+    )
   }
 }
 </script>

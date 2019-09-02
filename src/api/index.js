@@ -3,6 +3,7 @@ import { axios } from '@/utils/request'
 export function api (command, args = {}) {
   args['command'] = command
   args['response'] = 'json'
+  console.log('HERE THERE EVERYWHERE')
   return axios.get('/', {
     params: args
   })

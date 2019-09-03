@@ -66,24 +66,30 @@ export default {
         this.pollJobs()
       }, 2000)
     },
-    pollJobs () {
+    async pollJobs () {
+      var hasUpdated = false
       for (var i in this.jobs) {
         if (this.jobs[i].status === 'progress') {
-          api('queryAsyncJobResult', {'jobid': this.jobs[i].jobid}).then(json => {        
+          await api('queryAsyncJobResult', {'jobid': this.jobs[i].jobid}).then(json => {
             var result = json.queryasyncjobresultresponse      
-            if (result.jobstatus === 0 && this.jobs[i].status !== 'progress') {
-              this.jobs[i].status = 'progress'
-            } else if (result.jobstatus === 1 && this.jobs[i].status !== 'done') {              
+            if (result.jobstatus === 1 && this.jobs[i].status !== 'done') {
+              hasUpdated = true
               this.jobs[i].status = 'done'
             } else if (result.jobstatus === 2 && this.jobs[i].status !== 'failed') {
+              hasUpdated = true
               this.jobs[i].status = 'failed'
+              if (result.jobresult.errortext !== null) {
+                this.jobs[i].description = result.jobresult.errortextq
+              }
             }
-            // this.$store.commit('SET_ASYNC_JOB_IDS', this.jobs.reverse)
           }).catch(function (e) {
             console.log('Error encountered while fetching async job result' + this.jobs[i].jobid)
           })
         }
-      }      
+      }
+      if (hasUpdated) {
+        this.$store.commit('SET_ASYNC_JOB_IDS', this.jobs.reverse())
+      }
     }
   },
   beforeDestroy () {

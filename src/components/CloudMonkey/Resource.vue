@@ -511,7 +511,7 @@ export default {
               if (obj.includes('response')) {
                 for (const res in json[obj]) {
                   if (res === 'jobid') {
-                    this.$store.dispatch('AddAsyncJob', { 'title': this.currentAction.label, 'jobid': json[obj][res], 'description': obj, 'status': 'progress'})
+                    this.$store.dispatch('AddAsyncJob', { 'title': this.currentAction.label, 'jobid': json[obj][res], 'description': this.resource.name, 'status': 'progress'})
                     break
                   }
                 }

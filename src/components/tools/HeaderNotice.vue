@@ -54,7 +54,6 @@ export default {
   methods: {
     showNotifications () {
       this.visible = !this.visible
-      this.startPolling()
     },
     clearJobs () {
       this.visible = false
@@ -64,26 +63,34 @@ export default {
     startPolling() {
       this.poller = setInterval(() => {
         this.pollJobs()
-      }, 2000)
+      }, 2500)
     },
     async pollJobs () {
       var hasUpdated = false
       for (var i in this.jobs) {
         if (this.jobs[i].status === 'progress') {
           await api('queryAsyncJobResult', {'jobid': this.jobs[i].jobid}).then(json => {
-            var result = json.queryasyncjobresultresponse      
+            var result = json.queryasyncjobresultresponse
             if (result.jobstatus === 1 && this.jobs[i].status !== 'done') {
               hasUpdated = true
+              this.$notification['success']({
+                message: this.jobs[i].title,
+                description: this.jobs[i].description
+              })
               this.jobs[i].status = 'done'
             } else if (result.jobstatus === 2 && this.jobs[i].status !== 'failed') {
               hasUpdated = true
               this.jobs[i].status = 'failed'
               if (result.jobresult.errortext !== null) {
-                this.jobs[i].description = result.jobresult.errortextq
+                this.jobs[i].description = '(' + this.jobs[i].description + ') ' + result.jobresult.errortext
               }
+              this.$notification['error']({
+                message: this.jobs[i].title,
+                description: this.jobs[i].description
+              })
             }
           }).catch(function (e) {
-            console.log('Error encountered while fetching async job result' + this.jobs[i].jobid)
+            console.log('Error encountered while fetching async job result' + e)
           })
         }
       }
@@ -93,10 +100,10 @@ export default {
     }
   },
   beforeDestroy () {
-	  clearInterval(this.poller)
+      clearInterval(this.poller)
   },
   created () {
-	  this.startPolling()
+      this.startPolling()
   },
   mounted () {
     this.jobs = store.getters.asyncJobIds.reverse()

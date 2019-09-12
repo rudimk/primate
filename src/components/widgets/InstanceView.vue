@@ -252,11 +252,9 @@ export default {
       totalStorage: 0,
       guestOsName: '',
       osLogo: 'linux',
-      tags: [],
       inputVisible: false,
       inputValue: '',
       activeKey: ['1', '2', '3'],
-
       tags: ['os=centos', 'tag=value', 'demo=true'],
       tagInputVisible: false,
       tagInputValue: '',

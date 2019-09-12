@@ -111,9 +111,14 @@
       @ok="handleSubmit"
       @cancel="closeAction"
       :confirmLoading="currentAction.loading"
-      centered
+      :width="650"
     >
-      <a-spin :spinning="currentAction.loading">
+      <wizard
+        :visible="showAction"
+        :current-action="currentAction"
+      ></wizard>
+
+      <a-spin :spinning="currentAction.loading" v-if="false">
         <a-form
           :form="form"
           @submit="handleSubmit"
@@ -280,10 +285,12 @@ import DataView from '@/components/widgets/DataView'
 import InstanceView from '@/components/widgets/InstanceView'
 import Status from '@/components/widgets/Status'
 import { mixinDevice } from '@/utils/mixin.js'
+import Wizard from '@comp/CloudMonkey/Wizard'
 
 export default {
   name: 'Resource',
   components: {
+    Wizard,
     ChartCard,
     DataView,
     InstanceView,
@@ -455,7 +462,7 @@ export default {
     closeAction () {
       this.currentAction.loading = false
       this.showAction = false
-      this.currentAction = {}
+      // this.currentAction = {}
     },
     execAction (action) {
       this.currentAction = action

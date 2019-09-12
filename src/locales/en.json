@@ -665,5 +665,7 @@
     "zone": "Zone", 
     "zoneId": "Zone", 
     "zoneid": "Zone", 
-    "zonename": "Zone"
+    "zonename": "Zone",
+    "basic": "Basic",
+    "advanced": "Advanced"
 }

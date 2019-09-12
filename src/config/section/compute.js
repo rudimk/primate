@@ -1,3 +1,5 @@
+import createEditVmMapping from '@/config/section/wizard-mapping/create-edit-vm'
+
 export default {
   name: 'compute',
   title: 'Compute',
@@ -21,8 +23,9 @@ export default {
           api: 'deployVirtualMachine',
           icon: 'plus',
           label: 'Deploy VM',
-          params: ['name', 'zoneid', 'diskofferingid'],
-          listView: true
+          params: [],
+          listView: true,
+          wizardMapping: createEditVmMapping
         },
         {
           api: 'updateVirtualMachine',

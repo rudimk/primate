@@ -1,5 +1,3 @@
-import createEditVmMapping from '@/config/section/wizard-mapping/create-edit-vm'
-
 export default {
   name: 'compute',
   title: 'Compute',
@@ -24,7 +22,8 @@ export default {
           icon: 'plus',
           label: 'Deploy VM',
           args: ['name', 'zoneid', 'templateid', 'serviceofferingid', 'rootdisksize'],
-          listView: true
+          listView: true,
+          component: () => import('@views/compute/VmWizard')
         },
         {
           api: 'updateVirtualMachine',

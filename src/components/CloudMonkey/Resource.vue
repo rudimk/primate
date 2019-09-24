@@ -93,13 +93,14 @@
           @ok="handleSubmit"
           @cancel="closeAction"
           :confirmLoading="currentAction.loading"
-          centered
+          :width="650"
         >
-          <component :is="currentAction.component"/></component>
+          <component :is="currentAction.component" v-bind="{currentAction}"/>
         </a-modal>
       </keep-alive>
 
       <a-modal
+        v-if="!currentAction.component"
         :title="currentAction.label"
         :visible="showAction"
         :closable="true"
@@ -107,14 +108,9 @@
         @ok="handleSubmit"
         @cancel="closeAction"
         :confirmLoading="currentAction.loading"
-        :width="650"
-    >
-      <wizard
-        :visible="showAction"
-        :current-action="currentAction"
-      ></wizard>
-
-      <a-spin :spinning="currentAction.loading" v-if="false">
+        centered
+      >
+        <a-spin :spinning="currentAction.loading">
           <a-form
             :form="form"
             @submit="handleSubmit"
@@ -201,12 +197,10 @@ import DataView from '@/components/widgets/DataView'
 import InstanceView from '@/components/widgets/InstanceView'
 import ListView from '@/components/widgets/ListView'
 import Status from '@/components/widgets/Status'
-import Wizard from '@comp/CloudMonkey/Wizard'
 
 export default {
   name: 'Resource',
   components: {
-    Wizard,
     Breadcrumb,
     CardView,
     ChartCard,

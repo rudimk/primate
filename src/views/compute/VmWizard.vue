@@ -6,54 +6,46 @@
         @submit="handleSubmit"
         layout="vertical"
       >
-        <a-tabs :defaultActiveKey="Object.keys(currentAction.wizardMapping)[0]">
-          <a-tab-pane
-            v-for="(tab, tabIndex) in currentAction.wizardMapping"
-            :key="tabIndex"
-            :tab="$t(tabIndex)"
+        <a-form-item
+          v-for="(field, fieldIndex) in this.currentAction.params"
+          :key="fieldIndex"
+          :label="$t(field.name)"
+          :v-bind="field.name"
+        >
+          <a-switch
+            v-if="field.type==='boolean'"
+            v-decorator="[field.name, {
+              rules: [{ required: field.required, message: 'Please provide input' }]
+            }]"
+            :placeholder="field.description"
+          />
+          <a-select
+            v-else-if="field.type==='uuid' || field.name==='account'"
+            :loading="field.loading"
+            v-decorator="[field.name, {
+              rules: [{ required: field.required, message: 'Please select option' }]
+            }]"
+            :placeholder="field.description"
           >
-            <a-form-item
-              v-for="(field, fieldIndex) in getFilteredInputs(tab)"
-              :key="fieldIndex"
-              :label="$t(field.name)"
-              :v-bind="field.name"
-            >
-              <a-switch
-                v-if="field.type==='boolean'"
-                v-decorator="[field.name, {
-                  rules: [{ required: field.required, message: 'Please provide input' }]
-                }]"
-                :placeholder="field.description"
-              />
-              <a-select
-                v-else-if="field.type==='uuid' || field.name==='account'"
-                :loading="field.loading"
-                v-decorator="[field.name, {
-                  rules: [{ required: field.required, message: 'Please select option' }]
-                }]"
-                :placeholder="field.description"
-              >
-                <a-select-option v-for="(opt, optIndex) in field.opts" :key="optIndex">
-                  {{ opt.name }}
-                </a-select-option>
-              </a-select>
-              <a-input-number
-                v-else-if="field.type==='long'"
-                v-decorator="[field.name, {
-                  rules: [{ required: field.required, message: 'Please enter a number' }]
-                }]"
-                :placeholder="field.description"
-              />
-              <a-input
-                v-else
-                v-decorator="[field.name, {
-                  rules: [{ required: field.required, message: 'Please enter input' }]
-                }]"
-                :placeholder="field.description"
-              />
-            </a-form-item>
-          </a-tab-pane>
-        </a-tabs>
+            <a-select-option v-for="(opt, optIndex) in field.opts" :key="optIndex">
+              {{ opt.name }}
+            </a-select-option>
+          </a-select>
+          <a-input-number
+            v-else-if="field.type==='long'"
+            v-decorator="[field.name, {
+              rules: [{ required: field.required, message: 'Please enter a number' }]
+            }]"
+            :placeholder="field.description"
+          />
+          <a-input
+            v-else
+            v-decorator="[field.name, {
+              rules: [{ required: field.required, message: 'Please enter input' }]
+            }]"
+            :placeholder="field.description"
+          />
+        </a-form-item>
       </a-form>
     </a-spin>
   </div>
@@ -79,8 +71,7 @@ export default {
           label: '',
           params: [],
           listView: false,
-          loading: true,
-          wizardMapping: {}
+          loading: true
         }
       }
     }

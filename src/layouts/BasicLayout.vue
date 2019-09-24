@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import RouteView from '@/components/layouts/RouteView'
+import RouteView from '@/layouts/RouteView'
 import MultiTab from '@/components/MultiTab'
 import GlobalLayout from '@/components/page/GlobalLayout'
 
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="less">
-  @import url('../../style/index.less');
+  @import url('../style/index.less');
 
   /*
  * The following styles are auto-applied to elements with

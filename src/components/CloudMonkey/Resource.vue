@@ -1,26 +1,6 @@
 <template>
   <div>
-    <a-breadcrumb class="breadcrumb" v-if="device !== 'desktop'" style="margin-left: -16px; margin-right: -16px; margin-top: -16px">
-      <a-card :bordered="true">
-        <a-breadcrumb-item v-for="(item, index) in breadList" :key="index">
-          <router-link
-            v-if="item.name"
-            :to="{ path: item.path === '' ? '/' : item.path }"
-          >
-            <a-icon v-if="index == 0" :type="item.meta.icon" />
-            {{ $t(item.meta.title) }}
-          </router-link>
-          <span v-else-if="$route.params.id">
-            {{ $route.params.id }}
-            <a-button shape="circle" type="dashed" size="small" v-clipboard:copy="$route.params.id">
-              <a-icon type="copy" style="margin-left: 0px"/>
-            </a-button>
-          </span>
-          <span v-else>{{ $t(tem.meta.title) }}</span>
-        </a-breadcrumb-item>
-      </a-card>
-    </a-breadcrumb>
-
+    <breadcrumb v-if="device !== 'desktop'" style="margin-left: -16px; margin-right: -16px; margin-top: -16px" />
     <a-row>
       <a-col :span="17">
         <a-tooltip placement="bottom" v-for="(action, actionIndex) in actions" :key="actionIndex" v-if="(!dataView && (action.listView || action.groupAction && selectedRowKeys.length > 0)) || (dataView && action.dataView)">
@@ -103,15 +83,31 @@
       </a-col>
     </a-row>
 
-    <a-modal
-      :title="currentAction.label"
-      :visible="showAction"
-      :closable="true"
-      style="top: 20px;"
-      @ok="handleSubmit"
-      @cancel="closeAction"
-      :confirmLoading="currentAction.loading"
-      :width="650"
+    <div v-show="showAction">
+      <keep-alive v-if="currentAction.component">
+        <a-modal
+          :title="currentAction.label"
+          :visible="showAction"
+          :closable="true"
+          style="top: 20px;"
+          @ok="handleSubmit"
+          @cancel="closeAction"
+          :confirmLoading="currentAction.loading"
+          centered
+        >
+          <component :is="currentAction.component"/></component>
+        </a-modal>
+      </keep-alive>
+
+      <a-modal
+        :title="currentAction.label"
+        :visible="showAction"
+        :closable="true"
+        style="top: 20px;"
+        @ok="handleSubmit"
+        @cancel="closeAction"
+        :confirmLoading="currentAction.loading"
+        :width="650"
     >
       <wizard
         :visible="showAction"
@@ -119,181 +115,104 @@
       ></wizard>
 
       <a-spin :spinning="currentAction.loading" v-if="false">
-        <a-form
-          :form="form"
-          @submit="handleSubmit"
-          layout="vertical" >
-          <a-form-item
-            v-for="(field, fieldIndex) in currentAction.params"
-            :key="fieldIndex"
-            :label="field.name"
-            :v-bind="field.name"
-            v-if="field.name !== 'id'"
-          >
+          <a-form
+            :form="form"
+            @submit="handleSubmit"
+            layout="vertical" >
+            <a-form-item
+              v-for="(field, fieldIndex) in currentAction.params"
+              :key="fieldIndex"
+              :label="$t(field.name)"
+              :v-bind="field.name"
+              v-if="field.name !== 'id'"
+            >
 
-            <span v-if="field.type==='boolean'">
-              <a-switch
-                v-decorator="[field.name, {
-                  rules: [{ required: field.required, message: 'Please provide input' }]
-                }]"
-                :placeholder="field.description"
-              />
-            </span>
-            <span v-else-if="field.type==='uuid' || field.name==='account'">
-              <a-select
-                :loading="field.loading"
-                v-decorator="[field.name, {
-                  rules: [{ required: field.required, message: 'Please select option' }]
-                }]"
-                :placeholder="field.description"
+              <span v-if="field.type==='boolean'">
+                <a-switch
+                  v-decorator="[field.name, {
+                    rules: [{ required: field.required, message: 'Please provide input' }]
+                  }]"
+                  :placeholder="field.description"
+                />
+              </span>
+              <span v-else-if="field.type==='uuid' || field.name==='account'">
+                <a-select
+                  :loading="field.loading"
+                  v-decorator="[field.name, {
+                    rules: [{ required: field.required, message: 'Please select option' }]
+                  }]"
+                  :placeholder="field.description"
 
-              >
-                <a-select-option v-for="(opt, optIndex) in field.opts" :key="optIndex">
-                  {{ opt.name }}
-                </a-select-option>
-              </a-select>
-            </span>
-            <span v-else-if="field.type==='long'">
-              <a-input-number
-                v-decorator="[field.name, {
-                  rules: [{ required: field.required, message: 'Please enter a number' }]
-                }]"
-                :placeholder="field.description"
-              />
-            </span>
-            <span v-else>
-              <a-input
-                v-decorator="[field.name, {
-                  rules: [{ required: field.required, message: 'Please enter input' }]
-                }]"
-                :placeholder="field.description"
-              />
-            </span>
-          </a-form-item>
-
-        </a-form>
-      </a-spin>
-    </a-modal>
+                >
+                  <a-select-option v-for="(opt, optIndex) in field.opts" :key="optIndex">
+                    {{ opt.name }}
+                  </a-select-option>
+                </a-select>
+              </span>
+              <span v-else-if="field.type==='long'">
+                <a-input-number
+                  v-decorator="[field.name, {
+                    rules: [{ required: field.required, message: 'Please enter a number' }]
+                  }]"
+                  :placeholder="field.description"
+                />
+              </span>
+              <span v-else>
+                <a-input
+                  v-decorator="[field.name, {
+                    rules: [{ required: field.required, message: 'Please enter input' }]
+                  }]"
+                  :placeholder="field.description"
+                />
+              </span>
+            </a-form-item>
+          </a-form>
+        </a-spin>
+      </a-modal>
+    </div>
 
     <div v-if="dataView">
       <instance-view :vm="resource" v-if="routeName == 'vm'" />
       <data-view :resource="resource" v-else />
     </div>
     <div style="margin-top: 12px" v-else>
-      <a-row :gutter="12" v-show="!tableView">
-        <a-col v-for="item in items" :md="24" :lg="6" :key="item.id">
-          <a-card
-            hoverable
-            style="margin-bottom: 12px">
-            <template class="ant-card-actions" slot="actions">
-              <a-icon type="edit" />
-              <a-icon type="setting" />
-              <a-icon type="ellipsis" />
-            </template>
-            <a-card-meta>
-              <div slot="avatar">
-                <a-icon :type="$route.meta.icon" style="padding-right: 5px" />
-              </div>
-              <div slot="title">
-                <router-link :to="{ path: $route.path + '/' + item.id }" v-if="item.id">{{ item.name || item.displayname }}</router-link>
-                <span v-else>{{ item.name }}</span>
-              </div>
-              <div slot="description" style="height: 80px">
-                <status :text="item.state" displayText />
-                <div v-if="item.ipaddress">
-                  <a-icon type="wifi" style="padding-right: 5px" />
-                  <router-link :to="{ path: $route.path + '/' + item.id }">{{ item.ipaddress }}</router-link>
-                </div>
-                <div v-if="item.vmname">
-                  <a-icon type="desktop" style="padding-right: 5px" />
-                  <router-link :to="{ path: '/vm/' + item.virtualmachineid }">{{ item.vmname }}</router-link>
-                </div>
-                <div v-if="item.zonename">
-                  <a-icon type="table" style="padding-right: 5px" />
-                  <router-link :to="{ path: '/zone/' + item.zoneid }">{{ item.zonename }}</router-link>
-                </div>
-              </div>
-            </a-card-meta>
-          </a-card>
-        </a-col>
-      </a-row>
-
-      <a-table
-        :rowKey="record => record.id"
+      <list-view
         :loading="loading"
         :columns="columns"
-        :dataSource="items"
-        :scroll="{ x: '100%' }"
-        :pagination="{ position: 'bottom', size: 'small', showSizeChanger: true }"
-        :rowSelection="{selectedRowKeys: selectedRowKeys, onChange: onSelectChange}"
-        :rowClassName="getRowClassName"
-        v-show="tableView"
-      >
-        <template slot="footer">
-          <span v-if="hasSelected">
-            {{ `Selected ${selectedRowKeys.length} items` }}
-          </span>
-        </template>
-
-        <a slot="name" slot-scope="text, record" href="javascript:;">
-          <router-link :to="{ path: $route.path + '/' + record.id }" v-if="record.id">{{ text }}</router-link>
-          <span v-else>{{ text }}</span>
-        </a>
-        <a slot="displayname" slot-scope="text, record" href="javascript:;">
-          <router-link :to="{ path: $route.path + '/' + record.id }">{{ text }}</router-link>
-        </a>
-        <a slot="username" slot-scope="text, record" href="javascript:;">
-          <router-link :to="{ path: $route.path + '/' + record.id }">{{ text }}</router-link>
-        </a>
-        <a slot="ipaddress" slot-scope="text, record" href="javascript:;">
-          <router-link :to="{ path: $route.path + '/' + record.id }">{{ text }}</router-link>
-        </a>
-        <a slot="vmname" slot-scope="text, record" href="javascript:;">
-          <router-link :to="{ path: '/vm/' + record.virtualmachineid }">{{ text }}</router-link>
-        </a>
-        <template slot="state" slot-scope="text">
-          <status :text="text" />
-        </template>
-
-        <a slot="account" slot-scope="text, record" href="javascript:;">
-          <router-link :to="{ path: '/account/' + record.accountid }" v-if="record.accountid">{{ text }}</router-link>
-          <router-link :to="{ path: '/account', query: { name: record.account } }" v-else>{{ text }}</router-link>
-        </a>
-        <a slot="domain" slot-scope="text, record" href="javascript:;">
-          <router-link :to="{ path: '/domain/' + record.domainid }">{{ text }}</router-link>
-        </a>
-        <a slot="zonename" slot-scope="text, record" href="javascript:;">
-          <router-link :to="{ path: '/zone/' + record.zoneid }">{{ text }}</router-link>
-        </a>
-
-        <a slot="guestnetworkname" slot-scope="text, record" href="javascript:;">
-          <router-link :to="{ path: '/guestnetwork/' + record.guestnetworkid }">{{ text }}</router-link>
-        </a>
-
-      </a-table>
+        :items="items"
+        v-show="tableView" />
+      <card-view
+        :items="items"
+        :loading="loading"
+        v-show="!tableView" />
     </div>
 
   </div>
-
 </template>
 
 <script>
 import { api } from '@/api'
+import { mixinDevice } from '@/utils/mixin.js'
 import store from '@/store'
+import Breadcrumb from '@/components/widgets/Breadcrumb'
+import CardView from '@/components/widgets/CardView'
 import ChartCard from '@/components/chart/ChartCard'
 import DataView from '@/components/widgets/DataView'
 import InstanceView from '@/components/widgets/InstanceView'
+import ListView from '@/components/widgets/ListView'
 import Status from '@/components/widgets/Status'
-import { mixinDevice } from '@/utils/mixin.js'
 import Wizard from '@comp/CloudMonkey/Wizard'
 
 export default {
   name: 'Resource',
   components: {
     Wizard,
+    Breadcrumb,
+    CardView,
     ChartCard,
     DataView,
     InstanceView,
+    ListView,
     Status
   },
   mixins: [mixinDevice],
@@ -310,7 +229,6 @@ export default {
       showAction: false,
       dataView: false,
       actions: [],
-      breadList: [],
       tableView: true
     }
   },
@@ -338,15 +256,7 @@ export default {
     this.form = this.$form.createForm(this)
   },
   methods: {
-    getBreadcrumb () {
-      this.breadList = []
-      this.name = this.$route.name
-      this.$route.matched.forEach((item) => {
-        this.breadList.push(item)
-      })
-    },
     fetchData (search = '') {
-      this.getBreadcrumb()
       this.routeName = this.$route.name
       if (!this.routeName) {
         this.routeName = this.$route.matched[this.$route.matched.length - 1].parent.name
@@ -466,8 +376,8 @@ export default {
     },
     execAction (action) {
       this.currentAction = action
-      this.currentAction['params'] = store.getters.apis[this.currentAction.api]['params']
-      this.currentAction['params'].sort(function (a, b) {
+      var params = store.getters.apis[this.currentAction.api]['params']
+      params.sort(function (a, b) {
         if (a.name === 'name' && b.name !== 'name') { return -1 }
         if (a.name !== 'name' && b.name === 'name') { return -1 }
         if (a.name === 'id') { return -1 }
@@ -475,12 +385,22 @@ export default {
         if (a.name > b.name) { return 1 }
         return 0
       })
+      if (action.args && action.args.length > 0) {
+        this.currentAction['params'] = action.args.map(function (arg) {
+          return params.filter(function (param) {
+            return param.name === arg
+          })[0]
+        })
+      } else {
+        this.currentAction['params'] = params
+      }
+
+      this.showAction = true
       for (const param of this.currentAction['params']) {
         if (param.type === 'uuid' || param.name === 'account') {
           this.listUuidOpts(param)
         }
       }
-      this.showAction = true
       this.currentAction.loading = false
     },
     listUuidOpts (param) {
@@ -588,44 +508,6 @@ export default {
         }
       })
     },
-    getRowClassName (record, index) {
-      if (index % 2 === 0) {
-        return 'light-row'
-      }
-      return 'dark-row'
-    },
-    getBadgeStatus (state) {
-      var status = 'default'
-      switch (state) {
-        case 'Running':
-        case 'Ready':
-        case 'Up':
-        case 'BackedUp':
-        case 'Allocated':
-        case 'Implemented':
-        case 'Enabled':
-        case 'enabled':
-        case 'Active':
-        case 'Completed':
-        case 'Started':
-          status = 'success'
-          break
-        case 'Stopped':
-        case 'Error':
-          status = 'error'
-          break
-        case 'Migrating':
-        case 'Starting':
-        case 'Scheduled':
-          status = 'processing'
-          break
-        case 'Alert':
-        case 'Created':
-          status = 'warning'
-          break
-      }
-      return status
-    },
     start () {
       this.loading = true
       this.fetchData()
@@ -633,32 +515,14 @@ export default {
         this.loading = false
         this.selectedRowKeys = []
       }, 1000)
-    },
-    onSelectChange (selectedRowKeys) {
-      console.log('selectedRowKeys changed: ', selectedRowKeys)
-      this.selectedRowKeys = selectedRowKeys
     }
   }
 }
 </script>
 
 <style>
-
-.ant-badge-status-dot {
-  width: 14px;
-  height: 14px;
-}
-
 .info-card {
   margin-top: 12px;
-}
-
-.light-row {
-  background-color: #fff;
-}
-
-.dark-row {
-  background-color: #f9f9f9;
 }
 
 .ant-breadcrumb {

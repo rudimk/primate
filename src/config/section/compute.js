@@ -23,9 +23,8 @@ export default {
           api: 'deployVirtualMachine',
           icon: 'plus',
           label: 'Deploy VM',
-          params: [],
-          listView: true,
-          wizardMapping: createEditVmMapping
+          args: ['name', 'zoneid', 'templateid', 'serviceofferingid', 'rootdisksize'],
+          listView: true
         },
         {
           api: 'updateVirtualMachine',
@@ -63,21 +62,21 @@ export default {
           icon: 'usb',
           label: 'Reinstall Instance',
           dataView: true,
-          params: ['virtualmachineid']
+          args: ['virtualmachineid']
         },
         {
           api: 'updateVMAffinityGroup',
           icon: 'swap',
           label: 'Update Affinity Group',
           dataView: true,
-          params: ['id', 'serviceofferingid']
+          args: ['id', 'serviceofferingid']
         },
         {
           api: 'changeServiceForVirtualMachine',
           icon: 'sliders',
           label: 'Change Service Offering',
           dataView: true,
-          params: ['id', 'serviceofferingid']
+          args: ['id', 'serviceofferingid']
         },
         {
           api: 'createVMSnapshot',
@@ -90,14 +89,14 @@ export default {
           icon: 'paper-clip',
           label: 'Attach ISO',
           dataView: true,
-          params: ['id', 'virtualmachineid']
+          args: ['id', 'virtualmachineid']
         },
         {
           api: 'detachIso',
           icon: 'link',
           label: 'Detach ISO',
           dataView: true,
-          params: ['id', 'virtualmachineid']
+          args: ['id', 'virtualmachineid']
         },
         {
           api: 'migrateVirtualMachine',
@@ -111,7 +110,7 @@ export default {
           icon: 'key',
           label: 'Reset Instance Password',
           dataView: true,
-          params: ['id']
+          args: ['id']
         },
         {
           api: 'resetSSHKeyForVirtualMachine',
@@ -123,7 +122,7 @@ export default {
           api: 'destroyVirtualMachine',
           icon: 'delete',
           label: 'Destroy VM',
-          params: ['id'],
+          args: ['id'],
           dataView: true,
           groupAction: true
         }
@@ -150,13 +149,13 @@ export default {
           api: 'createSSHKeyPair',
           icon: 'plus',
           label: 'Create SSH key pair',
-          params: ['name', 'publickey', 'domainid']
+          args: ['name', 'publickey', 'domainid']
         },
         {
           api: 'deleteSSHKeyPair',
           icon: 'delete',
           label: 'Delete SSH key pair',
-          params: ['name', 'domainid', 'account']
+          args: ['name', 'domainid', 'account']
         }
       ]
     },
@@ -172,13 +171,13 @@ export default {
           api: 'createAffinityGroup',
           icon: 'plus',
           label: 'New Affinity Group',
-          params: ['name', 'description', 'type']
+          args: ['name', 'description', 'type']
         },
         {
           api: 'deleteAffinityGroup',
           icon: 'delete',
           label: 'Delete Affinity Group',
-          params: ['id']
+          args: ['id']
         }
       ]
     }

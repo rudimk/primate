@@ -168,7 +168,7 @@
     </div>
 
     <div v-if="dataView">
-      <component :is="$route.meta.viewComponent" :resource="resource" v-if="$route.meta.viewComponent"/></component>
+      <component :is="$route.meta.viewComponent" :resource="resource" v-if="$route.meta.viewComponent"/>
       <data-view :resource="resource" v-else />
     </div>
     <div style="margin-top: 12px" v-else>

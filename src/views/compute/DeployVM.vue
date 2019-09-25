@@ -1,51 +1,65 @@
 <template>
   <div>
-    <a-form
-      :form="form"
-      @submit="handleSubmit"
-      layout="vertical"
-    >
-      <a-form-item
-        v-for="(field, fieldIndex) in filteredInputs"
-        :key="fieldIndex"
-        :label="$t(field.name)"
-        :v-bind="field.name"
-      >
-        <a-switch
-          v-if="field.type==='boolean'"
-          v-decorator="[field.name, {
-            rules: [{ required: field.required, message: 'Please provide input' }]
-          }]"
-          :placeholder="field.description"
-        />
-        <a-select
-          v-else-if="field.type==='uuid' || field.name==='account'"
-          :loading="field.loading"
-          v-decorator="[field.name, {
-            rules: [{ required: field.required, message: 'Please select option' }]
-          }]"
-          :placeholder="field.description"
-        >
-          <a-select-option v-for="(opt, optIndex) in field.opts" :key="optIndex">
-            {{ opt.name }}
-          </a-select-option>
-        </a-select>
-        <a-input-number
-          v-else-if="field.type==='long'"
-          v-decorator="[field.name, {
-            rules: [{ required: field.required, message: 'Please enter a number' }]
-          }]"
-          :placeholder="field.description"
-        />
-        <a-input
-          v-else
-          v-decorator="[field.name, {
-            rules: [{ required: field.required, message: 'Please enter input' }]
-          }]"
-          :placeholder="field.description"
-        />
-      </a-form-item>
-    </a-form>
+    <a-row :gutter="12">
+      <a-col :md="24" :lg="16">
+        <a-card :bordered="true" :title="this.$t('instance')">
+          <a-form
+            :form="form"
+            @submit="handleSubmit"
+            layout="vertical"
+          >
+            <a-form-item
+              v-for="(field, fieldIndex) in filteredInputs"
+              :key="fieldIndex"
+              :label="$t(field.name)"
+              :v-bind="field.name"
+            >
+              <a-switch
+                v-if="field.type==='boolean'"
+                v-decorator="[field.name, {
+                  rules: [{ required: field.required, message: 'Please provide input' }]
+                }]"
+                :placeholder="field.description"
+              />
+              <a-select
+                v-else-if="field.type==='uuid' || field.name==='account'"
+                :loading="field.loading"
+                v-decorator="[field.name, {
+                  rules: [{ required: field.required, message: 'Please select option' }]
+                }]"
+                :placeholder="field.description"
+              >
+                <a-select-option v-for="(opt, optIndex) in field.opts" :key="optIndex">
+                  {{ opt.name }}
+                </a-select-option>
+              </a-select>
+              <a-input-number
+                v-else-if="field.type==='long'"
+                v-decorator="[field.name, {
+                  rules: [{ required: field.required, message: 'Please enter a number' }]
+                }]"
+                :placeholder="field.description"
+              />
+              <a-input
+                v-else
+                v-decorator="[field.name, {
+                  rules: [{ required: field.required, message: 'Please enter input' }]
+                }]"
+                :placeholder="field.description"
+              />
+            </a-form-item>
+            <div class="card-footer">
+              <a-button @click="() => this.$router.back()">{{ this.$t('cancel') }}</a-button>
+              <a-button type="primary" @click="handleSubmit">{{ this.$t('submit') }}</a-button>
+            </div>
+          </a-form>
+        </a-card>
+      </a-col>
+      <a-col :md="24" :lg="8">
+        <a-card :bordered="true" :title="this.$t('yourInstance')">
+        </a-card>
+      </a-col>
+    </a-row>
   </div>
 </template>
 
@@ -70,6 +84,7 @@ export default {
         'zoneid',
         'templateid',
         'serviceofferingid',
+        'diskofferingid',
         'rootdisksize'
       ]
     }
@@ -142,6 +157,11 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="less" scoped>
+.card-footer {
+  text-align: right;
+  button + button {
+    margin-left: 8px;
+  }
+}
 </style>

@@ -667,6 +667,6 @@
     "zoneId": "Zone", 
     "zoneid": "Zone", 
     "zonename": "Zone",
-    "basic": "Basic",
-    "advanced": "Advanced"
+    "instance": "Instance",
+    "yourInstance": "Your instance"
 }

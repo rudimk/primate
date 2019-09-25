@@ -6,7 +6,7 @@
       layout="vertical"
     >
       <a-form-item
-        v-for="(field, fieldIndex) in this.params"
+        v-for="(field, fieldIndex) in filteredInputs"
         :key="fieldIndex"
         :label="$t(field.name)"
         :v-bind="field.name"
@@ -64,10 +64,23 @@ export default {
   data () {
     return {
       loading: false,
-      params: []
+      params: [],
+      visibleParams: [
+        'name',
+        'zoneid',
+        'templateid',
+        'serviceofferingid',
+        'rootdisksize'
+      ]
     }
   },
-  computed: {},
+  computed: {
+    filteredInputs () {
+      return this.visibleParams.map((fieldName) => {
+        return this.params.find((param) => fieldName === param.name)
+      })
+    }
+  },
   watch: {
   },
   beforeCreate () {
